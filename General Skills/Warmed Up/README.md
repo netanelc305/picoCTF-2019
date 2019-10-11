@@ -10,7 +10,9 @@ Submit your answer in our competition's flag format. For example, if you answer 
 
 # Solution
 Only need to covert bases , we can use python:
+
+
 ![Screenshot](solution.png)
 
 # Flag
-picoCTF{101010}
+picoCTF{61}
