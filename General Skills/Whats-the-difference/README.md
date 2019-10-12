@@ -23,7 +23,7 @@ So on first look it's easy to see the one image is corrupted but why?
 
 it will be much easier to get hex dump of both and compare, so I used "hd" command to get both hex dumps and "vimdiff" to compare between them
 
-![Screenshot](hexdump.jpg)
+![Screenshot](hexdump.png)
 
 after looking a bit on the differences I figured some bytes were changed. 
 The next thing I did is to write a script to check each byte and to gather only the difference to one string wich compile our flag.
