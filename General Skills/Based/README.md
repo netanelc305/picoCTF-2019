@@ -13,7 +13,8 @@ It might help to have multiple windows open
 
 # Solution
 
-We need to connect using nc and convert some bases to words ....for this one i choosed to use rapidtables 
+We need to connect the program using nc and then convert some numbers to words ....for this one i choosed to use RapidTables
+ 
 https://www.rapidtables.com/convert/number/ascii-hex-bin-dec-converter.html
 
 ![Screenshot](solution.png)
