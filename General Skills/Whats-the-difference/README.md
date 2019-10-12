@@ -19,14 +19,14 @@ Dumping the data from a hex editor may make it easier to compare.
 
 # Solution
 
-So on first look it's easy to see the one image is corrupted but why?
+So on first look it's easy to see one of the images is corrupted ,but why?
 
-it will be much easier to get hex dump of both and compare, so I used "hd" command to get both hex dumps and "vimdiff" to compare between them
+it will be much easier to look inside the images and just compare thier hex dumps, so I used "hd" command to get both hex dumps and "vimdiff" to compare between them
 
 ![Screenshot](hexdump.png)
 
 after looking a bit on the differences I figured some bytes were changed. 
-The next thing I did is to write a script to check each byte and to gather only the difference to one string wich compile our flag.
+The next thing I did is to write a script to check each byte and to gather only the difference into to one string which give us the flag.
 
 ```with open('cattos.jpg','rb') as image1:
     cattos = bytearray(image1.read())
