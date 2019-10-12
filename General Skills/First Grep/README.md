@@ -9,8 +9,8 @@ Can you find the flag in file? This would be really tedious to look through manu
 grep tutorial
 
 # Solution
-cat file | grep "pico"
+cat file | grep pico
 ![Screenshot](solution.png)
 
 # Flag
-picoCTF{101010}
+picoCTF{grep_is_good_to_find_things_bf6aec61}
