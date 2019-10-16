@@ -4,7 +4,7 @@ Points : 300
 
 # Question
 
-Lets decrypt this: [ciphertext](ciphertext.txt)? Something seems a bit small
+Lets decrypt this: [ciphertext](ciphertext)? Something seems a bit small
 
 # Hint 
 
