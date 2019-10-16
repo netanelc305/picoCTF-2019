@@ -12,7 +12,7 @@ The flag is in the format PICOCTF{}
 
 # Solution
 
-After I googled a little bit I found this [International maritime signal flags](https://en.wikipedia.org/wiki/International_maritime_signal_flags)
+I googled a little bit till I found this [International maritime signal flags](https://en.wikipedia.org/wiki/International_maritime_signal_flags)
 
 after convert flags to letters we get our flag.
 
