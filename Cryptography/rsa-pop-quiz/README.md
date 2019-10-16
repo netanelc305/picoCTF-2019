@@ -12,7 +12,7 @@ Class, take your seats! It's PRIME-time for a quiz... nc 2019shell1.picoctf.com 
 
 # Solution
 
-inroder to solve this challage only nned to be familiar with [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)
+inorder to solve this challenge only need to be familiar with [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
 and use [RSA Calculator](https://www.cs.drexel.edu/~jpopyack/IntroCS/HW/RSAWorksheet.html)
 
 
