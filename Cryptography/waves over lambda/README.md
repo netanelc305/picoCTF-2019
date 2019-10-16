@@ -31,7 +31,7 @@ that's even look better however we need to get rid of the "?"
 
 look like the first word need to be "congrats" ....let's try to subtitue (?) with (t) 
 
-and this is the flag ! 
+and this was the flag ! 
 
 # Flag
 frequency_is_c_over_lambda_vlnhnasstm
