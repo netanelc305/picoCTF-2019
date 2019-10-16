@@ -27,12 +27,12 @@ looks like i am on the right diraction ....maybe i should try to drop only ```vd
 
 that's even look better however we need to get rid of the "?" 
 
-``` congra?s were is your flag - frequency_is_c_over_lambda_vlnwnass?m```
+``` congra?s were is your flag - frequency_is_c_over_lambda_vlnhnass?m```
 
 look like the first word need to be "congrats" ....let's try to subtitue (?) with (t) 
 
 and this is the flag ! 
 
 # Flag
-frequency_is_c_over_lambda_vlnwnasstm
+frequency_is_c_over_lambda_vlnhnasstm
 
