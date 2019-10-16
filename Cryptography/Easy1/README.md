@@ -1,6 +1,6 @@
 # Easy1
 
-Points : 
+Points : 100
 
 # Question
 
