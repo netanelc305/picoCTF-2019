@@ -18,7 +18,7 @@ after i saw the table i right away figured its [Vigenère cipher](https://en.wik
 
 i used [online tool](http://rumkin.com/tools/cipher/vigenere.php) to decipher the message 
 
-![Screenshot](the_numbers.png)
+![Screenshot](vigenere.png)
 
 
 # Flag
