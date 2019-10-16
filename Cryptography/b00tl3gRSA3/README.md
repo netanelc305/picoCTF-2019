@@ -1,0 +1,68 @@
+# b00tl3gRSA3
+
+Points : 450
+
+# Question
+
+Why use p and q when I can use more? Connect with nc 2019shell1.picoctf.com 21880.
+
+# Hint 
+
+There's more prime factors than p and q, finding d is going to be different.
+
+# Solution
+
+After connection using nc we get this message we need to decrypt 
+
+![Screenshot](RSA3nc.png)
+
+however this time we can't use RsaCtfTools because it does not support multi-prime RSA
+
+
+
+using [Alpertron](https://www.alpertron.com.ar/ECM.HTM) i factored  N and get all the prime numbers and get phi(Euler's totient)
+
+eventually i used [Script from pico-2018-Writeup](https://tcode2k16.github.io/blog/posts/picoctf-2018-writeup/cryptography/#super-safe-rsa-3)
+
+to get the flag
+
+```
+from pwn import *
+
+# https://stackoverflow.com/questions/4798654/modular-multiplicative-inverse-function-in-python
+def egcd(a, b):
+    if a == 0:
+        return (b, 0, 1)
+    else:
+        g, y, x = egcd(b % a, a)
+        return (g, x - (b // a) * y, y)
+
+def modinv(a, m):
+    g, x, y = egcd(a, m)
+    if g != 1:
+        raise Exception('modular inverse does not exist')
+    else:
+        return x % m
+
+def Rsa3():
+    c = 7156923147683598511941322234348374257824801144959548472260122181043302569808456868098080013431161113473226045505904631429034106735162156403185043220679825880304375615049363791253440398923179410157085380702574796957408667182767820605242245624685788695276429341725674930892240839652137502252185799777749430475206807223444608289980591370843296286
+    n = 13472553539302121922625205902448980751013302117459853918241125141584975393421090986279611937663653868655412973688116708271801056267834039797779057942597659629028933471424340273522604162308901962488192138896559237789185916090084387581390618195119026158813509845391000528289184852040272639465107183985995228431970008745124937624597090437536725943
+    e = 65537
+    phi=13472553501563342493051168188439537546308090510715023360847727963083544652953770910650259531807452422482905699242351952459317060754251948708639486210268622762891547647485822532638013611140493645851976561516432676939380454233956972688709789220437062835799742901762095094277187103810136229477134709914835520504638840010991821561272383569920000000    
+    
+    d = modinv(e, phi)
+    m = pow(c, d, n)
+
+    flag = unhex(hex(m)[2:])
+
+    print(flag)
+
+
+if __name__ == '__main__':
+    Rsa3()
+
+```
+
+# Flag
+picoCTF{too_many_fact0rs_6542458}
+
