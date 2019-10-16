@@ -22,5 +22,5 @@ i used [online tool](http://rumkin.com/tools/cipher/vigenere.php) to decipher th
 
 
 # Flag
-picoCTF{vigenere.png}
+picoCTF{CRYPTOISFUN}
 
