@@ -21,6 +21,10 @@ however, it's still doesn't look like our flag ... so I tried to take the first 
 picoCTF{KODIAK_ALANKA}
 ```
 
+its look like the real flag, however, it doesn't accept the solution 
+let's try to google this ....
+
+
 ![Screenshot](alaska.png)
 
 and this is the real flag :)
