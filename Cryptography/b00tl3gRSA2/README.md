@@ -16,7 +16,7 @@ After connecting using nc we get this message we need to decipher
 
 ![Screenshot](ncRSA.png)
 
-exactrly like miniRSA we can use [RsaCtfTool](https://github.com/Ganapati/RsaCtfTool)
+exactly like miniRSA we can use [RsaCtfTool](https://github.com/Ganapati/RsaCtfTool)
 
 ![Screenshot](ncRSA.png)
 
