@@ -53,8 +53,7 @@ By looking at the source code we can see that we need to give an input that will
 
 So ...all we need to do is to recompile the flag from the conditions we have, we can use this guideline 
 
-password.charAt(position) =="char" 
-position = 0.....31
+password.charAt(position) =="char" where position (0...31)
 
 
 # Flag
