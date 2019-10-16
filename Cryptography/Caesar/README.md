@@ -14,7 +14,7 @@ caesar cipher [tutorial](https://learncryptography.com/classical-encryption/caes
 
 to solve this one i used [Cryptii](https://cryptii.com/pipes/caesar-cipher) and just played with the shifts untill i got the flag 
 
-![Screenshot](caeser.png.png)
+![Screenshot](caeser.png)
 
 
 # Flag
