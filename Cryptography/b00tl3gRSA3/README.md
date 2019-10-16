@@ -22,9 +22,9 @@ however this time we can't use RsaCtfTools because it does not support multi-pri
 
 using [Alpertron](https://www.alpertron.com.ar/ECM.HTM) i factored  N and get all the prime numbers and get phi(Euler's totient)
 
-eventually i used [Script from pico-2018-Writeup](https://tcode2k16.github.io/blog/posts/picoctf-2018-writeup/cryptography/#super-safe-rsa-3)
+![Screenshot](primeFactor.png)
 
-to get the flag
+eventually i used [Script from pico-2018-Writeup](https://tcode2k16.github.io/blog/posts/picoctf-2018-writeup/cryptography/#super-safe-rsa-3) to get the flag
 
 ```
 from pwn import *
