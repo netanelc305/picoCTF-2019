@@ -4,7 +4,7 @@ Points : 200
 
 # Question
 
-What do the [flags](flags.png) mean?
+What do the [flags](flag.png) mean?
 
 # Hint 
 
