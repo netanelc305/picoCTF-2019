@@ -12,9 +12,7 @@ This can be solved online if you don't want to do it by hand!
 
 # Solution
 
-[ROT 13](https://en.wikipedia.org/wiki/ROT13) is a substitution cipher , we can use [online tool](https://rot13.com/)
-
-to decipher the message
+[ROT 13](https://en.wikipedia.org/wiki/ROT13) is a substitution cipher , we can use [online tool](https://rot13.com/) to decipher the message
 
 
 ![Screenshot](rot13.png)
