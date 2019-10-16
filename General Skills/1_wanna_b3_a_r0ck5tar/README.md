@@ -8,7 +8,7 @@ I wrote you another song. Put the flag in the picoCTF{} flag format
 
 # Solution
 
-In [Musi1c]:https://github.com/netanelc305/picoCTF-2019/tree/master/General%20Skills/Mus1c I found out about Rockstar programming language... again we get code written in Rockstar , however this time we cant use https://codewithrockstar.com/online
+In [Musi1c](https://github.com/netanelc305/picoCTF-2019/tree/master/General%20Skills/Mus1c) I found out about Rockstar programming language... again we get code written in Rockstar , however this time we cant use https://codewithrockstar.com/online
 
 so i downloaded Rockstar-to-Python transpiler from https://github.com/RockstarLang/rockstar and converted to code to python
 
