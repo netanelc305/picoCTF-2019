@@ -1,6 +1,6 @@
 # Mr-Worldwide 
 
-Points : 
+Points : 200
 
 # Question
 
