@@ -13,7 +13,7 @@ Make sure you dont lose precision, the numbers are pretty big (besides the e val
 
 # Solution
 
-Inroder to solve this one i used an amazing tool name [RsaCtfTool](https://github.com/Ganapati/RsaCtfTool)
+In order to solve this one I used an amazing tool - [RsaCtfTool](https://github.com/Ganapati/RsaCtfTool)
 
 
 ![Screenshot](miniRsa.png)
