@@ -35,7 +35,7 @@ By examin the source code we can see that :
 
 ```
 
-all we need to do is convert all the byte array back to ascii [script](script.py)
+all we need to do is convert all the byte array back to ascii - [The script](script.py)
 
 ```python 
 
