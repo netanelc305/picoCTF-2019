@@ -36,7 +36,7 @@ By examin the source code we can see that :
 ```
 
 Since we have 94 characters that can potentially meet the condition (passBytes[i] ^ 0x55) - myBytes[i]) ==0  for each one of the 32 letters of the flage , its super
-easy to bruteforce the solution [script](script.py)
+easy to bruteforce the solution - [script](script.py)
 
 ```python 
 def vault_door_6():
