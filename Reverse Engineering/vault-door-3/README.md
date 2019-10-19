@@ -39,7 +39,7 @@ By examin the source code we can see that :
 
 so in order to recive the flag we need to revese the proccess , meaning we need to take "jU5t_a_sna_3lpm17ga45_u_4_mbrf4c" and revese the method body and we will get the flag .
 
-The [script](script.py)
+So i used python and wrote [this script](script.py)
 ```python
 import operator
 
