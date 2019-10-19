@@ -123,9 +123,7 @@ System.out.println("bit2 " + Integer.toBinaryString(bit2)); */
    0x27,
    0xB5,
    0x77,
-   0xE1,The reason for this is we have method scrumble that takes each one of the string letters and calls swithBits which preform some bitwise operations to encrypt the real flag.
-
-so, we have the algorithm that used to encrypt the flag and the expected result, we can try to reverse the algorithm and use expected array as our input.
+   0xE1,
    0xC0,
    0xA4,
    0x95,
