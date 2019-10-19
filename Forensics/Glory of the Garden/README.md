@@ -13,7 +13,7 @@ What is a hex editor?
 # Solution
 
 Only need to open the image using a hex editor and the flag will be at the bottom. 
-so i run ```hd graden.jpg```
+so i used ```hd graden.jpg```
 
 ![](solution.png)
 
