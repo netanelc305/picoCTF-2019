@@ -12,7 +12,7 @@ There is data encoded somewhere, there might be an online decoder
 
 # Solution
 
-like the hint suggest i looked for online tool and found [Steganography Online](https://stylesuxx.github.io/steganography/)
+as the hint suggests I looked for online tool and found [Steganography Online](https://stylesuxx.github.io/steganography/)
 
 ![](solution.png)
 
