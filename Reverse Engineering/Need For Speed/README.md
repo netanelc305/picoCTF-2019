@@ -25,7 +25,7 @@ after checking the assembly code we can see there is a call to "set_timer", so .
 
 ![](need3.png) 
 
-i converted the call to NOP instruction now lets save it to a new binray file [need-for-speed-mod](need-for-speed-mod) and run it
+i converted the call to NOP instruction now lets save it to a new binary file [need-for-speed-mod](need-for-speed-mod) and run it
 
 ![](solution.png)
 
