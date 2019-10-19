@@ -33,14 +33,14 @@ By examin the source code we can see that :
             buffer[i] = password.charAt(i);				/
         }								/
         String s = new String(buffer);				
-        return s.equals("jU5t_a_sna_3lpm17ga45_u_4_mbrf4c"); 			<------- If our input after the maniputlaion equal to "jU5t_a_sna_3lpm17ga45_u_4_mbrf4c" meaning we gave 												 the  rigt flag
+        return s.equals("jU5t_a_sna_3lpm17ga45_u_4_mbrf4c"); 			<------- If our input after the maniputlaion equal to "jU5t_a_sna_3lpm17ga45_u_4_mbrf4c" meaning we gave the  rigt flag
     }
 ```
 
 so in order to recive the flag we need to revese the proccess , meaning we need to take "jU5t_a_sna_3lpm17ga45_u_4_mbrf4c" and revese the method body and we will get the flag .
 
-
-import operator
+The [script](script.py)
+```import operator
 
 def vault_door_3():
 
@@ -68,7 +68,7 @@ def vault_door_3():
 if __name__ == '__main__':
     vault_door_3()
 
+```
 
 # Flag
 picoCTF{jU5t_a_s1mpl3_an4gr4m_4_u_5baf7c}
-
