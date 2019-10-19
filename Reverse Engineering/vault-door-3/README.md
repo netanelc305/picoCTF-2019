@@ -13,7 +13,7 @@ Make a table that contains each value of the loop variables and the correspondin
 # Solution
 By examin the source code we can see that : 
 
-```
+```java
     public boolean checkPassword(String password) { 				<---------------- Call the methon with our input(flag)
         if (password.length() != 32) {
             return false;
@@ -40,7 +40,7 @@ By examin the source code we can see that :
 so in order to recive the flag we need to revese the proccess , meaning we need to take "jU5t_a_sna_3lpm17ga45_u_4_mbrf4c" and revese the method body and we will get the flag .
 
 The [script](script.py)
-```
+```python
 import operator
 
 def vault_door_3():
