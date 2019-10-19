@@ -37,9 +37,9 @@ asm1:
 	<+46>:	sub    eax,0x11
 	<+49>:	jmp    0x526 <asm1+57>
 	<+51>:	mov    eax,DWORD PTR [ebp+0x8]		eax = 0x76
-	<+54>:	add    eax,0x11				eax = 0x87
+	<+54>:	add    eax,0x11				eax = 0x76+0x11=0x87
 	<+57>:	pop    ebp				
-	<+58>:	ret    					0x87
+	<+58>:	ret    					eax
 ```
 
 
