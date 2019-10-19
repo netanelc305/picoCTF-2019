@@ -141,7 +141,7 @@ System.out.println("bit2 " + Integer.toBinaryString(bit2)); */
 
 By examin the source code we can see we parse the "flag" into checkPassword with compare our string vs the expected array, so the expected array is our flag however it doesn't look like .
 
-The reason for this is we have method scrumble that takes each one of the string letters and calls swithBits which preform some bitwise operations to encrypt the real flag.
+The reason for this is we have method **scramble** that takes each one of the string letters and calls **switchBits** which preform some bitwise operations to encrypt the real flag.
 so, we have the algorithm that used to encrypt the flag and the expected result, we can try to reverse the algorithm and use expected array as our input. [script.py](script.py)
 
 ```python 
