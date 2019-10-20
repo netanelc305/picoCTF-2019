@@ -26,7 +26,7 @@ using [Alpertron](https://www.alpertron.com.ar/ECM.HTM) i factored  N and get al
 
 eventually i used [Script from pico-2018-Writeup](https://tcode2k16.github.io/blog/posts/picoctf-2018-writeup/cryptography/#super-safe-rsa-3) to get the flag
 
-```
+```python
 from pwn import *
 
 # https://stackoverflow.com/questions/4798654/modular-multiplicative-inverse-function-in-python
