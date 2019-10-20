@@ -25,7 +25,7 @@ So, maybe it will be a good thing to check the data section of the UDP packets, 
 
 hmm, look like the source IP is always 10.0.0.2 and dest IP can be 10.0.0.12-13.
 
-instead do this manually I wrote [script](script.py) to compile the flag 
+instead do this manually I wrote [script](script.py) to assemble the flag 
 
 ```python
 from scapy.all import *
