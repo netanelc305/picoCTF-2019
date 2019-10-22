@@ -12,7 +12,8 @@ Try fixing the file header
 
 # Solution
 
-wwe get some kind of binary file, when we check it using ```file``` we get its a data file.
+we get some kind of binary file, when we check it using ```file``` we get its a data file.
+
 ![](corrupt1.png)
 
 let's check the hex dump using ```hd mystery```
