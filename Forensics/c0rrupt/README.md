@@ -30,7 +30,7 @@ After reading about [PNG  specifications](https://www.w3.org/TR/PNG/#11IHDR) I r
 
 ![](corrupt4.png)
 
-using ```pngcheck``` we can see there is a problem with the CRC calculation in chunk PHY, we have the value 495224f0 instead 38d82c82, let's try to change it.
+using ```pngcheck``` we can see there is a problem with the CRC calculation in chunk PHY, we have the value 495224f0 instead 38d82c82, let's try to change it, and run pngcheck again.
 
 ![](corrupt5.png)
 
