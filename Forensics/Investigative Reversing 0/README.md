@@ -24,9 +24,9 @@ look like the flag was appended to the png file after the IEND chunk, however, t
 
 now let's check the binary file with BinaryNinja and see
 
-![](ninj1.png)
+![](ninja1.png)
 
-![](ninj2.png)
+![](ninja2.png)
 
 
 after looking at the assembly code we can see that every character from index 5 to 15 was modified so I wrote [script](script.py) to recover the flag.
