@@ -13,7 +13,8 @@ we get this pasta image
 
 ![](ctf.png)
 
-after looking for some Steganography online tools I found this one, after changing the bits in the hidden image we get the hidden image with the flag 
+after looking for some Steganography online tools I found [this one].
+Changing the bits in the image and we get the hidden image with the flag 
 
 ![](pasta1.png)
 
