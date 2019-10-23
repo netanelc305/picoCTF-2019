@@ -15,7 +15,7 @@ at some point, the port number is changed and some letter in ASCII value is adde
 
 ![](shark1.png)
 
-so i wrote a script that will extract the letter from the ports of the packet that was sent from10.0.0.66 to 10.0.0.1
+so i wrote a script that will extract the letter from the ports of the packet that was sent from 10.0.0.66 to 10.0.0.1
 
 ```python
 from scapy.all import *
