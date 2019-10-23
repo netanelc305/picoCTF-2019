@@ -40,7 +40,10 @@ clue3 say ```Alan Eliasen Future boy ```, who is Alan Eliasen ?? let's ask googl
 
 ```Steganography Tools - Alan Eliasen``` looks exactly what we need!
 
+
 When we pick file to decode there is a password field and clue1 give us the password ```hidden_stegosaurus```
+
+![](moon2.png)
 
 After clicking on decode we get the flag 
 
