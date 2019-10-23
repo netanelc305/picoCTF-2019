@@ -28,9 +28,9 @@ for packet in packets:
         try:
             ipSrc = str(packet[IP].src)
             ipDst = str(packet[IP].dst)
-            sPort = str(packet[IP].sport)
+            sPort = packet[IP].sport
             if ipSrc=="10.0.0.66" and ipDst=="10.0.0.1":
-                flag+=chr(int(sPort[1:]))
+                flag+=chr(sPort-5000)
         except:
             pass
 print(flag)
