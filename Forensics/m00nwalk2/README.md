@@ -17,12 +17,15 @@ Were getting hidden message and 3 clues, all of them look like SSTV images that 
 after convert the .wav files to images this what we get :
 
 clue1 :
+
 ![](clue1.jpg)
 
 clue2 :
+
 ![](clue2.jpg)
 
 clue3 :
+
 ![](clue3.jpg)
 
 message:
