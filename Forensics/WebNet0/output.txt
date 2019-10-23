@@ -1,0 +1,2376 @@
+Wireshark SSL debug log 
+
+Wireshark version: 2.6.10 (Git v2.6.10 packaged as 2.6.10-1~ubuntu19.04.0)
+GnuTLS version:    3.6.5
+Libgcrypt version: 1.8.4
+
+KeyID[20]:
+| aa b2 25 ba 59 ab 41 96 2c bc bd dc f0 51 ff bc |..%.Y.A.,....Q..|
+| 39 f2 a2 0c                                     |9...            |
+ssl_init private key file /home/netanel/Desktop/picoCTF-2019/Forensics/WebNet0/picopico.key successfully loaded.
+
+dissect_ssl enter frame #6 (first time)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38a010, ssl_session = 0x555deb38b4e0
+  record: offset = 0, reported_length_remaining = 517
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 512, ssl state 0x00
+packet_from_server: is from server - FALSE
+decrypt_ssl3_record: using client decoder
+decrypt_ssl3_record: no decoder available
+dissect_ssl3_handshake iteration 1 type 1 offset 5 length 508 bytes, remaining 517 
+Calculating hash with offset 5 512
+ssl_dissect_hnd_hello_common found CLIENT RANDOM -> state 0x01
+
+dissect_ssl enter frame #8 (first time)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38a010, ssl_session = 0x555deb38b4e0
+  record: offset = 0, reported_length_remaining = 1007
+ssl_try_set_version found version 0x0303 -> state 0x11
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 53, ssl state 0x11
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+decrypt_ssl3_record: no decoder available
+dissect_ssl3_handshake iteration 1 type 2 offset 5 length 49 bytes, remaining 58 
+ssl_try_set_version found version 0x0303 -> state 0x11
+Calculating hash with offset 5 53
+ssl_dissect_hnd_hello_common found SERVER RANDOM -> state 0x13
+ssl_set_cipher found CIPHER 0x009D TLS_RSA_WITH_AES_256_GCM_SHA384 -> state 0x17
+ssl_load_keyfile dtls/ssl.keylog_file is not configured!
+tls13_load_secret TLS version 0x303 is not 1.3
+tls13_load_secret TLS version 0x303 is not 1.3
+  record: offset = 58, reported_length_remaining = 949
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 935, ssl state 0x17
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+decrypt_ssl3_record: no decoder available
+dissect_ssl3_handshake iteration 1 type 11 offset 63 length 931 bytes, remaining 998 
+Calculating hash with offset 63 935
+lookup(KeyID)[20]:
+| aa b2 25 ba 59 ab 41 96 2c bc bd dc f0 51 ff bc |..%.Y.A.,....Q..|
+| 39 f2 a2 0c                                     |9...            |
+ssl_find_private_key_by_pubkey: lookup result: 0x555deadb3730
+  record: offset = 998, reported_length_remaining = 9
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 4, ssl state 0x17
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+decrypt_ssl3_record: no decoder available
+dissect_ssl3_handshake iteration 1 type 14 offset 1003 length 0 bytes, remaining 1007 
+Calculating hash with offset 1003 4
+
+dissect_ssl enter frame #10 (first time)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38a8b0, ssl_session = 0x555deb38c8b0
+  record: offset = 0, reported_length_remaining = 517
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 512, ssl state 0x00
+packet_from_server: is from server - FALSE
+decrypt_ssl3_record: using client decoder
+decrypt_ssl3_record: no decoder available
+dissect_ssl3_handshake iteration 1 type 1 offset 5 length 508 bytes, remaining 517 
+Calculating hash with offset 5 512
+ssl_dissect_hnd_hello_common found CLIENT RANDOM -> state 0x01
+
+dissect_ssl enter frame #13 (first time)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38a8b0, ssl_session = 0x555deb38c8b0
+  record: offset = 0, reported_length_remaining = 1007
+ssl_try_set_version found version 0x0303 -> state 0x11
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 53, ssl state 0x11
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+decrypt_ssl3_record: no decoder available
+dissect_ssl3_handshake iteration 1 type 2 offset 5 length 49 bytes, remaining 58 
+ssl_try_set_version found version 0x0303 -> state 0x11
+Calculating hash with offset 5 53
+ssl_dissect_hnd_hello_common found SERVER RANDOM -> state 0x13
+ssl_set_cipher found CIPHER 0x009D TLS_RSA_WITH_AES_256_GCM_SHA384 -> state 0x17
+ssl_load_keyfile dtls/ssl.keylog_file is not configured!
+tls13_load_secret TLS version 0x303 is not 1.3
+tls13_load_secret TLS version 0x303 is not 1.3
+  record: offset = 58, reported_length_remaining = 949
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 935, ssl state 0x17
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+decrypt_ssl3_record: no decoder available
+dissect_ssl3_handshake iteration 1 type 11 offset 63 length 931 bytes, remaining 998 
+Calculating hash with offset 63 935
+lookup(KeyID)[20]:
+| aa b2 25 ba 59 ab 41 96 2c bc bd dc f0 51 ff bc |..%.Y.A.,....Q..|
+| 39 f2 a2 0c                                     |9...            |
+ssl_find_private_key_by_pubkey: lookup result: 0x555deadb3730
+  record: offset = 998, reported_length_remaining = 9
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 4, ssl state 0x17
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+decrypt_ssl3_record: no decoder available
+dissect_ssl3_handshake iteration 1 type 14 offset 1003 length 0 bytes, remaining 1007 
+Calculating hash with offset 1003 4
+
+dissect_ssl enter frame #14 (first time)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38a010, ssl_session = 0x555deb38b4e0
+  record: offset = 0, reported_length_remaining = 318
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 262, ssl state 0x17
+packet_from_server: is from server - FALSE
+decrypt_ssl3_record: using client decoder
+decrypt_ssl3_record: no decoder available
+dissect_ssl3_handshake iteration 1 type 16 offset 5 length 258 bytes, remaining 267 
+Calculating hash with offset 5 262
+ssl_load_keyfile dtls/ssl.keylog_file is not configured!
+ssl_generate_pre_master_secret: found SSL_HND_CLIENT_KEY_EXCHG, state 17
+ssl_restore_master_key can't find pre-master secret by Unencrypted pre-master secret
+pre master encrypted[256]:
+| 6d 25 d2 0c a0 c4 ca dc 48 97 87 12 e9 bd 2e 13 |m%......H.......|
+| 16 7a d1 ab 0d 82 aa 67 27 5c 53 94 47 23 28 11 |.z.....g'\S.G#(.|
+| b4 97 91 a1 74 b3 28 31 5a 39 cb 50 4d 42 13 12 |....t.(1Z9.PMB..|
+| 90 3b 70 91 5e 23 e1 03 92 50 53 f6 84 5d e6 c8 |.;p.^#...PS..]..|
+| 93 8c 79 7c a6 83 0c df 07 ca 6d 63 fb 56 62 a3 |..y|......mc.Vb.|
+| e0 4e bd d5 d2 e6 42 5b c3 87 16 fb 5f f0 c6 fd |.N....B[...._...|
+| 6e 45 53 d7 19 2e f5 0a fa 3b 70 e6 30 e7 7c 4f |nES......;p.0.|O|
+| e1 c2 66 dd 75 1a 17 46 b6 35 69 64 34 02 f0 31 |..f.u..F.5id4..1|
+| 20 67 03 8e 5c f1 80 02 03 b0 58 8d 66 17 a7 cf | g..\.....X.f...|
+| 8f cc e1 e0 cd 43 08 c3 85 18 32 3d 65 48 17 4a |.....C....2=eH.J|
+| 26 fc 69 62 b4 47 95 39 91 ba df d7 6b 3b 47 17 |&.ib.G.9....k;G.|
+| 2d 12 4d e9 39 20 a4 b0 63 23 48 0b 52 a3 b7 26 |-.M.9 ..c#H.R..&|
+| fc 6e b5 e8 7e a8 4c d9 34 01 48 6b f9 1d e4 a0 |.n..~.L.4.Hk....|
+| f2 cd 02 8d 67 dc 7b 72 76 14 d5 eb c4 7e 5f a3 |....g.{rv....~_.|
+| e8 d9 d2 fa 6a 0b f9 2d b8 e3 34 76 4a d2 e6 68 |....j..-..4vJ..h|
+| af bd d6 81 f8 b5 5f 1b 43 41 a4 b1 25 37 67 8d |......_.CA..%7g.|
+ssl_decrypt_pre_master_secret: RSA_private_decrypt
+pre master secret[48]:
+| 03 03 50 c5 91 6d 2f 79 09 0c 77 c6 f9 48 9e 78 |..P..m/y..w..H.x|
+| 5c 06 e9 a9 86 e0 07 16 37 4a 65 b7 58 f4 9e ed |\.......7Je.X...|
+| d7 1f 79 2a e1 53 00 e1 e7 5f 78 41 a4 7b b1 60 |..y*.S..._xA.{.`|
+  record: offset = 267, reported_length_remaining = 51
+dissect_ssl3_record: content_type 20 Change Cipher Spec
+decrypt_ssl3_record: app_data len 1, ssl state 0x57
+packet_from_server: is from server - FALSE
+decrypt_ssl3_record: using client decoder
+decrypt_ssl3_record: no decoder available
+ssl_load_keyfile dtls/ssl.keylog_file is not configured!
+ssl_finalize_decryption state = 0x57
+ssl_generate_keyring_material:PRF(pre_master_secret)
+pre master secret[48]:
+| 03 03 50 c5 91 6d 2f 79 09 0c 77 c6 f9 48 9e 78 |..P..m/y..w..H.x|
+| 5c 06 e9 a9 86 e0 07 16 37 4a 65 b7 58 f4 9e ed |\.......7Je.X...|
+| d7 1f 79 2a e1 53 00 e1 e7 5f 78 41 a4 7b b1 60 |..y*.S..._xA.{.`|
+client random[32]:
+| 98 d8 b4 80 b8 3e fa 00 7d f1 05 a8 e8 05 14 c7 |.....>..}.......|
+| 95 04 a3 2e 9d 4f 5d 45 65 0c 64 d2 d4 4e 12 04 |.....O]Ee.d..N..|
+server random[32]:
+| 1c 2a 89 81 87 5e c3 df 90 72 b1 67 21 1c 78 df |.*...^...r.g!.x.|
+| 79 8d ef 5f 93 21 55 77 cb 66 e2 c4 f2 55 09 1b |y.._.!Uw.f...U..|
+tls12_prf: tls_hash(hash_alg SHA384 secret_len 48 seed_len 77 )
+tls_hash: hash secret[48]:
+| 03 03 50 c5 91 6d 2f 79 09 0c 77 c6 f9 48 9e 78 |..P..m/y..w..H.x|
+| 5c 06 e9 a9 86 e0 07 16 37 4a 65 b7 58 f4 9e ed |\.......7Je.X...|
+| d7 1f 79 2a e1 53 00 e1 e7 5f 78 41 a4 7b b1 60 |..y*.S..._xA.{.`|
+tls_hash: hash seed[77]:
+| 6d 61 73 74 65 72 20 73 65 63 72 65 74 98 d8 b4 |master secret...|
+| 80 b8 3e fa 00 7d f1 05 a8 e8 05 14 c7 95 04 a3 |..>..}..........|
+| 2e 9d 4f 5d 45 65 0c 64 d2 d4 4e 12 04 1c 2a 89 |..O]Ee.d..N...*.|
+| 81 87 5e c3 df 90 72 b1 67 21 1c 78 df 79 8d ef |..^...r.g!.x.y..|
+| 5f 93 21 55 77 cb 66 e2 c4 f2 55 09 1b          |_.!Uw.f...U..   |
+hash out[48]:
+| 28 b7 08 67 c9 4d 7a 2f f6 02 87 d5 03 ef 11 18 |(..g.Mz/........|
+| 2f 3a f1 fa ee 4c 22 d7 1b d3 a9 6c f6 2d cd e6 |/:...L"....l.-..|
+| 57 fa 21 93 13 f4 66 98 42 75 7d 6b df 9b 84 04 |W.!...f.Bu}k....|
+PRF out[48]:
+| 28 b7 08 67 c9 4d 7a 2f f6 02 87 d5 03 ef 11 18 |(..g.Mz/........|
+| 2f 3a f1 fa ee 4c 22 d7 1b d3 a9 6c f6 2d cd e6 |/:...L"....l.-..|
+| 57 fa 21 93 13 f4 66 98 42 75 7d 6b df 9b 84 04 |W.!...f.Bu}k....|
+master secret[48]:
+| 28 b7 08 67 c9 4d 7a 2f f6 02 87 d5 03 ef 11 18 |(..g.Mz/........|
+| 2f 3a f1 fa ee 4c 22 d7 1b d3 a9 6c f6 2d cd e6 |/:...L"....l.-..|
+| 57 fa 21 93 13 f4 66 98 42 75 7d 6b df 9b 84 04 |W.!...f.Bu}k....|
+ssl_generate_keyring_material CIPHER: AES256
+ssl_generate_keyring_material sess key generation
+tls12_prf: tls_hash(hash_alg SHA384 secret_len 48 seed_len 77 )
+tls_hash: hash secret[48]:
+| 28 b7 08 67 c9 4d 7a 2f f6 02 87 d5 03 ef 11 18 |(..g.Mz/........|
+| 2f 3a f1 fa ee 4c 22 d7 1b d3 a9 6c f6 2d cd e6 |/:...L"....l.-..|
+| 57 fa 21 93 13 f4 66 98 42 75 7d 6b df 9b 84 04 |W.!...f.Bu}k....|
+tls_hash: hash seed[77]:
+| 6b 65 79 20 65 78 70 61 6e 73 69 6f 6e 1c 2a 89 |key expansion.*.|
+| 81 87 5e c3 df 90 72 b1 67 21 1c 78 df 79 8d ef |..^...r.g!.x.y..|
+| 5f 93 21 55 77 cb 66 e2 c4 f2 55 09 1b 98 d8 b4 |_.!Uw.f...U.....|
+| 80 b8 3e fa 00 7d f1 05 a8 e8 05 14 c7 95 04 a3 |..>..}..........|
+| 2e 9d 4f 5d 45 65 0c 64 d2 d4 4e 12 04          |..O]Ee.d..N..   |
+hash out[168]:
+| 9b 2a 66 30 f0 c1 cc 54 33 f9 ff 50 ed eb 87 9a |.*f0...T3..P....|
+| 32 00 af 93 74 ab 38 86 26 a6 16 9e f1 62 26 48 |2...t.8.&....b&H|
+| d3 8a 2e be 9c a3 59 70 f1 ef 93 58 f2 13 16 56 |......Yp...X...V|
+| c0 d7 d8 07 06 c0 0d b8 e8 0f e0 67 a8 55 cd c8 |...........g.U..|
+| 3e 64 e0 2e 17 a3 9e d4 49 40 ef e0 ca d8 31 62 |>d......I@....1b|
+| 19 08 80 51 2b b9 07 91 37 ff 36 6f 78 9f 77 a0 |...Q+...7.6ox.w.|
+| 33 64 79 e3 a6 34 bd 17 35 fb b7 e4 24 a3 1d 4a |3dy..4..5...$..J|
+| fc a7 73 70 9c 4f 74 a6 c2 1b 8e d5 9f a4 17 1d |..sp.Ot.........|
+| 9d 92 d1 0a b7 04 04 47 2e f6 72 a0 fd 66 14 9d |.......G..r..f..|
+| d4 17 1a 24 81 ef fa 8e f6 28 7c 1d 9b 8d 10 68 |...$.....(|....h|
+| 03 5a de 73 9d 1c 40 5a                         |.Z.s..@Z        |
+PRF out[168]:
+| 9b 2a 66 30 f0 c1 cc 54 33 f9 ff 50 ed eb 87 9a |.*f0...T3..P....|
+| 32 00 af 93 74 ab 38 86 26 a6 16 9e f1 62 26 48 |2...t.8.&....b&H|
+| d3 8a 2e be 9c a3 59 70 f1 ef 93 58 f2 13 16 56 |......Yp...X...V|
+| c0 d7 d8 07 06 c0 0d b8 e8 0f e0 67 a8 55 cd c8 |...........g.U..|
+| 3e 64 e0 2e 17 a3 9e d4 49 40 ef e0 ca d8 31 62 |>d......I@....1b|
+| 19 08 80 51 2b b9 07 91 37 ff 36 6f 78 9f 77 a0 |...Q+...7.6ox.w.|
+| 33 64 79 e3 a6 34 bd 17 35 fb b7 e4 24 a3 1d 4a |3dy..4..5...$..J|
+| fc a7 73 70 9c 4f 74 a6 c2 1b 8e d5 9f a4 17 1d |..sp.Ot.........|
+| 9d 92 d1 0a b7 04 04 47 2e f6 72 a0 fd 66 14 9d |.......G..r..f..|
+| d4 17 1a 24 81 ef fa 8e f6 28 7c 1d 9b 8d 10 68 |...$.....(|....h|
+| 03 5a de 73 9d 1c 40 5a                         |.Z.s..@Z        |
+key expansion[168]:
+| 9b 2a 66 30 f0 c1 cc 54 33 f9 ff 50 ed eb 87 9a |.*f0...T3..P....|
+| 32 00 af 93 74 ab 38 86 26 a6 16 9e f1 62 26 48 |2...t.8.&....b&H|
+| d3 8a 2e be 9c a3 59 70 f1 ef 93 58 f2 13 16 56 |......Yp...X...V|
+| c0 d7 d8 07 06 c0 0d b8 e8 0f e0 67 a8 55 cd c8 |...........g.U..|
+| 3e 64 e0 2e 17 a3 9e d4 49 40 ef e0 ca d8 31 62 |>d......I@....1b|
+| 19 08 80 51 2b b9 07 91 37 ff 36 6f 78 9f 77 a0 |...Q+...7.6ox.w.|
+| 33 64 79 e3 a6 34 bd 17 35 fb b7 e4 24 a3 1d 4a |3dy..4..5...$..J|
+| fc a7 73 70 9c 4f 74 a6 c2 1b 8e d5 9f a4 17 1d |..sp.Ot.........|
+| 9d 92 d1 0a b7 04 04 47 2e f6 72 a0 fd 66 14 9d |.......G..r..f..|
+| d4 17 1a 24 81 ef fa 8e f6 28 7c 1d 9b 8d 10 68 |...$.....(|....h|
+| 03 5a de 73 9d 1c 40 5a                         |.Z.s..@Z        |
+Client Write key[32]:
+| 9b 2a 66 30 f0 c1 cc 54 33 f9 ff 50 ed eb 87 9a |.*f0...T3..P....|
+| 32 00 af 93 74 ab 38 86 26 a6 16 9e f1 62 26 48 |2...t.8.&....b&H|
+Server Write key[32]:
+| d3 8a 2e be 9c a3 59 70 f1 ef 93 58 f2 13 16 56 |......Yp...X...V|
+| c0 d7 d8 07 06 c0 0d b8 e8 0f e0 67 a8 55 cd c8 |...........g.U..|
+Client Write IV[4]:
+| 3e 64 e0 2e                                     |>d..            |
+Server Write IV[4]:
+| 17 a3 9e d4                                     |....            |
+ssl_generate_keyring_material ssl_create_decoder(client)
+decoder initialized (digest len 48)
+ssl_generate_keyring_material ssl_create_decoder(server)
+decoder initialized (digest len 48)
+ssl_generate_keyring_material: client seq 0, server seq 0
+ssl_save_master_key inserted (pre-)master secret for Client Random
+stored key[32]:
+| 98 d8 b4 80 b8 3e fa 00 7d f1 05 a8 e8 05 14 c7 |.....>..}.......|
+| 95 04 a3 2e 9d 4f 5d 45 65 0c 64 d2 d4 4e 12 04 |.....O]Ee.d..N..|
+stored (pre-)master secret[48]:
+| 28 b7 08 67 c9 4d 7a 2f f6 02 87 d5 03 ef 11 18 |(..g.Mz/........|
+| 2f 3a f1 fa ee 4c 22 d7 1b d3 a9 6c f6 2d cd e6 |/:...L"....l.-..|
+| 57 fa 21 93 13 f4 66 98 42 75 7d 6b df 9b 84 04 |W.!...f.Bu}k....|
+ssl_save_master_key: not saving empty Session ID!
+packet_from_server: is from server - FALSE
+ssl_change_cipher CLIENT
+  record: offset = 273, reported_length_remaining = 45
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 40, ssl state 0x3F
+packet_from_server: is from server - FALSE
+decrypt_ssl3_record: using client decoder
+ssl_decrypt_record ciphertext len 40
+Ciphertext[40]:
+| c8 d2 cc 42 80 72 2e 8d 7a 5a 29 f4 d0 77 b1 50 |...B.r..zZ)..w.P|
+| 52 46 44 fe a6 3a ce 96 7a a2 44 43 1c 58 3e d5 |RFD..:..z.DC.X>.|
+| 4f a6 98 b6 46 84 23 4a                         |O...F.#J        |
+ssl_decrypt_record: allocating 72 bytes for decrypt data (old len 32)
+nonce[12]:
+| 3e 64 e0 2e c8 d2 cc 42 80 72 2e 8d             |>d.....B.r..    |
+AAD[13]:
+| 00 00 00 00 00 00 00 00 16 03 03 00 10          |.............   |
+auth_tag(OK)[16]:
+| 7a a2 44 43 1c 58 3e d5 4f a6 98 b6 46 84 23 4a |z.DC.X>.O...F.#J|
+Plaintext[16]:
+| 14 00 00 0c 2a f9 2c 9f 64 c9 5e 71 d6 4e 8f 9c |....*.,.d.^q.N..|
+dissect_ssl3_handshake iteration 1 type 20 offset 0 length 12 bytes, remaining 16 
+ssl_load_keyfile dtls/ssl.keylog_file is not configured!
+tls13_load_secret TLS version 0x303 is not 1.3
+
+dissect_ssl enter frame #15 (first time)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38a010, ssl_session = 0x555deb38b4e0
+  record: offset = 0, reported_length_remaining = 258
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 202, ssl state 0x3F
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+decrypt_ssl3_record: no decoder available
+dissect_ssl3_handshake iteration 1 type 4 offset 5 length 198 bytes, remaining 207 
+ssl_save_master_key inserted (pre-)master secret for Session Ticket
+stored key[192]:
+| 4e 56 44 49 36 32 ca e2 c1 b7 c7 82 e3 89 85 7d |NVDI62.........}|
+| 8a 4a 61 23 e9 46 78 bf 37 ea 5a 08 b7 47 fb 21 |.Ja#.Fx.7.Z..G.!|
+| e5 df 6f c1 46 d9 8c 3b db 8a 5e 54 84 4c b7 c8 |..o.F..;..^T.L..|
+| 16 4b a7 18 38 f5 06 a0 15 8c 69 e7 45 c8 18 f8 |.K..8.....i.E...|
+| 3d 46 cb 20 af 50 83 1d 98 ff ee cd 6a 16 f5 98 |=F. .P......j...|
+| ab 22 24 b0 96 c5 37 fb 23 ed 67 c1 64 64 db 0c |."$...7.#.g.dd..|
+| 73 8c 3d d4 8c d6 56 cc 5f 06 97 98 92 e5 49 30 |s.=...V._.....I0|
+| 52 ea 15 d3 03 dc 39 7c 12 86 0c b0 ef 93 e5 8e |R.....9|........|
+| 94 95 23 3d 2c d3 f5 78 49 05 4b 8a 9a 51 78 f8 |..#=,..xI.K..Qx.|
+| 5b 76 fa 5f 5f 63 a3 fc c2 0d a0 84 c3 cb ee 0c |[v.__c..........|
+| b9 c9 77 af a8 dc d1 8f ca eb be 28 0a ec 2d 33 |..w........(..-3|
+| 9e a6 73 f9 14 cb 78 54 4d d7 f6 71 f3 2a 96 02 |..s...xTM..q.*..|
+stored (pre-)master secret[48]:
+| 28 b7 08 67 c9 4d 7a 2f f6 02 87 d5 03 ef 11 18 |(..g.Mz/........|
+| 2f 3a f1 fa ee 4c 22 d7 1b d3 a9 6c f6 2d cd e6 |/:...L"....l.-..|
+| 57 fa 21 93 13 f4 66 98 42 75 7d 6b df 9b 84 04 |W.!...f.Bu}k....|
+  record: offset = 207, reported_length_remaining = 51
+dissect_ssl3_record: content_type 20 Change Cipher Spec
+decrypt_ssl3_record: app_data len 1, ssl state 0x43F
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+decrypt_ssl3_record: no decoder available
+ssl_dissect_change_cipher_spec Not using Session resumption
+ssl_load_keyfile dtls/ssl.keylog_file is not configured!
+ssl_finalize_decryption state = 0x43F
+  session key already available, nothing to do.
+packet_from_server: is from server - TRUE
+ssl_change_cipher SERVER
+  record: offset = 213, reported_length_remaining = 45
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 40, ssl state 0x43F
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+ssl_decrypt_record ciphertext len 40
+Ciphertext[40]:
+| cf b9 35 98 5d 66 63 0e 08 b6 07 73 8b 0a 1e 46 |..5.]fc....s...F|
+| 99 4f 8e bc 9d 87 c3 10 8b 8b b2 37 73 f2 df 85 |.O.........7s...|
+| 7e fd de b8 81 2d ae c3                         |~....-..        |
+nonce[12]:
+| 17 a3 9e d4 cf b9 35 98 5d 66 63 0e             |......5.]fc.    |
+AAD[13]:
+| 00 00 00 00 00 00 00 00 16 03 03 00 10          |.............   |
+auth_tag(OK)[16]:
+| 8b 8b b2 37 73 f2 df 85 7e fd de b8 81 2d ae c3 |...7s...~....-..|
+Plaintext[16]:
+| 14 00 00 0c 00 52 07 8d 65 4c 08 ad c0 cf c6 c2 |.....R..eL......|
+dissect_ssl3_handshake iteration 1 type 20 offset 0 length 12 bytes, remaining 16 
+ssl_load_keyfile dtls/ssl.keylog_file is not configured!
+tls13_load_secret TLS version 0x303 is not 1.3
+
+dissect_ssl enter frame #19 (first time)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38a8b0, ssl_session = 0x555deb38c8b0
+  record: offset = 0, reported_length_remaining = 318
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 262, ssl state 0x17
+packet_from_server: is from server - FALSE
+decrypt_ssl3_record: using client decoder
+decrypt_ssl3_record: no decoder available
+dissect_ssl3_handshake iteration 1 type 16 offset 5 length 258 bytes, remaining 267 
+Calculating hash with offset 5 262
+ssl_load_keyfile dtls/ssl.keylog_file is not configured!
+ssl_generate_pre_master_secret: found SSL_HND_CLIENT_KEY_EXCHG, state 17
+ssl_restore_master_key can't find pre-master secret by Unencrypted pre-master secret
+pre master encrypted[256]:
+| 48 09 20 2c f6 9b 60 d2 66 78 5f 0e 0b c2 6d 3b |H. ,..`.fx_...m;|
+| 56 98 dc a8 60 4b f5 ce e1 42 67 61 4e 6a bf 5a |V...`K...BgaNj.Z|
+| 98 7f 62 79 c3 7d cc b1 00 99 bb fa 62 f1 f5 e5 |..by.}......b...|
+| f2 01 3a 35 8e 98 42 1a 14 7d 4a 8c eb 9d d8 d4 |..:5..B..}J.....|
+| c1 e2 e3 61 e1 71 88 57 dd ac c1 51 6a 00 af c7 |...a.q.W...Qj...|
+| 6e a3 be 87 45 54 ef aa ee 4b a7 38 1f 97 cf da |n...ET...K.8....|
+| 35 c1 be 81 01 0f 8d 9f 97 d0 0b d7 e3 12 ee 63 |5..............c|
+| a1 28 e9 bc 78 ba dd 56 41 7a 98 e1 a9 94 d3 7e |.(..x..VAz.....~|
+| 33 b1 a0 d4 ff ba c8 7e 1f d2 44 ca 29 5e f2 dc |3......~..D.)^..|
+| 12 c8 07 fb 08 db 02 2c 08 27 dc 14 4f 8e b8 11 |.......,.'..O...|
+| 63 53 7d a7 e2 a4 5e 30 6c a0 7c cd c0 dc da b9 |cS}...^0l.|.....|
+| 95 22 5c 08 3d b8 f7 88 58 48 69 85 16 96 c2 c4 |."\.=...XHi.....|
+| 1e 4f 82 02 49 cc c1 0b 39 c2 7d a2 30 36 ff ee |.O..I...9.}.06..|
+| 7d 79 f8 66 fe 7b 63 dc 08 21 e3 cf 2c 8b 22 42 |}y.f.{c..!..,."B|
+| e0 cc c4 b1 9c 7d 77 ae b3 d3 ae f7 38 e1 8e da |.....}w.....8...|
+| 01 a9 c1 b8 de ea bc 65 3c fc e5 1d 24 6e 21 1e |.......e<...$n!.|
+ssl_decrypt_pre_master_secret: RSA_private_decrypt
+pre master secret[48]:
+| 03 03 22 9c b7 7d 93 87 47 8d d9 85 31 a2 bc cf |.."..}..G...1...|
+| 24 06 ab 1e e4 b7 6f 23 79 f2 42 05 08 cc 99 fd |$.....o#y.B.....|
+| 2f b5 9b 96 32 7d 96 ab 2c cc 8e 85 71 d4 e0 2f |/...2}..,...q../|
+  record: offset = 267, reported_length_remaining = 51
+dissect_ssl3_record: content_type 20 Change Cipher Spec
+decrypt_ssl3_record: app_data len 1, ssl state 0x57
+packet_from_server: is from server - FALSE
+decrypt_ssl3_record: using client decoder
+decrypt_ssl3_record: no decoder available
+ssl_load_keyfile dtls/ssl.keylog_file is not configured!
+ssl_finalize_decryption state = 0x57
+ssl_generate_keyring_material:PRF(pre_master_secret)
+pre master secret[48]:
+| 03 03 22 9c b7 7d 93 87 47 8d d9 85 31 a2 bc cf |.."..}..G...1...|
+| 24 06 ab 1e e4 b7 6f 23 79 f2 42 05 08 cc 99 fd |$.....o#y.B.....|
+| 2f b5 9b 96 32 7d 96 ab 2c cc 8e 85 71 d4 e0 2f |/...2}..,...q../|
+client random[32]:
+| b5 d5 03 18 dc 42 7b 09 db 7c 92 d8 16 c6 68 f4 |.....B{..|....h.|
+| e3 43 85 cc 53 58 09 44 72 c8 9a 81 d9 81 cb 67 |.C..SX.Dr......g|
+server random[32]:
+| e0 27 c4 db f6 35 f4 6d 1b b8 44 df 67 11 06 63 |.'...5.m..D.g..c|
+| 0d d8 d3 70 e5 2d c8 b7 c4 e0 b5 4e e2 4e c9 98 |...p.-.....N.N..|
+tls12_prf: tls_hash(hash_alg SHA384 secret_len 48 seed_len 77 )
+tls_hash: hash secret[48]:
+| 03 03 22 9c b7 7d 93 87 47 8d d9 85 31 a2 bc cf |.."..}..G...1...|
+| 24 06 ab 1e e4 b7 6f 23 79 f2 42 05 08 cc 99 fd |$.....o#y.B.....|
+| 2f b5 9b 96 32 7d 96 ab 2c cc 8e 85 71 d4 e0 2f |/...2}..,...q../|
+tls_hash: hash seed[77]:
+| 6d 61 73 74 65 72 20 73 65 63 72 65 74 b5 d5 03 |master secret...|
+| 18 dc 42 7b 09 db 7c 92 d8 16 c6 68 f4 e3 43 85 |..B{..|....h..C.|
+| cc 53 58 09 44 72 c8 9a 81 d9 81 cb 67 e0 27 c4 |.SX.Dr......g.'.|
+| db f6 35 f4 6d 1b b8 44 df 67 11 06 63 0d d8 d3 |..5.m..D.g..c...|
+| 70 e5 2d c8 b7 c4 e0 b5 4e e2 4e c9 98          |p.-.....N.N..   |
+hash out[48]:
+| 86 c3 62 59 54 41 19 bd 6f 55 90 20 83 60 74 1e |..bYTA..oU. .`t.|
+| ec a5 f4 fa 05 a5 c2 2b 54 a4 5b f2 26 18 88 3e |.......+T.[.&..>|
+| 4f 79 c4 f6 8c 9f 23 d3 17 2d a4 fa 3b 34 a5 e7 |Oy....#..-..;4..|
+PRF out[48]:
+| 86 c3 62 59 54 41 19 bd 6f 55 90 20 83 60 74 1e |..bYTA..oU. .`t.|
+| ec a5 f4 fa 05 a5 c2 2b 54 a4 5b f2 26 18 88 3e |.......+T.[.&..>|
+| 4f 79 c4 f6 8c 9f 23 d3 17 2d a4 fa 3b 34 a5 e7 |Oy....#..-..;4..|
+master secret[48]:
+| 86 c3 62 59 54 41 19 bd 6f 55 90 20 83 60 74 1e |..bYTA..oU. .`t.|
+| ec a5 f4 fa 05 a5 c2 2b 54 a4 5b f2 26 18 88 3e |.......+T.[.&..>|
+| 4f 79 c4 f6 8c 9f 23 d3 17 2d a4 fa 3b 34 a5 e7 |Oy....#..-..;4..|
+ssl_generate_keyring_material CIPHER: AES256
+ssl_generate_keyring_material sess key generation
+tls12_prf: tls_hash(hash_alg SHA384 secret_len 48 seed_len 77 )
+tls_hash: hash secret[48]:
+| 86 c3 62 59 54 41 19 bd 6f 55 90 20 83 60 74 1e |..bYTA..oU. .`t.|
+| ec a5 f4 fa 05 a5 c2 2b 54 a4 5b f2 26 18 88 3e |.......+T.[.&..>|
+| 4f 79 c4 f6 8c 9f 23 d3 17 2d a4 fa 3b 34 a5 e7 |Oy....#..-..;4..|
+tls_hash: hash seed[77]:
+| 6b 65 79 20 65 78 70 61 6e 73 69 6f 6e e0 27 c4 |key expansion.'.|
+| db f6 35 f4 6d 1b b8 44 df 67 11 06 63 0d d8 d3 |..5.m..D.g..c...|
+| 70 e5 2d c8 b7 c4 e0 b5 4e e2 4e c9 98 b5 d5 03 |p.-.....N.N.....|
+| 18 dc 42 7b 09 db 7c 92 d8 16 c6 68 f4 e3 43 85 |..B{..|....h..C.|
+| cc 53 58 09 44 72 c8 9a 81 d9 81 cb 67          |.SX.Dr......g   |
+hash out[168]:
+| e7 76 3a dc 9d d8 b1 75 ea f0 38 ee cc 72 ba c9 |.v:....u..8..r..|
+| 72 7d 36 e5 ab 7b 8f 07 33 9b f8 42 b1 ca c8 8c |r}6..{..3..B....|
+| c2 1c 5b 75 6c ca fe 43 6a 7b b6 44 79 87 1b 1c |..[ul..Cj{.Dy...|
+| 19 f0 cf 87 6a 2c 5b e2 39 c6 02 11 c8 55 36 c8 |....j,[.9....U6.|
+| e0 b5 22 94 ac 59 73 35 65 57 0a 99 51 11 37 21 |.."..Ys5eW..Q.7!|
+| 4b ea 9f 3a e9 45 4e ec 76 11 e3 37 9f de dd 21 |K..:.EN.v..7...!|
+| 87 d0 69 2c 1b f2 62 bf 1e ac 74 aa 99 4a 17 13 |..i,..b...t..J..|
+| 99 eb f2 ba c6 5a 27 3a a9 93 59 6c eb 04 c5 b5 |.....Z':..Yl....|
+| 62 af 53 99 aa 3f 97 26 df 55 cb 1a 6d 61 1e 77 |b.S..?.&.U..ma.w|
+| 07 67 3e ae 85 6f cd 5d 0a 9f 72 12 2d 07 99 c1 |.g>..o.]..r.-...|
+| 8d 22 e8 29 8b df 07 3d                         |.".)...=        |
+PRF out[168]:
+| e7 76 3a dc 9d d8 b1 75 ea f0 38 ee cc 72 ba c9 |.v:....u..8..r..|
+| 72 7d 36 e5 ab 7b 8f 07 33 9b f8 42 b1 ca c8 8c |r}6..{..3..B....|
+| c2 1c 5b 75 6c ca fe 43 6a 7b b6 44 79 87 1b 1c |..[ul..Cj{.Dy...|
+| 19 f0 cf 87 6a 2c 5b e2 39 c6 02 11 c8 55 36 c8 |....j,[.9....U6.|
+| e0 b5 22 94 ac 59 73 35 65 57 0a 99 51 11 37 21 |.."..Ys5eW..Q.7!|
+| 4b ea 9f 3a e9 45 4e ec 76 11 e3 37 9f de dd 21 |K..:.EN.v..7...!|
+| 87 d0 69 2c 1b f2 62 bf 1e ac 74 aa 99 4a 17 13 |..i,..b...t..J..|
+| 99 eb f2 ba c6 5a 27 3a a9 93 59 6c eb 04 c5 b5 |.....Z':..Yl....|
+| 62 af 53 99 aa 3f 97 26 df 55 cb 1a 6d 61 1e 77 |b.S..?.&.U..ma.w|
+| 07 67 3e ae 85 6f cd 5d 0a 9f 72 12 2d 07 99 c1 |.g>..o.]..r.-...|
+| 8d 22 e8 29 8b df 07 3d                         |.".)...=        |
+key expansion[168]:
+| e7 76 3a dc 9d d8 b1 75 ea f0 38 ee cc 72 ba c9 |.v:....u..8..r..|
+| 72 7d 36 e5 ab 7b 8f 07 33 9b f8 42 b1 ca c8 8c |r}6..{..3..B....|
+| c2 1c 5b 75 6c ca fe 43 6a 7b b6 44 79 87 1b 1c |..[ul..Cj{.Dy...|
+| 19 f0 cf 87 6a 2c 5b e2 39 c6 02 11 c8 55 36 c8 |....j,[.9....U6.|
+| e0 b5 22 94 ac 59 73 35 65 57 0a 99 51 11 37 21 |.."..Ys5eW..Q.7!|
+| 4b ea 9f 3a e9 45 4e ec 76 11 e3 37 9f de dd 21 |K..:.EN.v..7...!|
+| 87 d0 69 2c 1b f2 62 bf 1e ac 74 aa 99 4a 17 13 |..i,..b...t..J..|
+| 99 eb f2 ba c6 5a 27 3a a9 93 59 6c eb 04 c5 b5 |.....Z':..Yl....|
+| 62 af 53 99 aa 3f 97 26 df 55 cb 1a 6d 61 1e 77 |b.S..?.&.U..ma.w|
+| 07 67 3e ae 85 6f cd 5d 0a 9f 72 12 2d 07 99 c1 |.g>..o.]..r.-...|
+| 8d 22 e8 29 8b df 07 3d                         |.".)...=        |
+Client Write key[32]:
+| e7 76 3a dc 9d d8 b1 75 ea f0 38 ee cc 72 ba c9 |.v:....u..8..r..|
+| 72 7d 36 e5 ab 7b 8f 07 33 9b f8 42 b1 ca c8 8c |r}6..{..3..B....|
+Server Write key[32]:
+| c2 1c 5b 75 6c ca fe 43 6a 7b b6 44 79 87 1b 1c |..[ul..Cj{.Dy...|
+| 19 f0 cf 87 6a 2c 5b e2 39 c6 02 11 c8 55 36 c8 |....j,[.9....U6.|
+Client Write IV[4]:
+| e0 b5 22 94                                     |..".            |
+Server Write IV[4]:
+| ac 59 73 35                                     |.Ys5            |
+ssl_generate_keyring_material ssl_create_decoder(client)
+decoder initialized (digest len 48)
+ssl_generate_keyring_material ssl_create_decoder(server)
+decoder initialized (digest len 48)
+ssl_generate_keyring_material: client seq 0, server seq 0
+ssl_save_master_key inserted (pre-)master secret for Client Random
+stored key[32]:
+| b5 d5 03 18 dc 42 7b 09 db 7c 92 d8 16 c6 68 f4 |.....B{..|....h.|
+| e3 43 85 cc 53 58 09 44 72 c8 9a 81 d9 81 cb 67 |.C..SX.Dr......g|
+stored (pre-)master secret[48]:
+| 86 c3 62 59 54 41 19 bd 6f 55 90 20 83 60 74 1e |..bYTA..oU. .`t.|
+| ec a5 f4 fa 05 a5 c2 2b 54 a4 5b f2 26 18 88 3e |.......+T.[.&..>|
+| 4f 79 c4 f6 8c 9f 23 d3 17 2d a4 fa 3b 34 a5 e7 |Oy....#..-..;4..|
+ssl_save_master_key: not saving empty Session ID!
+packet_from_server: is from server - FALSE
+ssl_change_cipher CLIENT
+  record: offset = 273, reported_length_remaining = 45
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 40, ssl state 0x3F
+packet_from_server: is from server - FALSE
+decrypt_ssl3_record: using client decoder
+ssl_decrypt_record ciphertext len 40
+Ciphertext[40]:
+| f3 24 31 0e 0a 00 8e 29 20 d0 90 19 0b 4e 74 99 |.$1....) ....Nt.|
+| d6 5c 08 bb b9 f0 ba ee aa ce fb 3e 3f b6 6a 88 |.\.........>?.j.|
+| 43 d4 cb 3a c4 f6 85 10                         |C..:....        |
+nonce[12]:
+| e0 b5 22 94 f3 24 31 0e 0a 00 8e 29             |.."..$1....)    |
+AAD[13]:
+| 00 00 00 00 00 00 00 00 16 03 03 00 10          |.............   |
+auth_tag(OK)[16]:
+| aa ce fb 3e 3f b6 6a 88 43 d4 cb 3a c4 f6 85 10 |...>?.j.C..:....|
+Plaintext[16]:
+| 14 00 00 0c 3f 5c eb be b9 0d 1d d1 85 23 e5 d3 |....?\.......#..|
+dissect_ssl3_handshake iteration 1 type 20 offset 0 length 12 bytes, remaining 16 
+ssl_load_keyfile dtls/ssl.keylog_file is not configured!
+tls13_load_secret TLS version 0x303 is not 1.3
+
+dissect_ssl enter frame #21 (first time)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38a8b0, ssl_session = 0x555deb38c8b0
+  record: offset = 0, reported_length_remaining = 258
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 202, ssl state 0x3F
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+decrypt_ssl3_record: no decoder available
+dissect_ssl3_handshake iteration 1 type 4 offset 5 length 198 bytes, remaining 207 
+ssl_save_master_key inserted (pre-)master secret for Session Ticket
+stored key[192]:
+| 4e 56 44 49 36 32 ca e2 c1 b7 c7 82 e3 89 85 7d |NVDI62.........}|
+| 58 ea 00 6b ec 1b 1c 15 4b 78 3b 7a 9d 91 a2 62 |X..k....Kx;z...b|
+| 19 15 b8 22 ed 1b 7d ca ac 3b 28 d9 b3 9a 03 c2 |..."..}..;(.....|
+| de 4e 76 2d 00 25 21 c8 40 c0 ac 67 30 39 e9 d2 |.Nv-.%!.@..g09..|
+| d9 1c 32 d8 72 ff 69 15 50 c5 5e cb cc b2 8b af |..2.r.i.P.^.....|
+| 7c 27 e8 a9 ee fb d7 91 f6 5c ab 1e af 75 09 8a ||'.......\...u..|
+| 37 43 7e 5a 7f 48 64 1d 80 b5 9a a8 2f f6 ed d4 |7C~Z.Hd...../...|
+| a9 bb 70 93 52 d8 df 46 24 9c 0c b9 95 76 f6 fc |..p.R..F$....v..|
+| 7e 08 20 8a 42 15 d7 62 2a 76 50 5d a8 92 66 f9 |~. .B..b*vP]..f.|
+| 78 fc fb b3 68 1c a2 f2 bb b2 bc 7b 66 83 03 a7 |x...h......{f...|
+| 65 e1 1a 46 76 f1 f9 27 16 8a da 8c e9 9b 4b a7 |e..Fv..'......K.|
+| 6f d7 a9 28 ed 62 76 ba 35 84 6e 74 53 d5 96 ef |o..(.bv.5.ntS...|
+stored (pre-)master secret[48]:
+| 86 c3 62 59 54 41 19 bd 6f 55 90 20 83 60 74 1e |..bYTA..oU. .`t.|
+| ec a5 f4 fa 05 a5 c2 2b 54 a4 5b f2 26 18 88 3e |.......+T.[.&..>|
+| 4f 79 c4 f6 8c 9f 23 d3 17 2d a4 fa 3b 34 a5 e7 |Oy....#..-..;4..|
+  record: offset = 207, reported_length_remaining = 51
+dissect_ssl3_record: content_type 20 Change Cipher Spec
+decrypt_ssl3_record: app_data len 1, ssl state 0x43F
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+decrypt_ssl3_record: no decoder available
+ssl_dissect_change_cipher_spec Not using Session resumption
+ssl_load_keyfile dtls/ssl.keylog_file is not configured!
+ssl_finalize_decryption state = 0x43F
+  session key already available, nothing to do.
+packet_from_server: is from server - TRUE
+ssl_change_cipher SERVER
+  record: offset = 213, reported_length_remaining = 45
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 40, ssl state 0x43F
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+ssl_decrypt_record ciphertext len 40
+Ciphertext[40]:
+| 0c eb 89 17 4a 16 76 d3 d7 33 48 7b 04 74 de 27 |....J.v..3H{.t.'|
+| ca d4 8f 2c 8b af c9 2b 74 b8 69 87 20 73 b1 d9 |...,...+t.i. s..|
+| ea 75 ce 71 69 cf 95 b3                         |.u.qi...        |
+nonce[12]:
+| ac 59 73 35 0c eb 89 17 4a 16 76 d3             |.Ys5....J.v.    |
+AAD[13]:
+| 00 00 00 00 00 00 00 00 16 03 03 00 10          |.............   |
+auth_tag(OK)[16]:
+| 74 b8 69 87 20 73 b1 d9 ea 75 ce 71 69 cf 95 b3 |t.i. s...u.qi...|
+Plaintext[16]:
+| 14 00 00 0c c1 78 2a d7 11 1e 0b 28 6b ca 2a a3 |.....x*....(k.*.|
+dissect_ssl3_handshake iteration 1 type 20 offset 0 length 12 bytes, remaining 16 
+ssl_load_keyfile dtls/ssl.keylog_file is not configured!
+tls13_load_secret TLS version 0x303 is not 1.3
+
+dissect_ssl enter frame #23 (first time)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38ea70, ssl_session = 0x555deb390670
+  record: offset = 0, reported_length_remaining = 517
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 512, ssl state 0x00
+packet_from_server: is from server - FALSE
+decrypt_ssl3_record: using client decoder
+decrypt_ssl3_record: no decoder available
+dissect_ssl3_handshake iteration 1 type 1 offset 5 length 508 bytes, remaining 517 
+Calculating hash with offset 5 512
+ssl_dissect_hnd_hello_common found CLIENT RANDOM -> state 0x01
+
+dissect_ssl enter frame #25 (first time)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38ea70, ssl_session = 0x555deb390670
+  record: offset = 0, reported_length_remaining = 1007
+ssl_try_set_version found version 0x0303 -> state 0x11
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 53, ssl state 0x11
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+decrypt_ssl3_record: no decoder available
+dissect_ssl3_handshake iteration 1 type 2 offset 5 length 49 bytes, remaining 58 
+ssl_try_set_version found version 0x0303 -> state 0x11
+Calculating hash with offset 5 53
+ssl_dissect_hnd_hello_common found SERVER RANDOM -> state 0x13
+ssl_set_cipher found CIPHER 0x009D TLS_RSA_WITH_AES_256_GCM_SHA384 -> state 0x17
+ssl_load_keyfile dtls/ssl.keylog_file is not configured!
+tls13_load_secret TLS version 0x303 is not 1.3
+tls13_load_secret TLS version 0x303 is not 1.3
+  record: offset = 58, reported_length_remaining = 949
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 935, ssl state 0x17
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+decrypt_ssl3_record: no decoder available
+dissect_ssl3_handshake iteration 1 type 11 offset 63 length 931 bytes, remaining 998 
+Calculating hash with offset 63 935
+lookup(KeyID)[20]:
+| aa b2 25 ba 59 ab 41 96 2c bc bd dc f0 51 ff bc |..%.Y.A.,....Q..|
+| 39 f2 a2 0c                                     |9...            |
+ssl_find_private_key_by_pubkey: lookup result: 0x555deadb3730
+  record: offset = 998, reported_length_remaining = 9
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 4, ssl state 0x17
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+decrypt_ssl3_record: no decoder available
+dissect_ssl3_handshake iteration 1 type 14 offset 1003 length 0 bytes, remaining 1007 
+Calculating hash with offset 1003 4
+
+dissect_ssl enter frame #28 (first time)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38ea70, ssl_session = 0x555deb390670
+  record: offset = 0, reported_length_remaining = 318
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 262, ssl state 0x17
+packet_from_server: is from server - FALSE
+decrypt_ssl3_record: using client decoder
+decrypt_ssl3_record: no decoder available
+dissect_ssl3_handshake iteration 1 type 16 offset 5 length 258 bytes, remaining 267 
+Calculating hash with offset 5 262
+ssl_load_keyfile dtls/ssl.keylog_file is not configured!
+ssl_generate_pre_master_secret: found SSL_HND_CLIENT_KEY_EXCHG, state 17
+ssl_restore_master_key can't find pre-master secret by Unencrypted pre-master secret
+pre master encrypted[256]:
+| 19 cc 35 fd 46 5b dd 73 e9 54 51 c1 42 b8 bd 53 |..5.F[.s.TQ.B..S|
+| 7d 25 72 43 cb 34 67 7e 3b 2e f6 92 01 d5 90 d7 |}%rC.4g~;.......|
+| f6 8c 71 f8 4b ae 2f e3 a3 ee 75 a7 4f 9f 5f 72 |..q.K./...u.O._r|
+| 6b 58 bb 7c 5c 05 7a a9 bb b8 d8 da 24 09 b0 af |kX.|\.z.....$...|
+| c2 a7 b8 a3 01 43 74 eb 05 e4 35 53 04 33 bb b3 |.....Ct...5S.3..|
+| ea bb f9 ec be aa 68 95 e9 1f c2 55 30 3b 19 6b |......h....U0;.k|
+| 08 03 a9 48 0c b9 12 5b c6 eb 66 ff cb 50 75 83 |...H...[..f..Pu.|
+| bc e1 d0 1b 4f 67 fd 6d b9 dc ce 93 5b 84 39 e7 |....Og.m....[.9.|
+| 22 a5 26 63 11 b1 6a d9 46 7d 6c 75 b8 55 2f 51 |".&c..j.F}lu.U/Q|
+| 3a 38 f2 ea bb 82 4f c4 a7 70 8c dd 96 1b fe 9b |:8....O..p......|
+| 24 bb bd 8f 32 53 9a 3f 68 95 f0 9f 9a 83 c0 fc |$...2S.?h.......|
+| 41 cd bc 2c fb 5f 6e 45 fb 9c fb 7d a7 60 89 ff |A..,._nE...}.`..|
+| 3c 98 72 e9 01 50 0d f7 35 b7 52 17 1b d9 61 59 |<.r..P..5.R...aY|
+| 07 18 62 75 bb 7f 4d fe 53 38 0e bd 60 99 27 27 |..bu..M.S8..`.''|
+| 7e a6 74 c0 a6 11 b1 55 1b eb 10 5f 0b 73 74 09 |~.t....U..._.st.|
+| c1 a4 e3 68 4c 6a 35 1f 93 5c d8 94 80 1d af c7 |...hLj5..\......|
+ssl_decrypt_pre_master_secret: RSA_private_decrypt
+pre master secret[48]:
+| 03 03 96 50 7e b4 c4 ce 33 b7 be 76 46 ec b2 cd |...P~...3..vF...|
+| 6f 6a 75 59 d4 ec 72 cc e7 3d 55 47 18 d7 6c 15 |ojuY..r..=UG..l.|
+| d7 cb a6 9f 8c 11 b7 4e cb 63 ba 26 9b 34 39 0c |.......N.c.&.49.|
+  record: offset = 267, reported_length_remaining = 51
+dissect_ssl3_record: content_type 20 Change Cipher Spec
+decrypt_ssl3_record: app_data len 1, ssl state 0x57
+packet_from_server: is from server - FALSE
+decrypt_ssl3_record: using client decoder
+decrypt_ssl3_record: no decoder available
+ssl_load_keyfile dtls/ssl.keylog_file is not configured!
+ssl_finalize_decryption state = 0x57
+ssl_generate_keyring_material:PRF(pre_master_secret)
+pre master secret[48]:
+| 03 03 96 50 7e b4 c4 ce 33 b7 be 76 46 ec b2 cd |...P~...3..vF...|
+| 6f 6a 75 59 d4 ec 72 cc e7 3d 55 47 18 d7 6c 15 |ojuY..r..=UG..l.|
+| d7 cb a6 9f 8c 11 b7 4e cb 63 ba 26 9b 34 39 0c |.......N.c.&.49.|
+client random[32]:
+| 1a 65 13 f3 8b 0d 4b d1 3a ca b1 70 f8 13 a6 a8 |.e....K.:..p....|
+| e4 4e 4e 1f 97 ff eb 5f d9 c5 d0 c7 4c 47 a5 2c |.NN...._....LG.,|
+server random[32]:
+| e0 0b 1e c7 43 ce b3 90 af a2 00 94 49 c9 c3 37 |....C.......I..7|
+| 93 31 81 14 4f a5 a1 56 2e b5 5a c5 c9 8f c0 af |.1..O..V..Z.....|
+tls12_prf: tls_hash(hash_alg SHA384 secret_len 48 seed_len 77 )
+tls_hash: hash secret[48]:
+| 03 03 96 50 7e b4 c4 ce 33 b7 be 76 46 ec b2 cd |...P~...3..vF...|
+| 6f 6a 75 59 d4 ec 72 cc e7 3d 55 47 18 d7 6c 15 |ojuY..r..=UG..l.|
+| d7 cb a6 9f 8c 11 b7 4e cb 63 ba 26 9b 34 39 0c |.......N.c.&.49.|
+tls_hash: hash seed[77]:
+| 6d 61 73 74 65 72 20 73 65 63 72 65 74 1a 65 13 |master secret.e.|
+| f3 8b 0d 4b d1 3a ca b1 70 f8 13 a6 a8 e4 4e 4e |...K.:..p.....NN|
+| 1f 97 ff eb 5f d9 c5 d0 c7 4c 47 a5 2c e0 0b 1e |...._....LG.,...|
+| c7 43 ce b3 90 af a2 00 94 49 c9 c3 37 93 31 81 |.C.......I..7.1.|
+| 14 4f a5 a1 56 2e b5 5a c5 c9 8f c0 af          |.O..V..Z.....   |
+hash out[48]:
+| de 8a 92 1d a6 6a ae 48 20 11 e9 67 df 0e 99 fd |.....j.H ..g....|
+| db d8 ff 8a 4e 97 a4 0b e4 bc 37 7a c8 4f f5 dd |....N.....7z.O..|
+| e9 58 eb 34 67 a4 22 3c 6b 8c fc 86 e1 11 3d 5e |.X.4g."<k.....=^|
+PRF out[48]:
+| de 8a 92 1d a6 6a ae 48 20 11 e9 67 df 0e 99 fd |.....j.H ..g....|
+| db d8 ff 8a 4e 97 a4 0b e4 bc 37 7a c8 4f f5 dd |....N.....7z.O..|
+| e9 58 eb 34 67 a4 22 3c 6b 8c fc 86 e1 11 3d 5e |.X.4g."<k.....=^|
+master secret[48]:
+| de 8a 92 1d a6 6a ae 48 20 11 e9 67 df 0e 99 fd |.....j.H ..g....|
+| db d8 ff 8a 4e 97 a4 0b e4 bc 37 7a c8 4f f5 dd |....N.....7z.O..|
+| e9 58 eb 34 67 a4 22 3c 6b 8c fc 86 e1 11 3d 5e |.X.4g."<k.....=^|
+ssl_generate_keyring_material CIPHER: AES256
+ssl_generate_keyring_material sess key generation
+tls12_prf: tls_hash(hash_alg SHA384 secret_len 48 seed_len 77 )
+tls_hash: hash secret[48]:
+| de 8a 92 1d a6 6a ae 48 20 11 e9 67 df 0e 99 fd |.....j.H ..g....|
+| db d8 ff 8a 4e 97 a4 0b e4 bc 37 7a c8 4f f5 dd |....N.....7z.O..|
+| e9 58 eb 34 67 a4 22 3c 6b 8c fc 86 e1 11 3d 5e |.X.4g."<k.....=^|
+tls_hash: hash seed[77]:
+| 6b 65 79 20 65 78 70 61 6e 73 69 6f 6e e0 0b 1e |key expansion...|
+| c7 43 ce b3 90 af a2 00 94 49 c9 c3 37 93 31 81 |.C.......I..7.1.|
+| 14 4f a5 a1 56 2e b5 5a c5 c9 8f c0 af 1a 65 13 |.O..V..Z......e.|
+| f3 8b 0d 4b d1 3a ca b1 70 f8 13 a6 a8 e4 4e 4e |...K.:..p.....NN|
+| 1f 97 ff eb 5f d9 c5 d0 c7 4c 47 a5 2c          |...._....LG.,   |
+hash out[168]:
+| bb 53 5a b8 c5 0d cf ea 4b ae d0 2d cb eb f7 0b |.SZ.....K..-....|
+| 22 eb 7e be 51 dd 0d a2 15 3b d9 41 78 99 dd fe |".~.Q....;.Ax...|
+| a9 f7 9f c8 54 6d 69 04 7c 8a de 50 38 b0 b8 ea |....Tmi.|..P8...|
+| f9 11 6e 87 c9 15 56 4f 9b f0 72 73 6f 4b 1e 64 |..n...VO..rsoK.d|
+| 8e 89 f5 4e b8 13 5d ba d1 20 8f 1e ce 7d 98 3d |...N..].. ...}.=|
+| 35 13 08 5f 09 12 1f 35 51 5d 90 bf c1 f4 56 30 |5.._...5Q]....V0|
+| 66 51 e1 47 c3 a9 9d 0d 78 dc 67 50 52 55 6a f0 |fQ.G....x.gPRUj.|
+| 41 43 14 93 36 19 4e 3b e1 07 14 f3 79 ed 6a f7 |AC..6.N;....y.j.|
+| e8 25 1d 19 ea 39 66 b7 89 6e 5e 26 ae 09 7b 03 |.%...9f..n^&..{.|
+| ad 69 07 8b b5 ad f1 a6 85 21 b5 30 ce cf cd 9e |.i.......!.0....|
+| 40 e8 8c 73 6b 2b 57 3c                         |@..sk+W<        |
+PRF out[168]:
+| bb 53 5a b8 c5 0d cf ea 4b ae d0 2d cb eb f7 0b |.SZ.....K..-....|
+| 22 eb 7e be 51 dd 0d a2 15 3b d9 41 78 99 dd fe |".~.Q....;.Ax...|
+| a9 f7 9f c8 54 6d 69 04 7c 8a de 50 38 b0 b8 ea |....Tmi.|..P8...|
+| f9 11 6e 87 c9 15 56 4f 9b f0 72 73 6f 4b 1e 64 |..n...VO..rsoK.d|
+| 8e 89 f5 4e b8 13 5d ba d1 20 8f 1e ce 7d 98 3d |...N..].. ...}.=|
+| 35 13 08 5f 09 12 1f 35 51 5d 90 bf c1 f4 56 30 |5.._...5Q]....V0|
+| 66 51 e1 47 c3 a9 9d 0d 78 dc 67 50 52 55 6a f0 |fQ.G....x.gPRUj.|
+| 41 43 14 93 36 19 4e 3b e1 07 14 f3 79 ed 6a f7 |AC..6.N;....y.j.|
+| e8 25 1d 19 ea 39 66 b7 89 6e 5e 26 ae 09 7b 03 |.%...9f..n^&..{.|
+| ad 69 07 8b b5 ad f1 a6 85 21 b5 30 ce cf cd 9e |.i.......!.0....|
+| 40 e8 8c 73 6b 2b 57 3c                         |@..sk+W<        |
+key expansion[168]:
+| bb 53 5a b8 c5 0d cf ea 4b ae d0 2d cb eb f7 0b |.SZ.....K..-....|
+| 22 eb 7e be 51 dd 0d a2 15 3b d9 41 78 99 dd fe |".~.Q....;.Ax...|
+| a9 f7 9f c8 54 6d 69 04 7c 8a de 50 38 b0 b8 ea |....Tmi.|..P8...|
+| f9 11 6e 87 c9 15 56 4f 9b f0 72 73 6f 4b 1e 64 |..n...VO..rsoK.d|
+| 8e 89 f5 4e b8 13 5d ba d1 20 8f 1e ce 7d 98 3d |...N..].. ...}.=|
+| 35 13 08 5f 09 12 1f 35 51 5d 90 bf c1 f4 56 30 |5.._...5Q]....V0|
+| 66 51 e1 47 c3 a9 9d 0d 78 dc 67 50 52 55 6a f0 |fQ.G....x.gPRUj.|
+| 41 43 14 93 36 19 4e 3b e1 07 14 f3 79 ed 6a f7 |AC..6.N;....y.j.|
+| e8 25 1d 19 ea 39 66 b7 89 6e 5e 26 ae 09 7b 03 |.%...9f..n^&..{.|
+| ad 69 07 8b b5 ad f1 a6 85 21 b5 30 ce cf cd 9e |.i.......!.0....|
+| 40 e8 8c 73 6b 2b 57 3c                         |@..sk+W<        |
+Client Write key[32]:
+| bb 53 5a b8 c5 0d cf ea 4b ae d0 2d cb eb f7 0b |.SZ.....K..-....|
+| 22 eb 7e be 51 dd 0d a2 15 3b d9 41 78 99 dd fe |".~.Q....;.Ax...|
+Server Write key[32]:
+| a9 f7 9f c8 54 6d 69 04 7c 8a de 50 38 b0 b8 ea |....Tmi.|..P8...|
+| f9 11 6e 87 c9 15 56 4f 9b f0 72 73 6f 4b 1e 64 |..n...VO..rsoK.d|
+Client Write IV[4]:
+| 8e 89 f5 4e                                     |...N            |
+Server Write IV[4]:
+| b8 13 5d ba                                     |..].            |
+ssl_generate_keyring_material ssl_create_decoder(client)
+decoder initialized (digest len 48)
+ssl_generate_keyring_material ssl_create_decoder(server)
+decoder initialized (digest len 48)
+ssl_generate_keyring_material: client seq 0, server seq 0
+ssl_save_master_key inserted (pre-)master secret for Client Random
+stored key[32]:
+| 1a 65 13 f3 8b 0d 4b d1 3a ca b1 70 f8 13 a6 a8 |.e....K.:..p....|
+| e4 4e 4e 1f 97 ff eb 5f d9 c5 d0 c7 4c 47 a5 2c |.NN...._....LG.,|
+stored (pre-)master secret[48]:
+| de 8a 92 1d a6 6a ae 48 20 11 e9 67 df 0e 99 fd |.....j.H ..g....|
+| db d8 ff 8a 4e 97 a4 0b e4 bc 37 7a c8 4f f5 dd |....N.....7z.O..|
+| e9 58 eb 34 67 a4 22 3c 6b 8c fc 86 e1 11 3d 5e |.X.4g."<k.....=^|
+ssl_save_master_key: not saving empty Session ID!
+packet_from_server: is from server - FALSE
+ssl_change_cipher CLIENT
+  record: offset = 273, reported_length_remaining = 45
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 40, ssl state 0x3F
+packet_from_server: is from server - FALSE
+decrypt_ssl3_record: using client decoder
+ssl_decrypt_record ciphertext len 40
+Ciphertext[40]:
+| 07 44 51 05 3e 99 d5 c0 06 0d 61 e8 8b 27 0a 85 |.DQ.>.....a..'..|
+| 13 c2 e5 f3 f4 79 1c bb df ce bc 12 52 45 f0 38 |.....y......RE.8|
+| a7 62 bd 73 27 45 d1 52                         |.b.s'E.R        |
+nonce[12]:
+| 8e 89 f5 4e 07 44 51 05 3e 99 d5 c0             |...N.DQ.>...    |
+AAD[13]:
+| 00 00 00 00 00 00 00 00 16 03 03 00 10          |.............   |
+auth_tag(OK)[16]:
+| df ce bc 12 52 45 f0 38 a7 62 bd 73 27 45 d1 52 |....RE.8.b.s'E.R|
+Plaintext[16]:
+| 14 00 00 0c de cd fb 31 f6 d9 f7 81 2e b3 af 6a |.......1.......j|
+dissect_ssl3_handshake iteration 1 type 20 offset 0 length 12 bytes, remaining 16 
+ssl_load_keyfile dtls/ssl.keylog_file is not configured!
+tls13_load_secret TLS version 0x303 is not 1.3
+
+dissect_ssl enter frame #29 (first time)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38ea70, ssl_session = 0x555deb390670
+  record: offset = 0, reported_length_remaining = 258
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 202, ssl state 0x3F
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+decrypt_ssl3_record: no decoder available
+dissect_ssl3_handshake iteration 1 type 4 offset 5 length 198 bytes, remaining 207 
+ssl_save_master_key inserted (pre-)master secret for Session Ticket
+stored key[192]:
+| 4e 56 44 49 36 32 ca e2 c1 b7 c7 82 e3 89 85 7d |NVDI62.........}|
+| ab 3c 47 66 80 e7 1a 0b 30 2b ea 78 13 31 0c b9 |.<Gf....0+.x.1..|
+| 69 c7 10 e5 75 c8 e3 9e 3c a0 55 ba da 49 c3 10 |i...u...<.U..I..|
+| e7 e4 8c 1f 03 21 69 d8 54 a3 8b 7b 30 22 41 ae |.....!i.T..{0"A.|
+| a6 d0 9c e7 7d 44 3e f5 2e 80 a0 a6 73 70 3f de |....}D>.....sp?.|
+| 76 92 dd b9 b0 ca d3 ee b3 6a 75 ab 7f 16 b0 bd |v........ju.....|
+| cd 29 99 7f 3a c1 f8 35 68 e8 05 6d 44 94 e0 e4 |.)..:..5h..mD...|
+| 44 92 97 af 4c ea ef 98 18 4e cd b9 7a e1 e3 f9 |D...L....N..z...|
+| 76 e0 15 71 1b 89 39 75 83 18 c0 81 bb 77 01 ab |v..q..9u.....w..|
+| 03 21 59 14 20 77 09 29 ca ef 1a a1 99 b5 1b 10 |.!Y. w.)........|
+| e3 f2 40 88 a8 3a 0c ed cf 6c 36 9b 9f c6 f0 99 |..@..:...l6.....|
+| 30 0d 0f 85 d0 96 38 cd 9e 21 7b 75 32 87 38 94 |0.....8..!{u2.8.|
+stored (pre-)master secret[48]:
+| de 8a 92 1d a6 6a ae 48 20 11 e9 67 df 0e 99 fd |.....j.H ..g....|
+| db d8 ff 8a 4e 97 a4 0b e4 bc 37 7a c8 4f f5 dd |....N.....7z.O..|
+| e9 58 eb 34 67 a4 22 3c 6b 8c fc 86 e1 11 3d 5e |.X.4g."<k.....=^|
+  record: offset = 207, reported_length_remaining = 51
+dissect_ssl3_record: content_type 20 Change Cipher Spec
+decrypt_ssl3_record: app_data len 1, ssl state 0x43F
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+decrypt_ssl3_record: no decoder available
+ssl_dissect_change_cipher_spec Not using Session resumption
+ssl_load_keyfile dtls/ssl.keylog_file is not configured!
+ssl_finalize_decryption state = 0x43F
+  session key already available, nothing to do.
+packet_from_server: is from server - TRUE
+ssl_change_cipher SERVER
+  record: offset = 213, reported_length_remaining = 45
+dissect_ssl3_record: content_type 22 Handshake
+decrypt_ssl3_record: app_data len 40, ssl state 0x43F
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+ssl_decrypt_record ciphertext len 40
+Ciphertext[40]:
+| e6 6f f4 e1 55 cd f1 ae 41 4c 48 4e 24 c0 d0 b2 |.o..U...ALHN$...|
+| 42 eb 7c 9f 0e 6c b4 5f 84 1a 63 21 cb bf 1f 5a |B.|..l._..c!...Z|
+| 4f 5d 31 a5 35 e7 cb 01                         |O]1.5...        |
+nonce[12]:
+| b8 13 5d ba e6 6f f4 e1 55 cd f1 ae             |..]..o..U...    |
+AAD[13]:
+| 00 00 00 00 00 00 00 00 16 03 03 00 10          |.............   |
+auth_tag(OK)[16]:
+| 84 1a 63 21 cb bf 1f 5a 4f 5d 31 a5 35 e7 cb 01 |..c!...ZO]1.5...|
+Plaintext[16]:
+| 14 00 00 0c 87 8e f2 2f b8 05 e8 92 72 5a 87 67 |......./....rZ.g|
+dissect_ssl3_handshake iteration 1 type 20 offset 0 length 12 bytes, remaining 16 
+ssl_load_keyfile dtls/ssl.keylog_file is not configured!
+tls13_load_secret TLS version 0x303 is not 1.3
+
+dissect_ssl enter frame #31 (first time)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38ea70, ssl_session = 0x555deb390670
+  record: offset = 0, reported_length_remaining = 440
+dissect_ssl3_record: content_type 23 Application Data
+decrypt_ssl3_record: app_data len 435, ssl state 0x43F
+packet_from_server: is from server - FALSE
+decrypt_ssl3_record: using client decoder
+ssl_decrypt_record ciphertext len 435
+Ciphertext[435]:
+| 07 44 51 05 3e 99 d5 c1 11 bb 82 9f 08 10 fd 78 |.DQ.>..........x|
+| 7f 5a af a8 a3 d6 99 76 82 62 ad 89 6f ad a5 26 |.Z.....v.b..o..&|
+| 89 51 2f 52 90 ea 2e 84 0b 92 40 b9 b2 27 0b db |.Q/R......@..'..|
+| 4e ea 2e 0d f9 39 9d d2 f2 0b 5a d8 d0 8e 80 3d |N....9....Z....=|
+| a9 ba 8b 29 af 5c 62 3f be 63 de a6 26 26 32 c8 |...).\b?.c..&&2.|
+| 82 2a f8 51 e6 36 8b 3f 36 8b 82 65 ff e9 f4 c8 |.*.Q.6.?6..e....|
+| 5f 5e a4 5e ee ca ef 76 b7 6a 17 10 c0 63 34 2b |_^.^...v.j...c4+|
+| 0c c5 22 c8 95 af 6e bf a2 99 b6 58 0a bb 74 f3 |.."...n....X..t.|
+| 3e c1 06 da c6 44 20 39 db 6e e3 49 22 2f 5a 8e |>....D 9.n.I"/Z.|
+| 05 61 01 67 2c 9c 20 3b 87 3a c1 2f a2 ba 21 26 |.a.g,. ;.:./..!&|
+| 3d 62 2b db 76 0c 6e 46 9c 90 f7 86 29 20 49 0d |=b+.v.nF....) I.|
+| f8 e9 d0 4e 8d 20 fd 75 4a 6d ff 80 69 d8 0e 87 |...N. .uJm..i...|
+| 4d 33 eb 02 c2 bd 5e ca 53 de ec 41 50 df 05 98 |M3....^.S..AP...|
+| 06 e8 3f d6 b5 d3 8b b9 c9 e3 19 45 23 a4 25 a6 |..?........E#.%.|
+| d7 31 d5 ca 43 6f fb 30 c2 73 08 74 85 df ca 77 |.1..Co.0.s.t...w|
+| 5e b4 07 a6 19 cd 22 e6 e9 4d a1 11 72 6b d0 20 |^....."..M..rk. |
+| 40 3e 80 75 e9 4c ea 54 62 71 f5 a8 e3 9e 08 8c |@>.u.L.Tbq......|
+| ae b2 86 ee 77 47 cf 7f d2 17 33 2a 94 94 95 56 |....wG....3*...V|
+| 14 00 12 94 e2 80 6b f1 e8 c2 c2 ec 23 3f 03 35 |......k.....#?.5|
+| c7 33 ff 66 b7 f7 45 23 86 10 13 de a5 c7 96 e1 |.3.f..E#........|
+| 92 c8 91 36 e2 63 46 c5 5d 8e 84 64 3e 0e b9 00 |...6.cF.]..d>...|
+| ef 1c c8 42 00 bb d7 bd 93 c0 73 49 4f 76 77 86 |...B......sIOvw.|
+| 44 01 1c 00 d2 76 d5 56 cf 75 49 8d e1 2e fe 26 |D....v.V.uI....&|
+| a4 b9 47 7c 30 a7 af 68 e2 11 bb a1 68 8b 6f 41 |..G|0..h....h.oA|
+| 81 77 9e c6 b7 87 9b 08 71 2f 0f 15 75 03 94 2c |.w......q/..u..,|
+| 0b 3a 60 c2 f5 ef 7c 26 7d ce 66 02 98 f0 b5 84 |.:`...|&}.f.....|
+| d0 89 d9 fc 2d 0b 18 bd c2 83 f6 43 41 b6 d8 22 |....-......CA.."|
+| 69 43 04                                        |iC.             |
+ssl_decrypt_record: allocating 467 bytes for decrypt data (old len 72)
+nonce[12]:
+| 8e 89 f5 4e 07 44 51 05 3e 99 d5 c1             |...N.DQ.>...    |
+AAD[13]:
+| 00 00 00 00 00 00 00 01 17 03 03 01 9b          |.............   |
+auth_tag(OK)[16]:
+| fc 2d 0b 18 bd c2 83 f6 43 41 b6 d8 22 69 43 04 |.-......CA.."iC.|
+Plaintext[411]:
+| 47 45 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a |GET / HTTP/1.1..|
+| 48 6f 73 74 3a 20 65 63 32 2d 31 38 2d 32 32 33 |Host: ec2-18-223|
+| 2d 31 38 34 2d 32 30 30 2e 75 73 2d 65 61 73 74 |-184-200.us-east|
+| 2d 32 2e 63 6f 6d 70 75 74 65 2e 61 6d 61 7a 6f |-2.compute.amazo|
+| 6e 61 77 73 2e 63 6f 6d 0d 0a 55 73 65 72 2d 41 |naws.com..User-A|
+| 67 65 6e 74 3a 20 4d 6f 7a 69 6c 6c 61 2f 35 2e |gent: Mozilla/5.|
+| 30 20 28 4d 61 63 69 6e 74 6f 73 68 3b 20 49 6e |0 (Macintosh; In|
+| 74 65 6c 20 4d 61 63 20 4f 53 20 58 20 31 30 2e |tel Mac OS X 10.|
+| 31 34 3b 20 72 76 3a 36 38 2e 30 29 20 47 65 63 |14; rv:68.0) Gec|
+| 6b 6f 2f 32 30 31 30 30 31 30 31 20 46 69 72 65 |ko/20100101 Fire|
+| 66 6f 78 2f 36 38 2e 30 0d 0a 41 63 63 65 70 74 |fox/68.0..Accept|
+| 3a 20 74 65 78 74 2f 68 74 6d 6c 2c 61 70 70 6c |: text/html,appl|
+| 69 63 61 74 69 6f 6e 2f 78 68 74 6d 6c 2b 78 6d |ication/xhtml+xm|
+| 6c 2c 61 70 70 6c 69 63 61 74 69 6f 6e 2f 78 6d |l,application/xm|
+| 6c 3b 71 3d 30 2e 39 2c 2a 2f 2a 3b 71 3d 30 2e |l;q=0.9,*/*;q=0.|
+| 38 0d 0a 41 63 63 65 70 74 2d 4c 61 6e 67 75 61 |8..Accept-Langua|
+| 67 65 3a 20 65 6e 2d 55 53 2c 65 6e 3b 71 3d 30 |ge: en-US,en;q=0|
+| 2e 35 0d 0a 41 63 63 65 70 74 2d 45 6e 63 6f 64 |.5..Accept-Encod|
+| 69 6e 67 3a 20 67 7a 69 70 2c 20 64 65 66 6c 61 |ing: gzip, defla|
+| 74 65 2c 20 62 72 0d 0a 43 6f 6e 6e 65 63 74 69 |te, br..Connecti|
+| 6f 6e 3a 20 6b 65 65 70 2d 61 6c 69 76 65 0d 0a |on: keep-alive..|
+| 55 70 67 72 61 64 65 2d 49 6e 73 65 63 75 72 65 |Upgrade-Insecure|
+| 2d 52 65 71 75 65 73 74 73 3a 20 31 0d 0a 50 72 |-Requests: 1..Pr|
+| 61 67 6d 61 3a 20 6e 6f 2d 63 61 63 68 65 0d 0a |agma: no-cache..|
+| 43 61 63 68 65 2d 43 6f 6e 74 72 6f 6c 3a 20 6e |Cache-Control: n|
+| 6f 2d 63 61 63 68 65 0d 0a 0d 0a                |o-cache....     |
+ssl_add_record_info stored decrypted record seq=0 nxtseq=411 flow=0x555deb391370
+dissect_ssl_payload decrypted len 411
+decrypted app data fragment[411]:
+| 47 45 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a |GET / HTTP/1.1..|
+| 48 6f 73 74 3a 20 65 63 32 2d 31 38 2d 32 32 33 |Host: ec2-18-223|
+| 2d 31 38 34 2d 32 30 30 2e 75 73 2d 65 61 73 74 |-184-200.us-east|
+| 2d 32 2e 63 6f 6d 70 75 74 65 2e 61 6d 61 7a 6f |-2.compute.amazo|
+| 6e 61 77 73 2e 63 6f 6d 0d 0a 55 73 65 72 2d 41 |naws.com..User-A|
+| 67 65 6e 74 3a 20 4d 6f 7a 69 6c 6c 61 2f 35 2e |gent: Mozilla/5.|
+| 30 20 28 4d 61 63 69 6e 74 6f 73 68 3b 20 49 6e |0 (Macintosh; In|
+| 74 65 6c 20 4d 61 63 20 4f 53 20 58 20 31 30 2e |tel Mac OS X 10.|
+| 31 34 3b 20 72 76 3a 36 38 2e 30 29 20 47 65 63 |14; rv:68.0) Gec|
+| 6b 6f 2f 32 30 31 30 30 31 30 31 20 46 69 72 65 |ko/20100101 Fire|
+| 66 6f 78 2f 36 38 2e 30 0d 0a 41 63 63 65 70 74 |fox/68.0..Accept|
+| 3a 20 74 65 78 74 2f 68 74 6d 6c 2c 61 70 70 6c |: text/html,appl|
+| 69 63 61 74 69 6f 6e 2f 78 68 74 6d 6c 2b 78 6d |ication/xhtml+xm|
+| 6c 2c 61 70 70 6c 69 63 61 74 69 6f 6e 2f 78 6d |l,application/xm|
+| 6c 3b 71 3d 30 2e 39 2c 2a 2f 2a 3b 71 3d 30 2e |l;q=0.9,*/*;q=0.|
+| 38 0d 0a 41 63 63 65 70 74 2d 4c 61 6e 67 75 61 |8..Accept-Langua|
+| 67 65 3a 20 65 6e 2d 55 53 2c 65 6e 3b 71 3d 30 |ge: en-US,en;q=0|
+| 2e 35 0d 0a 41 63 63 65 70 74 2d 45 6e 63 6f 64 |.5..Accept-Encod|
+| 69 6e 67 3a 20 67 7a 69 70 2c 20 64 65 66 6c 61 |ing: gzip, defla|
+| 74 65 2c 20 62 72 0d 0a 43 6f 6e 6e 65 63 74 69 |te, br..Connecti|
+| 6f 6e 3a 20 6b 65 65 70 2d 61 6c 69 76 65 0d 0a |on: keep-alive..|
+| 55 70 67 72 61 64 65 2d 49 6e 73 65 63 75 72 65 |Upgrade-Insecure|
+| 2d 52 65 71 75 65 73 74 73 3a 20 31 0d 0a 50 72 |-Requests: 1..Pr|
+| 61 67 6d 61 3a 20 6e 6f 2d 63 61 63 68 65 0d 0a |agma: no-cache..|
+| 43 61 63 68 65 2d 43 6f 6e 74 72 6f 6c 3a 20 6e |Cache-Control: n|
+| 6f 2d 63 61 63 68 65 0d 0a 0d 0a                |o-cache....     |
+process_ssl_payload: no heuristics dissector, falling back to handle 0x555dea35a420 (http-over-tls)
+process_ssl_payload: found handle 0x555dea35a420 (http-over-tls)
+packet_from_server: is from server - FALSE
+
+dissect_ssl enter frame #32 (first time)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38ea70, ssl_session = 0x555deb390670
+  record: offset = 0, reported_length_remaining = 1233
+dissect_ssl3_record: content_type 23 Application Data
+decrypt_ssl3_record: app_data len 1228, ssl state 0x43F
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+ssl_decrypt_record ciphertext len 1228
+Ciphertext[1228]:
+| e6 6f f4 e1 55 cd f1 af a5 52 43 fc 0d a9 30 f4 |.o..U....RC...0.|
+| e5 ce bb 49 a5 22 15 d5 5a 18 df 34 23 02 4a 65 |...I."..Z..4#.Je|
+| b5 5a 5d ea bd a3 fb 09 c0 21 0c 0b 90 b1 d8 90 |.Z]......!......|
+| e1 1e 27 6e 11 59 a2 a5 15 c3 7c dc 5d 23 1f cd |..'n.Y....|.]#..|
+| bb 79 12 a8 d5 13 d9 3e 6a be 21 fc b4 f7 9c b5 |.y.....>j.!.....|
+| ec 2d 4f c2 3d 2a 40 53 89 7b 08 7f 11 10 7a b7 |.-O.=*@S.{....z.|
+| b0 29 a6 85 0c 40 a7 e4 bc d4 a9 93 d6 d1 eb 61 |.)...@.........a|
+| 00 99 94 90 88 1b 1b 37 57 e5 9a 58 8c 5e d8 05 |.......7W..X.^..|
+| c4 d3 2c 53 8f b1 00 71 6d 0e d4 be 85 4d 36 cb |..,S...qm....M6.|
+| 2d 66 4b 52 e6 aa 0b b9 d9 4d 69 dc 3f 79 58 a7 |-fKR.....Mi.?yX.|
+| 11 58 11 27 cd 05 9b 99 fd 7a 92 43 60 75 91 ff |.X.'.....z.C`u..|
+| 6a c3 aa 23 43 8c 9f 56 89 a6 f2 b0 78 f1 7f f3 |j..#C..V....x...|
+| 84 ad 9f e4 8c da 46 62 2f 27 16 9d 59 61 a4 27 |......Fb/'..Ya.'|
+| a2 c9 d3 49 80 09 8d 87 1a cc 5e 42 98 6d 50 ce |...I......^B.mP.|
+| f6 80 b8 ee 70 aa 75 18 6b 96 7e c0 b0 4a ca ae |....p.u.k.~..J..|
+| 19 e0 71 6d 34 ca c8 33 e1 57 4c 33 13 96 5d 2a |..qm4..3.WL3..]*|
+| d0 23 ab c6 85 3c d3 9b 0a 14 3a 2d f0 64 3f fb |.#...<....:-.d?.|
+| f2 03 e2 94 06 f9 99 88 52 d3 3c 4d d0 b2 85 43 |........R.<M...C|
+| 6d 81 aa 80 d1 e7 b0 5b ac ac 01 aa e3 bc 00 4c |m......[.......L|
+| 4f a0 ee b3 43 77 4f e3 21 88 7d a3 53 e3 6c 7e |O...CwO.!.}.S.l~|
+| e7 62 71 a2 87 67 0e 1e 19 60 fd c7 17 47 5b c2 |.bq..g...`...G[.|
+| e3 3a 0b 34 3d 18 0a 1b 0c ff 79 2f 5b 24 b6 03 |.:.4=.....y/[$..|
+| 72 e2 03 f9 fa 5b 87 9a 04 92 c4 10 42 2a 9b 87 |r....[......B*..|
+| 72 58 59 f6 4e 66 1a cd a5 79 22 9e 1c 37 3b 18 |rXY.Nf...y"..7;.|
+| 76 5d 13 2b 26 40 9c 51 d4 02 f9 11 1a 3b a0 be |v].+&@.Q.....;..|
+| fb 40 e1 05 2f 45 1d fe a0 bd ec d8 f6 ae 33 63 |.@../E........3c|
+| ff 30 97 40 ae 20 8f e0 eb db 38 26 d3 d0 c7 b4 |.0.@. ....8&....|
+| d0 3e cd c7 4d 19 7f 8e 3c 3a f2 bc f7 c3 12 e3 |.>..M...<:......|
+| ee 35 66 33 b8 41 c4 f1 a8 3f a3 7d 58 aa f8 fc |.5f3.A...?.}X...|
+| 9c 87 75 20 3e 12 c3 71 e8 41 57 ea 9f 47 88 bb |..u >..q.AW..G..|
+| ba b9 97 17 76 d6 3a ce f8 04 89 30 51 20 b0 f3 |....v.:....0Q ..|
+| dc d8 68 ed 81 f5 3c 71 48 d3 15 f0 7f ed a5 f4 |..h...<qH.......|
+| 85 fe 86 bb 4e 65 a5 5c 98 eb d2 20 61 60 c3 91 |....Ne.\... a`..|
+| 5b 71 f6 9d 35 23 30 7b a7 fe 38 96 65 61 4c 67 |[q..5#0{..8.eaLg|
+| bf 5d c3 e4 b1 e8 78 cc 67 4e 4c 04 0f 85 eb e8 |.]....x.gNL.....|
+| 4c 51 e5 ff 28 01 3b 6c 0c bf d6 4a ac 00 0a 5b |LQ..(.;l...J...[|
+| 64 fe aa 53 eb f5 10 73 21 ce 0e a0 77 b2 fe ff |d..S...s!...w...|
+| 43 67 68 9f 4e 00 2e 6f 7d f6 2c 34 ae 5c 14 f1 |Cgh.N..o}.,4.\..|
+| 8c 38 4b 08 d3 9c dc eb 67 7d 27 41 c2 aa c2 d4 |.8K.....g}'A....|
+| 0c cf 40 bf 44 93 31 95 9d bc b0 65 19 a4 04 d6 |..@.D.1....e....|
+| 04 9a f9 10 02 b0 70 7e 8e bc 7d 3d 56 50 f9 65 |......p~..}=VP.e|
+| 81 bf 79 6e 4b 87 59 e7 43 71 f0 dc 0c 51 6e b6 |..ynK.Y.Cq...Qn.|
+| 2d 9e 0a 8c 0c f6 76 1b a5 be 83 b3 b7 df a9 3e |-.....v........>|
+| 61 97 e8 47 da 55 5f 4a bc e2 67 36 4f 39 f3 ac |a..G.U_J..g6O9..|
+| 23 ab 53 ba 17 5a 6d f1 25 1e 62 40 cb b9 65 17 |#.S..Zm.%.b@..e.|
+| 17 6a d8 c0 02 13 72 b9 be e2 ce 79 8d aa 95 61 |.j....r....y...a|
+| 04 79 81 7f 35 b3 cd 1d 6d 9f 35 0c 66 05 66 2c |.y..5...m.5.f.f,|
+| d4 fa 3c 88 d0 cb 25 83 26 7b dc 11 72 cb 27 8a |..<...%.&{..r.'.|
+| dd d6 0a 5f 3c 9c 24 ba af 37 e5 92 67 2b 75 da |..._<.$..7..g+u.|
+| d9 eb ea 8a 03 51 dc d4 67 c2 7c 5e c5 3b 70 f4 |.....Q..g.|^.;p.|
+| 99 ae ac 7a 6e 30 2f 62 49 2d 27 0a fa eb 7c 53 |...zn0/bI-'...|S|
+| d7 bd f1 6d 63 62 7d 3f f7 b3 e8 39 aa bb e9 a0 |...mcb}?...9....|
+| 87 87 fb 00 e9 b7 c8 e8 4e ca 32 20 ce 91 87 55 |........N.2 ...U|
+| 82 0e 0c c3 e0 59 b8 fd 0b 5b 42 92 91 7c 24 5d |.....Y...[B..|$]|
+| 09 0d e9 6c a4 2e c8 e9 27 87 55 d2 12 6c b3 bd |...l....'.U..l..|
+| da 44 e6 5b e4 b2 4f 75 51 c4 8b 1d 7e de e2 6e |.D.[..OuQ...~..n|
+| 28 fc 79 1d 98 20 8f dd ff 73 ce 22 11 df f4 c5 |(.y.. ...s."....|
+| fb c6 75 5f 4f de 7b 0a 52 b9 08 20 6c 45 39 7e |..u_O.{.R.. lE9~|
+| f2 08 77 5e 41 86 07 05 28 fb 54 61 cc 0d f2 4b |..w^A...(.Ta...K|
+| 23 e1 c7 bb 35 e0 7c 48 36 99 1d 33 35 79 6a a0 |#...5.|H6..35yj.|
+| b8 ec 34 c9 5a 44 d4 76 94 3c e3 bd 14 be ff 5c |..4.ZD.v.<.....\|
+| a5 85 91 ce 75 b0 74 ed 3d dc 54 e8 51 e1 65 f8 |....u.t.=.T.Q.e.|
+| e1 f6 86 80 09 c6 36 0d 08 d0 a1 58 01 71 06 cd |......6....X.q..|
+| 59 28 ad f4 0d 7a a6 c8 3a b4 c3 0b 5a 86 9e cc |Y(...z..:...Z...|
+| 81 2a e3 4a fc be 2b ef ea 2a 0b 23 d0 08 a5 1d |.*.J..+..*.#....|
+| 8b 2a 53 f7 96 8a 47 a4 d6 77 79 60 53 10 63 de |.*S...G..wy`S.c.|
+| dc 8a e6 b6 30 69 19 da 41 18 1e 77 58 08 b9 f0 |....0i..A..wX...|
+| 42 2f e3 68 e0 ee 57 e0 f3 d7 d5 26 a1 99 f0 68 |B/.h..W....&...h|
+| d8 2a 09 e4 d1 40 b1 70 54 68 7d 73 f6 4c 1b 3b |.*...@.pTh}s.L.;|
+| 4c d8 06 78 91 7d 3b 06 51 69 41 1f e1 92 63 f0 |L..x.};.QiA...c.|
+| 7e 1d 83 e5 37 98 ec ad b1 d5 9b ef 58 1e 5a 03 |~...7.......X.Z.|
+| 1e 23 c0 62 c9 63 d5 a0 24 de 1e b1 3a be c1 23 |.#.b.c..$...:..#|
+| e5 41 ee ca ff 45 1e 79 f0 be 0c 3f c2 7a a7 f8 |.A...E.y...?.z..|
+| 2d 14 9a 9f bd 20 e4 ef ed ac 67 a2 47 98 d4 b8 |-.... ....g.G...|
+| 39 06 9f 3a 9c 27 1e 3b 66 fe 82 0b 4f 50 08 15 |9..:.'.;f...OP..|
+| 0a f8 c6 5d 83 1f 1b 9b ef 98 83 52 05 a4 fa c2 |...].......R....|
+| f8 57 73 c5 b5 c0 3d 2f d4 ef bc 46             |.Ws...=/...F    |
+ssl_decrypt_record: allocating 1260 bytes for decrypt data (old len 467)
+nonce[12]:
+| b8 13 5d ba e6 6f f4 e1 55 cd f1 af             |..]..o..U...    |
+AAD[13]:
+| 00 00 00 00 00 00 00 01 17 03 03 04 b4          |.............   |
+auth_tag(OK)[16]:
+| 05 a4 fa c2 f8 57 73 c5 b5 c0 3d 2f d4 ef bc 46 |.....Ws...=/...F|
+Plaintext[1204]:
+| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+| 0a 44 61 74 65 3a 20 46 72 69 2c 20 32 33 20 41 |.Date: Fri, 23 A|
+| 75 67 20 32 30 31 39 20 31 35 3a 35 36 3a 33 36 |ug 2019 15:56:36|
+| 20 47 4d 54 0d 0a 53 65 72 76 65 72 3a 20 41 70 | GMT..Server: Ap|
+| 61 63 68 65 2f 32 2e 34 2e 32 39 20 28 55 62 75 |ache/2.4.29 (Ubu|
+| 6e 74 75 29 0d 0a 4c 61 73 74 2d 4d 6f 64 69 66 |ntu)..Last-Modif|
+| 69 65 64 3a 20 4d 6f 6e 2c 20 31 32 20 41 75 67 |ied: Mon, 12 Aug|
+| 20 32 30 31 39 20 31 36 3a 35 30 3a 30 35 20 47 | 2019 16:50:05 G|
+| 4d 54 0d 0a 45 54 61 67 3a 20 22 35 66 66 2d 35 |MT..ETag: "5ff-5|
+| 38 66 65 65 35 30 64 63 33 66 62 30 2d 67 7a 69 |8fee50dc3fb0-gzi|
+| 70 22 0d 0a 41 63 63 65 70 74 2d 52 61 6e 67 65 |p"..Accept-Range|
+| 73 3a 20 62 79 74 65 73 0d 0a 56 61 72 79 3a 20 |s: bytes..Vary: |
+| 41 63 63 65 70 74 2d 45 6e 63 6f 64 69 6e 67 0d |Accept-Encoding.|
+| 0a 43 6f 6e 74 65 6e 74 2d 45 6e 63 6f 64 69 6e |.Content-Encodin|
+| 67 3a 20 67 7a 69 70 0d 0a 50 69 63 6f 2d 46 6c |g: gzip..Pico-Fl|
+| 61 67 3a 20 70 69 63 6f 43 54 46 7b 6e 6f 6e 67 |ag: picoCTF{nong|
+| 73 68 69 6d 2e 73 68 72 69 6d 70 2e 63 72 61 63 |shim.shrimp.crac|
+| 6b 65 72 73 7d 0d 0a 43 6f 6e 74 65 6e 74 2d 4c |kers}..Content-L|
+| 65 6e 67 74 68 3a 20 38 32 31 0d 0a 4b 65 65 70 |ength: 821..Keep|
+| 2d 41 6c 69 76 65 3a 20 74 69 6d 65 6f 75 74 3d |-Alive: timeout=|
+| 35 2c 20 6d 61 78 3d 31 30 30 0d 0a 43 6f 6e 6e |5, max=100..Conn|
+| 65 63 74 69 6f 6e 3a 20 4b 65 65 70 2d 41 6c 69 |ection: Keep-Ali|
+| 76 65 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 |ve..Content-Type|
+| 3a 20 74 65 78 74 2f 68 74 6d 6c 0d 0a 0d 0a 1f |: text/html.....|
+| 8b 08 00 00 00 00 00 00 03 a5 54 5d 73 da 3a 14 |..........T]s.:.|
+| 7c 4e 7e 85 e2 d7 c4 16 2e 04 c8 1d 9b 99 24 34 ||N~...........$4|
+| 05 67 28 e1 23 40 f2 26 6c d9 96 2b 4b 42 12 1f |.g(.#@.&l..+KB..|
+| e6 d7 5f d9 84 90 66 da 4e ef 5c 5e 2c 1f 2d 47 |.._...f.N.\^,.-G|
+| bb 7b d6 f2 2e 22 1e ea 42 60 90 ea 9c 76 ce bd |.{..."..B`...v..|
+| f2 01 28 62 89 6f 61 66 75 ce 01 f0 52 8c a2 72 |..(b.oafu...R..r|
+| 61 96 17 b6 0d c6 78 b5 26 12 47 20 c7 1a 01 8d |a.....x.&.G ....|
+| 12 05 6c fb 6d bf 2a 85 29 92 0a 6b df 5a eb d8 |..l.m.*.)..k.Z..|
+| 6e 5b 1f b7 18 ca b1 6f 6d 08 de 0a 2e b5 05 42 |n[.....om......B|
+| ce 34 66 06 ba 25 91 4e fd 08 6f 48 88 ed ea e5 |.4f..%.N..oH....|
+| 0a 10 46 34 41 d4 56 21 a2 d8 77 af 80 4a 25 61 |..F4A.V!..w..J%a|
+| 3f 6c cd ed 98 68 9f 71 d3 fa 44 eb 8e 73 ad b4 |?l...h.q..D..s..|
+| 44 02 dc 4f 26 27 46 d4 fc 03 48 4c 7d 4b e9 82 |D..O&'F...HL}K..|
+| 62 95 62 6c ce 4d 25 8e 7d 2b d5 5a a8 7f 20 54 |b.bl.M%.}+.Z.. T|
+| 1a 85 3f 04 d2 a9 b3 3c 36 09 23 e6 84 3c 87 ef |..?....<6.#..<..|
+| 05 d8 70 ea 8e 0b 43 a5 4e 35 27 27 06 a5 94 65 |..p...C.N5''...e|
+| a8 6a 9c 48 a2 0b 73 4c 8a ea ed 86 9d 24 c3 62 |.j.H..sL.....$.b|
+| 5c 23 8b fb e5 60 b4 a9 2f 88 c8 51 bd 31 e8 5e |\#...`../..Q.1.^|
+| 46 3d e8 c6 a3 56 bb 01 b3 66 f8 02 49 30 1d 3d |F=...V...f..I0.=|
+| 0f d3 70 2e 5b bb 9b 60 c3 c7 bb e9 97 c1 eb d6 |..p.[..`........|
+| 9d 1a 6f 24 57 8a 4b 92 10 e6 5b 88 71 56 e4 7c |..o$W.K...[.qV.||
+| ad ac 0f 93 b8 5f 2b cd 73 70 10 06 62 2e 81 4e |....._+.sp..b..N|
+| 89 02 1a e7 82 22 8d 3f 99 70 d0 6c b4 4a 8d a5 |.....".?.p.l.J..|
+| 7d 04 1d f8 7f 36 e8 68 ac 26 9a e2 4e 0f 53 ca |}....6.h.&..N.S.|
+| af c0 96 4b 1a 5d 78 f0 50 2c 93 01 8f d1 f0 96 |...K.]x.P,......|
+| 3c 2a 3a e7 67 5e 44 36 20 a4 48 29 df 2a 67 8b |<*:.g^D6 .H).*g.|
+| 08 c3 f2 8d 32 00 67 3f ed 7f 66 f2 0e ab 80 a9 |....2.g?..f.....|
+| db 99 63 6a 46 80 81 e6 e0 16 4c 90 41 61 f0 84 |..cjF.....L.Aa..|
+| 12 6c 8e 75 7f c2 8a 63 4b 6a e8 98 36 67 e6 37 |.l.u...cKj..6g.7|
+| 4d b1 c4 c0 b8 41 71 42 34 60 dc 58 c3 92 b2 97 |M....AqB4`.X....|
+| c2 26 ec 66 d3 f1 96 b2 c2 7a 50 7c 60 08 0d c5 |.&.f.....zP|`...|
+| 52 49 f5 ac 6c 86 ce bb 94 ca d2 d3 00 86 42 13 |RI..l.........B.|
+| ce 10 05 01 da a0 49 28 89 d0 27 d3 4b 40 36 5a |......I(..'.K@6Z|
+| 63 59 80 98 48 a5 af cc 74 30 03 4f 5c 08 2c 9d |cY..H...t0.O\.,.|
+| 4c bd bd 9f 72 1b 7c 88 ad 3a 34 53 32 3c c5 34 |L...r.|..:4S2<.4|
+| e4 11 76 b2 55 d9 b1 ca e6 61 69 d7 cb 60 3a 8a |..v.U....ai..`:.|
+| 92 bc ca 63 f6 cb 38 ae da 04 2e 2e 6f 9a d7 dd |...c..8.....o...|
+| fd b0 26 a7 2d b4 7c 6c b8 c1 44 8f fa b7 ab 59 |..&.-.|l..D....Y|
+| 32 9e ed c5 72 cf af 55 be 78 14 8d 97 78 bc e9 |2...r..U.x...x..|
+| 5d b6 d1 52 4f bf ba 4f a4 99 91 3d ff 7d 1c 3d |]..RO..O...=.}.=|
+| 78 e0 fa 27 e2 11 cb 94 13 52 be 8e 62 8a 8c f3 |x..'.....R..b...|
+| 25 7b 94 a1 1d a4 64 a9 a0 38 3a 02 5d c7 6d 38 |%{....d..8:.].m8|
+| 2d b8 ce a3 63 f1 f7 8a 9e 87 5f f0 b4 76 2f 7a |-...c....._..v/z|
+| ab 68 12 8c 9a 69 a0 8b eb c7 99 48 f5 53 ba 9f |.h...i.....H.S..|
+| 67 37 f3 a1 1b d2 de 74 f0 0d d5 83 ee eb 56 b2 |g7.....t......V.|
+| d1 aa a1 1e da cd a8 df fb de dd d7 e6 ee ff 52 |...............R|
+| f4 1f 6e 8c ec f3 85 f1 6b 39 41 36 c9 67 49 11 |..n.....k9A6.gI.|
+| d5 44 5d 2c ee 5c 39 26 cb d7 e7 db 17 de ef 17 |.D],.\9&........|
+| cd a1 1c 35 67 32 eb 7f 45 0f 31 64 c1 b7 7d 7f |...5g2..E.1d..}.|
+| f7 d0 55 71 63 57 db f5 07 97 77 b5 56 36 1e fc |..UqcW....w.V6..|
+| 9d 1c 0f 1e 3e 54 f3 09 55 d7 fd bf 29 b5 3f 87 |....>T..U...).?.|
+| ff 05 00 00                                     |....            |
+ssl_add_record_info stored decrypted record seq=0 nxtseq=1204 flow=0x555deb3913d0
+dissect_ssl_payload decrypted len 1204
+decrypted app data fragment[1204]:
+| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+| 0a 44 61 74 65 3a 20 46 72 69 2c 20 32 33 20 41 |.Date: Fri, 23 A|
+| 75 67 20 32 30 31 39 20 31 35 3a 35 36 3a 33 36 |ug 2019 15:56:36|
+| 20 47 4d 54 0d 0a 53 65 72 76 65 72 3a 20 41 70 | GMT..Server: Ap|
+| 61 63 68 65 2f 32 2e 34 2e 32 39 20 28 55 62 75 |ache/2.4.29 (Ubu|
+| 6e 74 75 29 0d 0a 4c 61 73 74 2d 4d 6f 64 69 66 |ntu)..Last-Modif|
+| 69 65 64 3a 20 4d 6f 6e 2c 20 31 32 20 41 75 67 |ied: Mon, 12 Aug|
+| 20 32 30 31 39 20 31 36 3a 35 30 3a 30 35 20 47 | 2019 16:50:05 G|
+| 4d 54 0d 0a 45 54 61 67 3a 20 22 35 66 66 2d 35 |MT..ETag: "5ff-5|
+| 38 66 65 65 35 30 64 63 33 66 62 30 2d 67 7a 69 |8fee50dc3fb0-gzi|
+| 70 22 0d 0a 41 63 63 65 70 74 2d 52 61 6e 67 65 |p"..Accept-Range|
+| 73 3a 20 62 79 74 65 73 0d 0a 56 61 72 79 3a 20 |s: bytes..Vary: |
+| 41 63 63 65 70 74 2d 45 6e 63 6f 64 69 6e 67 0d |Accept-Encoding.|
+| 0a 43 6f 6e 74 65 6e 74 2d 45 6e 63 6f 64 69 6e |.Content-Encodin|
+| 67 3a 20 67 7a 69 70 0d 0a 50 69 63 6f 2d 46 6c |g: gzip..Pico-Fl|
+| 61 67 3a 20 70 69 63 6f 43 54 46 7b 6e 6f 6e 67 |ag: picoCTF{nong|
+| 73 68 69 6d 2e 73 68 72 69 6d 70 2e 63 72 61 63 |shim.shrimp.crac|
+| 6b 65 72 73 7d 0d 0a 43 6f 6e 74 65 6e 74 2d 4c |kers}..Content-L|
+| 65 6e 67 74 68 3a 20 38 32 31 0d 0a 4b 65 65 70 |ength: 821..Keep|
+| 2d 41 6c 69 76 65 3a 20 74 69 6d 65 6f 75 74 3d |-Alive: timeout=|
+| 35 2c 20 6d 61 78 3d 31 30 30 0d 0a 43 6f 6e 6e |5, max=100..Conn|
+| 65 63 74 69 6f 6e 3a 20 4b 65 65 70 2d 41 6c 69 |ection: Keep-Ali|
+| 76 65 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 |ve..Content-Type|
+| 3a 20 74 65 78 74 2f 68 74 6d 6c 0d 0a 0d 0a 1f |: text/html.....|
+| 8b 08 00 00 00 00 00 00 03 a5 54 5d 73 da 3a 14 |..........T]s.:.|
+| 7c 4e 7e 85 e2 d7 c4 16 2e 04 c8 1d 9b 99 24 34 ||N~...........$4|
+| 05 67 28 e1 23 40 f2 26 6c d9 96 2b 4b 42 12 1f |.g(.#@.&l..+KB..|
+| e6 d7 5f d9 84 90 66 da 4e ef 5c 5e 2c 1f 2d 47 |.._...f.N.\^,.-G|
+| bb 7b d6 f2 2e 22 1e ea 42 60 90 ea 9c 76 ce bd |.{..."..B`...v..|
+| f2 01 28 62 89 6f 61 66 75 ce 01 f0 52 8c a2 72 |..(b.oafu...R..r|
+| 61 96 17 b6 0d c6 78 b5 26 12 47 20 c7 1a 01 8d |a.....x.&.G ....|
+| 12 05 6c fb 6d bf 2a 85 29 92 0a 6b df 5a eb d8 |..l.m.*.)..k.Z..|
+| 6e 5b 1f b7 18 ca b1 6f 6d 08 de 0a 2e b5 05 42 |n[.....om......B|
+| ce 34 66 06 ba 25 91 4e fd 08 6f 48 88 ed ea e5 |.4f..%.N..oH....|
+| 0a 10 46 34 41 d4 56 21 a2 d8 77 af 80 4a 25 61 |..F4A.V!..w..J%a|
+| 3f 6c cd ed 98 68 9f 71 d3 fa 44 eb 8e 73 ad b4 |?l...h.q..D..s..|
+| 44 02 dc 4f 26 27 46 d4 fc 03 48 4c 7d 4b e9 82 |D..O&'F...HL}K..|
+| 62 95 62 6c ce 4d 25 8e 7d 2b d5 5a a8 7f 20 54 |b.bl.M%.}+.Z.. T|
+| 1a 85 3f 04 d2 a9 b3 3c 36 09 23 e6 84 3c 87 ef |..?....<6.#..<..|
+| 05 d8 70 ea 8e 0b 43 a5 4e 35 27 27 06 a5 94 65 |..p...C.N5''...e|
+| a8 6a 9c 48 a2 0b 73 4c 8a ea ed 86 9d 24 c3 62 |.j.H..sL.....$.b|
+| 5c 23 8b fb e5 60 b4 a9 2f 88 c8 51 bd 31 e8 5e |\#...`../..Q.1.^|
+| 46 3d e8 c6 a3 56 bb 01 b3 66 f8 02 49 30 1d 3d |F=...V...f..I0.=|
+| 0f d3 70 2e 5b bb 9b 60 c3 c7 bb e9 97 c1 eb d6 |..p.[..`........|
+| 9d 1a 6f 24 57 8a 4b 92 10 e6 5b 88 71 56 e4 7c |..o$W.K...[.qV.||
+| ad ac 0f 93 b8 5f 2b cd 73 70 10 06 62 2e 81 4e |....._+.sp..b..N|
+| 89 02 1a e7 82 22 8d 3f 99 70 d0 6c b4 4a 8d a5 |.....".?.p.l.J..|
+| 7d 04 1d f8 7f 36 e8 68 ac 26 9a e2 4e 0f 53 ca |}....6.h.&..N.S.|
+| af c0 96 4b 1a 5d 78 f0 50 2c 93 01 8f d1 f0 96 |...K.]x.P,......|
+| 3c 2a 3a e7 67 5e 44 36 20 a4 48 29 df 2a 67 8b |<*:.g^D6 .H).*g.|
+| 08 c3 f2 8d 32 00 67 3f ed 7f 66 f2 0e ab 80 a9 |....2.g?..f.....|
+| db 99 63 6a 46 80 81 e6 e0 16 4c 90 41 61 f0 84 |..cjF.....L.Aa..|
+| 12 6c 8e 75 7f c2 8a 63 4b 6a e8 98 36 67 e6 37 |.l.u...cKj..6g.7|
+| 4d b1 c4 c0 b8 41 71 42 34 60 dc 58 c3 92 b2 97 |M....AqB4`.X....|
+| c2 26 ec 66 d3 f1 96 b2 c2 7a 50 7c 60 08 0d c5 |.&.f.....zP|`...|
+| 52 49 f5 ac 6c 86 ce bb 94 ca d2 d3 00 86 42 13 |RI..l.........B.|
+| ce 10 05 01 da a0 49 28 89 d0 27 d3 4b 40 36 5a |......I(..'.K@6Z|
+| 63 59 80 98 48 a5 af cc 74 30 03 4f 5c 08 2c 9d |cY..H...t0.O\.,.|
+| 4c bd bd 9f 72 1b 7c 88 ad 3a 34 53 32 3c c5 34 |L...r.|..:4S2<.4|
+| e4 11 76 b2 55 d9 b1 ca e6 61 69 d7 cb 60 3a 8a |..v.U....ai..`:.|
+| 92 bc ca 63 f6 cb 38 ae da 04 2e 2e 6f 9a d7 dd |...c..8.....o...|
+| fd b0 26 a7 2d b4 7c 6c b8 c1 44 8f fa b7 ab 59 |..&.-.|l..D....Y|
+| 32 9e ed c5 72 cf af 55 be 78 14 8d 97 78 bc e9 |2...r..U.x...x..|
+| 5d b6 d1 52 4f bf ba 4f a4 99 91 3d ff 7d 1c 3d |]..RO..O...=.}.=|
+| 78 e0 fa 27 e2 11 cb 94 13 52 be 8e 62 8a 8c f3 |x..'.....R..b...|
+| 25 7b 94 a1 1d a4 64 a9 a0 38 3a 02 5d c7 6d 38 |%{....d..8:.].m8|
+| 2d b8 ce a3 63 f1 f7 8a 9e 87 5f f0 b4 76 2f 7a |-...c....._..v/z|
+| ab 68 12 8c 9a 69 a0 8b eb c7 99 48 f5 53 ba 9f |.h...i.....H.S..|
+| 67 37 f3 a1 1b d2 de 74 f0 0d d5 83 ee eb 56 b2 |g7.....t......V.|
+| d1 aa a1 1e da cd a8 df fb de dd d7 e6 ee ff 52 |...............R|
+| f4 1f 6e 8c ec f3 85 f1 6b 39 41 36 c9 67 49 11 |..n.....k9A6.gI.|
+| d5 44 5d 2c ee 5c 39 26 cb d7 e7 db 17 de ef 17 |.D],.\9&........|
+| cd a1 1c 35 67 32 eb 7f 45 0f 31 64 c1 b7 7d 7f |...5g2..E.1d..}.|
+| f7 d0 55 71 63 57 db f5 07 97 77 b5 56 36 1e fc |..UqcW....w.V6..|
+| 9d 1c 0f 1e 3e 54 f3 09 55 d7 fd bf 29 b5 3f 87 |....>T..U...).?.|
+| ff 05 00 00                                     |....            |
+process_ssl_payload: found handle 0x555dea35a420 (http-over-tls)
+packet_from_server: is from server - TRUE
+
+dissect_ssl enter frame #34 (first time)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38a010, ssl_session = 0x555deb38b4e0
+  record: offset = 0, reported_length_remaining = 455
+dissect_ssl3_record: content_type 23 Application Data
+decrypt_ssl3_record: app_data len 450, ssl state 0x43F
+packet_from_server: is from server - FALSE
+decrypt_ssl3_record: using client decoder
+ssl_decrypt_record ciphertext len 450
+Ciphertext[450]:
+| c8 d2 cc 42 80 72 2e 8e cc f0 5f d5 ad a9 b1 d3 |...B.r...._.....|
+| 30 70 ff d5 1b 65 7b e9 32 31 37 c7 e5 3c 7d e6 |0p...e{.217..<}.|
+| 37 cd aa f0 80 5b 3f 8e c2 2b a4 6b b7 c9 88 aa |7....[?..+.k....|
+| 4a 9b 50 1d bb e6 59 0e e3 12 b1 6d d8 cc 81 d4 |J.P...Y....m....|
+| 0d 3b 45 1b e9 12 f8 1b 2a cf 2b 2a d9 3c 1b 42 |.;E.....*.+*.<.B|
+| b7 31 f7 6e c1 e6 73 47 2b 4e 81 d3 e7 95 9e bd |.1.n..sG+N......|
+| d4 e3 7d 1e 57 19 0a e1 40 28 ec 6b 8f e1 e7 fd |..}.W...@(.k....|
+| e8 4e 25 18 a5 d9 b4 f7 1d 13 6b 20 ee b0 80 76 |.N%.......k ...v|
+| 8e cf ef 1d f4 15 8b 16 79 13 51 bd 4b 26 ee 69 |........y.Q.K&.i|
+| d2 73 f1 0e 0a 22 21 fc 4f 25 0d e9 d6 3d 60 5a |.s..."!.O%...=`Z|
+| c7 12 c1 96 0d e7 62 c5 60 80 69 ae 9d 5a 2f 10 |......b.`.i..Z/.|
+| e5 d7 60 77 70 59 94 48 0b cb ba 3c ed 5d 57 3d |..`wpY.H...<.]W=|
+| ad bf 0b cd ab 40 d5 cf cb 4c 28 4f 3c d3 32 2d |.....@...L(O<.2-|
+| 31 61 6f 75 fc 3a 0e 72 e6 d8 b7 2d b8 f8 1c e1 |1aou.:.r...-....|
+| 32 21 b9 56 76 e0 60 a2 44 98 59 52 e9 97 31 79 |2!.Vv.`.D.YR..1y|
+| d2 0a 3d 57 f9 c3 06 66 91 7c 89 24 08 13 90 41 |..=W...f.|.$...A|
+| 07 cc 8d aa fc a1 65 5a 2d 47 8c cd 18 47 09 23 |......eZ-G...G.#|
+| 65 d5 a6 5b c8 77 36 2d 55 81 8e 4f 7f 50 26 d9 |e..[.w6-U..O.P&.|
+| 94 26 85 ff e9 00 fb a8 9b 48 89 b2 39 e4 f3 5b |.&.......H..9..[|
+| 03 16 df a9 d7 bb 33 67 c2 65 15 bb 07 7e 98 5b |......3g.e...~.[|
+| a5 a9 e1 34 0a 74 5f ef 5a b9 72 8d 9e ea 37 fe |...4.t_.Z.r...7.|
+| 9e 17 ae 17 af bb 19 2f 65 a6 67 3c e8 c4 17 97 |......./e.g<....|
+| fa 25 d6 26 3e e5 94 43 e8 fd 70 33 da 4d a2 3a |.%.&>..C..p3.M.:|
+| dd 00 5a a8 c6 8f e4 2c 75 d0 bf cb e0 b0 ea c1 |..Z....,u.......|
+| 15 38 3e ac 8b 50 02 e9 39 8d 4b 18 24 b6 c0 38 |.8>..P..9.K.$..8|
+| 08 2a a5 88 bb 0c 03 3f 84 e6 7e 32 7c 70 07 ba |.*.....?..~2|p..|
+| 69 3d 65 2c d0 15 61 dc 90 69 1d 87 6c b3 b9 97 |i=e,..a..i..l...|
+| 66 48 44 4d 67 1f 2a 37 5a 8b 9c 9f 75 4b 9c e7 |fHDMg.*7Z...uK..|
+| 53 fa                                           |S.              |
+nonce[12]:
+| 3e 64 e0 2e c8 d2 cc 42 80 72 2e 8e             |>d.....B.r..    |
+AAD[13]:
+| 00 00 00 00 00 00 00 01 17 03 03 01 aa          |.............   |
+auth_tag(OK)[16]:
+| 44 4d 67 1f 2a 37 5a 8b 9c 9f 75 4b 9c e7 53 fa |DMg.*7Z...uK..S.|
+Plaintext[426]:
+| 47 45 54 20 2f 73 74 61 72 74 65 72 2d 74 65 6d |GET /starter-tem|
+| 70 6c 61 74 65 2e 63 73 73 20 48 54 54 50 2f 31 |plate.css HTTP/1|
+| 2e 31 0d 0a 48 6f 73 74 3a 20 65 63 32 2d 31 38 |.1..Host: ec2-18|
+| 2d 32 32 33 2d 31 38 34 2d 32 30 30 2e 75 73 2d |-223-184-200.us-|
+| 65 61 73 74 2d 32 2e 63 6f 6d 70 75 74 65 2e 61 |east-2.compute.a|
+| 6d 61 7a 6f 6e 61 77 73 2e 63 6f 6d 0d 0a 55 73 |mazonaws.com..Us|
+| 65 72 2d 41 67 65 6e 74 3a 20 4d 6f 7a 69 6c 6c |er-Agent: Mozill|
+| 61 2f 35 2e 30 20 28 4d 61 63 69 6e 74 6f 73 68 |a/5.0 (Macintosh|
+| 3b 20 49 6e 74 65 6c 20 4d 61 63 20 4f 53 20 58 |; Intel Mac OS X|
+| 20 31 30 2e 31 34 3b 20 72 76 3a 36 38 2e 30 29 | 10.14; rv:68.0)|
+| 20 47 65 63 6b 6f 2f 32 30 31 30 30 31 30 31 20 | Gecko/20100101 |
+| 46 69 72 65 66 6f 78 2f 36 38 2e 30 0d 0a 41 63 |Firefox/68.0..Ac|
+| 63 65 70 74 3a 20 74 65 78 74 2f 63 73 73 2c 2a |cept: text/css,*|
+| 2f 2a 3b 71 3d 30 2e 31 0d 0a 41 63 63 65 70 74 |/*;q=0.1..Accept|
+| 2d 4c 61 6e 67 75 61 67 65 3a 20 65 6e 2d 55 53 |-Language: en-US|
+| 2c 65 6e 3b 71 3d 30 2e 35 0d 0a 41 63 63 65 70 |,en;q=0.5..Accep|
+| 74 2d 45 6e 63 6f 64 69 6e 67 3a 20 67 7a 69 70 |t-Encoding: gzip|
+| 2c 20 64 65 66 6c 61 74 65 2c 20 62 72 0d 0a 43 |, deflate, br..C|
+| 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 70 2d |onnection: keep-|
+| 61 6c 69 76 65 0d 0a 52 65 66 65 72 65 72 3a 20 |alive..Referer: |
+| 68 74 74 70 73 3a 2f 2f 65 63 32 2d 31 38 2d 32 |https://ec2-18-2|
+| 32 33 2d 31 38 34 2d 32 30 30 2e 75 73 2d 65 61 |23-184-200.us-ea|
+| 73 74 2d 32 2e 63 6f 6d 70 75 74 65 2e 61 6d 61 |st-2.compute.ama|
+| 7a 6f 6e 61 77 73 2e 63 6f 6d 2f 0d 0a 50 72 61 |zonaws.com/..Pra|
+| 67 6d 61 3a 20 6e 6f 2d 63 61 63 68 65 0d 0a 43 |gma: no-cache..C|
+| 61 63 68 65 2d 43 6f 6e 74 72 6f 6c 3a 20 6e 6f |ache-Control: no|
+| 2d 63 61 63 68 65 0d 0a 0d 0a                   |-cache....      |
+ssl_add_record_info stored decrypted record seq=0 nxtseq=426 flow=0x555deb38c1e0
+dissect_ssl_payload decrypted len 426
+decrypted app data fragment[426]:
+| 47 45 54 20 2f 73 74 61 72 74 65 72 2d 74 65 6d |GET /starter-tem|
+| 70 6c 61 74 65 2e 63 73 73 20 48 54 54 50 2f 31 |plate.css HTTP/1|
+| 2e 31 0d 0a 48 6f 73 74 3a 20 65 63 32 2d 31 38 |.1..Host: ec2-18|
+| 2d 32 32 33 2d 31 38 34 2d 32 30 30 2e 75 73 2d |-223-184-200.us-|
+| 65 61 73 74 2d 32 2e 63 6f 6d 70 75 74 65 2e 61 |east-2.compute.a|
+| 6d 61 7a 6f 6e 61 77 73 2e 63 6f 6d 0d 0a 55 73 |mazonaws.com..Us|
+| 65 72 2d 41 67 65 6e 74 3a 20 4d 6f 7a 69 6c 6c |er-Agent: Mozill|
+| 61 2f 35 2e 30 20 28 4d 61 63 69 6e 74 6f 73 68 |a/5.0 (Macintosh|
+| 3b 20 49 6e 74 65 6c 20 4d 61 63 20 4f 53 20 58 |; Intel Mac OS X|
+| 20 31 30 2e 31 34 3b 20 72 76 3a 36 38 2e 30 29 | 10.14; rv:68.0)|
+| 20 47 65 63 6b 6f 2f 32 30 31 30 30 31 30 31 20 | Gecko/20100101 |
+| 46 69 72 65 66 6f 78 2f 36 38 2e 30 0d 0a 41 63 |Firefox/68.0..Ac|
+| 63 65 70 74 3a 20 74 65 78 74 2f 63 73 73 2c 2a |cept: text/css,*|
+| 2f 2a 3b 71 3d 30 2e 31 0d 0a 41 63 63 65 70 74 |/*;q=0.1..Accept|
+| 2d 4c 61 6e 67 75 61 67 65 3a 20 65 6e 2d 55 53 |-Language: en-US|
+| 2c 65 6e 3b 71 3d 30 2e 35 0d 0a 41 63 63 65 70 |,en;q=0.5..Accep|
+| 74 2d 45 6e 63 6f 64 69 6e 67 3a 20 67 7a 69 70 |t-Encoding: gzip|
+| 2c 20 64 65 66 6c 61 74 65 2c 20 62 72 0d 0a 43 |, deflate, br..C|
+| 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 70 2d |onnection: keep-|
+| 61 6c 69 76 65 0d 0a 52 65 66 65 72 65 72 3a 20 |alive..Referer: |
+| 68 74 74 70 73 3a 2f 2f 65 63 32 2d 31 38 2d 32 |https://ec2-18-2|
+| 32 33 2d 31 38 34 2d 32 30 30 2e 75 73 2d 65 61 |23-184-200.us-ea|
+| 73 74 2d 32 2e 63 6f 6d 70 75 74 65 2e 61 6d 61 |st-2.compute.ama|
+| 7a 6f 6e 61 77 73 2e 63 6f 6d 2f 0d 0a 50 72 61 |zonaws.com/..Pra|
+| 67 6d 61 3a 20 6e 6f 2d 63 61 63 68 65 0d 0a 43 |gma: no-cache..C|
+| 61 63 68 65 2d 43 6f 6e 74 72 6f 6c 3a 20 6e 6f |ache-Control: no|
+| 2d 63 61 63 68 65 0d 0a 0d 0a                   |-cache....      |
+process_ssl_payload: no heuristics dissector, falling back to handle 0x555dea35a420 (http-over-tls)
+process_ssl_payload: found handle 0x555dea35a420 (http-over-tls)
+packet_from_server: is from server - FALSE
+
+dissect_ssl enter frame #35 (first time)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38a010, ssl_session = 0x555deb38b4e0
+  record: offset = 0, reported_length_remaining = 510
+dissect_ssl3_record: content_type 23 Application Data
+decrypt_ssl3_record: app_data len 505, ssl state 0x43F
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+ssl_decrypt_record ciphertext len 505
+Ciphertext[505]:
+| cf b9 35 98 5d 66 63 0f ed a1 9b b5 47 85 d2 06 |..5.]fc.....G...|
+| b9 cb 57 8c 6a 82 49 e5 f3 78 e7 13 3b b0 2a 05 |..W.j.I..x..;.*.|
+| 44 7e 58 12 6c 58 bd 39 65 59 a2 40 66 e0 10 e9 |D~X.lX.9eY.@f...|
+| 58 47 f6 66 ef e5 a1 7c ef 6b a2 6c f2 f4 f9 c0 |XG.f...|.k.l....|
+| 24 33 d3 c7 3a 67 fe 03 59 f9 fd 29 65 7d ab 09 |$3..:g..Y..)e}..|
+| ff 02 3f 4b 27 09 1f e3 db 8e 04 de 4a 90 05 19 |..?K'.......J...|
+| 5d 58 e0 3b 37 ae 00 63 77 d8 df cc 10 cf 24 91 |]X.;7..cw.....$.|
+| 50 58 0e 16 fc 5f 29 37 e0 f6 c5 50 5d c8 0c 42 |PX..._)7...P]..B|
+| 9e b5 24 af d5 8a 12 8d b2 e4 11 78 4b b3 b9 4f |..$........xK..O|
+| fd f9 fb 33 1f 8c 7e 47 fc c9 47 cb 02 54 7a c3 |...3..~G..G..Tz.|
+| 06 a0 63 36 9b 4f ab b7 11 2a d5 35 e9 c7 1b a0 |..c6.O...*.5....|
+| 51 54 dc d7 84 66 b2 1b 14 73 bc 68 0e a8 b2 e0 |QT...f...s.h....|
+| 5b 42 7f 7e 9d bc 7c ac 10 b8 47 db ee 61 80 4c |[B.~..|...G..a.L|
+| 8a 38 e2 75 a9 fb 40 d2 32 bb 8e e7 fb 3c 39 95 |.8.u..@.2....<9.|
+| 4a bc 17 9b 72 23 91 c8 fe cd 0c 92 a6 35 3a 69 |J...r#.......5:i|
+| e8 59 20 c5 66 47 d1 20 80 99 5f 91 9d 13 64 81 |.Y .fG. .._...d.|
+| b5 be 22 2a b9 31 28 5b 5e d7 f4 f6 e4 0f cb 9a |.."*.1([^.......|
+| b9 1c 9b 4b 80 8f 1d 0f 36 22 b4 a2 59 b9 a8 f7 |...K....6"..Y...|
+| bd 76 f0 af bf ae 03 8d 04 e6 f2 e9 8b 76 03 33 |.v...........v.3|
+| 69 4c e9 16 cb e7 30 45 cc a5 7a 7e 23 ca a0 08 |iL....0E..z~#...|
+| dc 62 7c eb a9 5d 25 50 e8 6f f8 0a 4d 9e ca 6c |.b|..]%P.o..M..l|
+| ed af b1 07 ae d0 36 da 13 58 6b 43 77 b5 69 18 |......6..XkCw.i.|
+| b4 8c be e8 bc b6 8e ba 0c 4f 88 ba e3 3b 99 f7 |.........O...;..|
+| 41 c9 9d d3 f5 b0 31 62 c9 b4 f7 da c1 b9 b9 e2 |A.....1b........|
+| 1d c1 c9 83 e5 0f f8 03 0b b1 14 3a 93 f7 67 70 |...........:..gp|
+| ec 91 f2 80 76 34 d9 35 1f f7 c6 01 be f5 4b 66 |....v4.5......Kf|
+| aa d6 ac 9a c0 89 bc 51 4b 0f 2d 2d d9 7e 58 0b |.......QK.--.~X.|
+| c9 b2 36 85 e4 a7 40 17 0b 60 1e af 24 fa db 76 |..6...@..`..$..v|
+| c3 aa 00 d0 d2 bf 39 96 27 73 63 43 3f 8a 35 6b |......9.'scC?.5k|
+| 0a 55 d2 fe cb e6 9a 5c d7 7f 05 8f ea 3b 4c 22 |.U.....\.....;L"|
+| d8 77 b5 6e 65 62 64 09 56 25 9c a7 d8 ad e2 0f |.w.nebd.V%......|
+| 22 ac 9e cf a9 2b 6d dc f9                      |"....+m..       |
+nonce[12]:
+| 17 a3 9e d4 cf b9 35 98 5d 66 63 0f             |......5.]fc.    |
+AAD[13]:
+| 00 00 00 00 00 00 00 01 17 03 03 01 e1          |.............   |
+auth_tag(OK)[16]:
+| 25 9c a7 d8 ad e2 0f 22 ac 9e cf a9 2b 6d dc f9 |%......"....+m..|
+Plaintext[481]:
+| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+| 0a 44 61 74 65 3a 20 46 72 69 2c 20 32 33 20 41 |.Date: Fri, 23 A|
+| 75 67 20 32 30 31 39 20 31 35 3a 35 36 3a 33 36 |ug 2019 15:56:36|
+| 20 47 4d 54 0d 0a 53 65 72 76 65 72 3a 20 41 70 | GMT..Server: Ap|
+| 61 63 68 65 2f 32 2e 34 2e 32 39 20 28 55 62 75 |ache/2.4.29 (Ubu|
+| 6e 74 75 29 0d 0a 4c 61 73 74 2d 4d 6f 64 69 66 |ntu)..Last-Modif|
+| 69 65 64 3a 20 4d 6f 6e 2c 20 31 32 20 41 75 67 |ied: Mon, 12 Aug|
+| 20 32 30 31 39 20 31 36 3a 34 37 3a 30 35 20 47 | 2019 16:47:05 G|
+| 4d 54 0d 0a 45 54 61 67 3a 20 22 36 32 2d 35 38 |MT..ETag: "62-58|
+| 66 65 65 34 36 32 62 66 32 32 37 2d 67 7a 69 70 |fee462bf227-gzip|
+| 22 0d 0a 41 63 63 65 70 74 2d 52 61 6e 67 65 73 |"..Accept-Ranges|
+| 3a 20 62 79 74 65 73 0d 0a 56 61 72 79 3a 20 41 |: bytes..Vary: A|
+| 63 63 65 70 74 2d 45 6e 63 6f 64 69 6e 67 0d 0a |ccept-Encoding..|
+| 43 6f 6e 74 65 6e 74 2d 45 6e 63 6f 64 69 6e 67 |Content-Encoding|
+| 3a 20 67 7a 69 70 0d 0a 50 69 63 6f 2d 46 6c 61 |: gzip..Pico-Fla|
+| 67 3a 20 70 69 63 6f 43 54 46 7b 6e 6f 6e 67 73 |g: picoCTF{nongs|
+| 68 69 6d 2e 73 68 72 69 6d 70 2e 63 72 61 63 6b |him.shrimp.crack|
+| 65 72 73 7d 0d 0a 43 6f 6e 74 65 6e 74 2d 4c 65 |ers}..Content-Le|
+| 6e 67 74 68 3a 20 31 30 30 0d 0a 4b 65 65 70 2d |ngth: 100..Keep-|
+| 41 6c 69 76 65 3a 20 74 69 6d 65 6f 75 74 3d 35 |Alive: timeout=5|
+| 2c 20 6d 61 78 3d 31 30 30 0d 0a 43 6f 6e 6e 65 |, max=100..Conne|
+| 63 74 69 6f 6e 3a 20 4b 65 65 70 2d 41 6c 69 76 |ction: Keep-Aliv|
+| 65 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a |e..Content-Type:|
+| 20 74 65 78 74 2f 63 73 73 0d 0a 0d 0a 1f 8b 08 | text/css.......|
+| 00 00 00 00 00 00 03 4b ca 4f a9 54 a8 e6 52 50 |.......K.O.T..RP|
+| 28 48 4c 49 c9 cc 4b d7 2d c9 2f b0 52 30 2d 4a |(HLI..K.-./.R0-J|
+| cd b5 e6 aa e5 d2 2b 2e 49 2c 2a 49 2d d2 2d 49 |......+.I,*I-.-I|
+| cd 2d c8 49 2c 49 45 56 6a a5 60 0c 54 a6 60 a8 |.-.I,IEVj.`.T.`.|
+| 07 51 ad a0 50 92 5a 51 a2 9b 98 93 99 9e 67 a5 |.Q..P.ZQ......g.|
+| 90 9c 9a 07 d4 07 32 03 00 20 cc fb a0 62 00 00 |......2.. ...b..|
+| 00                                              |.               |
+ssl_add_record_info stored decrypted record seq=0 nxtseq=481 flow=0x555deb38c240
+dissect_ssl_payload decrypted len 481
+decrypted app data fragment[481]:
+| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+| 0a 44 61 74 65 3a 20 46 72 69 2c 20 32 33 20 41 |.Date: Fri, 23 A|
+| 75 67 20 32 30 31 39 20 31 35 3a 35 36 3a 33 36 |ug 2019 15:56:36|
+| 20 47 4d 54 0d 0a 53 65 72 76 65 72 3a 20 41 70 | GMT..Server: Ap|
+| 61 63 68 65 2f 32 2e 34 2e 32 39 20 28 55 62 75 |ache/2.4.29 (Ubu|
+| 6e 74 75 29 0d 0a 4c 61 73 74 2d 4d 6f 64 69 66 |ntu)..Last-Modif|
+| 69 65 64 3a 20 4d 6f 6e 2c 20 31 32 20 41 75 67 |ied: Mon, 12 Aug|
+| 20 32 30 31 39 20 31 36 3a 34 37 3a 30 35 20 47 | 2019 16:47:05 G|
+| 4d 54 0d 0a 45 54 61 67 3a 20 22 36 32 2d 35 38 |MT..ETag: "62-58|
+| 66 65 65 34 36 32 62 66 32 32 37 2d 67 7a 69 70 |fee462bf227-gzip|
+| 22 0d 0a 41 63 63 65 70 74 2d 52 61 6e 67 65 73 |"..Accept-Ranges|
+| 3a 20 62 79 74 65 73 0d 0a 56 61 72 79 3a 20 41 |: bytes..Vary: A|
+| 63 63 65 70 74 2d 45 6e 63 6f 64 69 6e 67 0d 0a |ccept-Encoding..|
+| 43 6f 6e 74 65 6e 74 2d 45 6e 63 6f 64 69 6e 67 |Content-Encoding|
+| 3a 20 67 7a 69 70 0d 0a 50 69 63 6f 2d 46 6c 61 |: gzip..Pico-Fla|
+| 67 3a 20 70 69 63 6f 43 54 46 7b 6e 6f 6e 67 73 |g: picoCTF{nongs|
+| 68 69 6d 2e 73 68 72 69 6d 70 2e 63 72 61 63 6b |him.shrimp.crack|
+| 65 72 73 7d 0d 0a 43 6f 6e 74 65 6e 74 2d 4c 65 |ers}..Content-Le|
+| 6e 67 74 68 3a 20 31 30 30 0d 0a 4b 65 65 70 2d |ngth: 100..Keep-|
+| 41 6c 69 76 65 3a 20 74 69 6d 65 6f 75 74 3d 35 |Alive: timeout=5|
+| 2c 20 6d 61 78 3d 31 30 30 0d 0a 43 6f 6e 6e 65 |, max=100..Conne|
+| 63 74 69 6f 6e 3a 20 4b 65 65 70 2d 41 6c 69 76 |ction: Keep-Aliv|
+| 65 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a |e..Content-Type:|
+| 20 74 65 78 74 2f 63 73 73 0d 0a 0d 0a 1f 8b 08 | text/css.......|
+| 00 00 00 00 00 00 03 4b ca 4f a9 54 a8 e6 52 50 |.......K.O.T..RP|
+| 28 48 4c 49 c9 cc 4b d7 2d c9 2f b0 52 30 2d 4a |(HLI..K.-./.R0-J|
+| cd b5 e6 aa e5 d2 2b 2e 49 2c 2a 49 2d d2 2d 49 |......+.I,*I-.-I|
+| cd 2d c8 49 2c 49 45 56 6a a5 60 0c 54 a6 60 a8 |.-.I,IEVj.`.T.`.|
+| 07 51 ad a0 50 92 5a 51 a2 9b 98 93 99 9e 67 a5 |.Q..P.ZQ......g.|
+| 90 9c 9a 07 d4 07 32 03 00 20 cc fb a0 62 00 00 |......2.. ...b..|
+| 00                                              |.               |
+process_ssl_payload: found handle 0x555dea35a420 (http-over-tls)
+packet_from_server: is from server - TRUE
+
+dissect_ssl enter frame #37 (first time)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38a010, ssl_session = 0x555deb38b4e0
+  record: offset = 0, reported_length_remaining = 372
+dissect_ssl3_record: content_type 23 Application Data
+decrypt_ssl3_record: app_data len 367, ssl state 0x43F
+packet_from_server: is from server - FALSE
+decrypt_ssl3_record: using client decoder
+ssl_decrypt_record ciphertext len 367
+Ciphertext[367]:
+| c8 d2 cc 42 80 72 2e 8f c7 c8 ed 5f 61 61 db 03 |...B.r....._aa..|
+| 05 db 19 4d 0b cc 26 82 4d b3 ff 6f 9c a7 0a e3 |...M..&.M..o....|
+| 79 3d 2a 79 d1 a2 aa f9 df 35 c6 4c af 6c 6d 34 |y=*y.....5.L.lm4|
+| 91 ca 84 df 93 d7 2d 17 2a ec 27 48 33 48 aa 1c |......-.*.'H3H..|
+| 4f 51 53 ff f0 b1 27 db d1 5f bd 3a 35 22 83 4c |OQS...'.._.:5".L|
+| f1 94 20 34 29 0a 05 3b f9 63 e8 1a cd 70 de 67 |.. 4)..;.c...p.g|
+| 3f 02 84 e9 fc 35 d9 39 c8 16 33 1c 27 e0 6c e7 |?....5.9..3.'.l.|
+| 01 86 8b 8a e8 95 d2 25 f9 3d ce f9 a1 e6 81 bc |.......%.=......|
+| fa cf d9 a6 ea 1e 3d 0d 34 d6 cc 4e 74 f1 65 99 |......=.4..Nt.e.|
+| 36 05 0c 05 e2 19 4e 4f e5 f6 58 f7 5e c1 3e ff |6.....NO..X.^.>.|
+| 68 41 cc 3a b3 0a 4a 7e 48 48 39 b4 ae d4 12 0f |hA.:..J~HH9.....|
+| 80 ee 60 6d ae fb 2a a3 47 8c cf f1 52 64 41 f0 |..`m..*.G...RdA.|
+| df fe 06 60 76 4f 6f 04 5e d2 c6 a8 23 09 0e df |...`vOo.^...#...|
+| 7e 2e 58 96 e3 e9 c2 fd db f6 76 b1 0f 2f 7a 89 |~.X.......v../z.|
+| a2 f8 a2 5d 2f 2a 4c ac b2 5d 2d ab cd 47 58 93 |...]/*L..]-..GX.|
+| a4 ae f3 20 e4 45 c8 1e fc 2d 34 a2 bb f7 12 93 |... .E...-4.....|
+| 89 a8 4b e4 f4 e9 19 89 f6 9f f8 52 ee 2a 91 77 |..K........R.*.w|
+| 15 8d 83 77 2e df d1 92 b8 fb c8 9e a9 26 8f ef |...w.........&..|
+| 5c 0a 66 fa 0d 5d 40 6e 73 18 a1 00 bb 1b 09 95 |\.f..]@ns.......|
+| 5c 83 9e e0 4d 32 f3 89 96 67 65 4d 14 29 0a 9b |\...M2...geM.)..|
+| 0b ea 74 4e a2 dc 86 02 06 44 b7 ff d7 97 87 7c |..tN.....D.....||
+| f2 1a ad 7b b7 ca f6 50 11 14 65 6e 74 6f 78 6f |...{...P..entoxo|
+| 11 8e 18 25 d4 84 70 6f 9a 4f a9 bb 5a 7b 0d    |...%..po.O..Z{. |
+nonce[12]:
+| 3e 64 e0 2e c8 d2 cc 42 80 72 2e 8f             |>d.....B.r..    |
+AAD[13]:
+| 00 00 00 00 00 00 00 02 17 03 03 01 57          |............W   |
+auth_tag(OK)[16]:
+| 6f 11 8e 18 25 d4 84 70 6f 9a 4f a9 bb 5a 7b 0d |o...%..po.O..Z{.|
+Plaintext[343]:
+| 47 45 54 20 2f 66 61 76 69 63 6f 6e 2e 69 63 6f |GET /favicon.ico|
+| 20 48 54 54 50 2f 31 2e 31 0d 0a 48 6f 73 74 3a | HTTP/1.1..Host:|
+| 20 65 63 32 2d 31 38 2d 32 32 33 2d 31 38 34 2d | ec2-18-223-184-|
+| 32 30 30 2e 75 73 2d 65 61 73 74 2d 32 2e 63 6f |200.us-east-2.co|
+| 6d 70 75 74 65 2e 61 6d 61 7a 6f 6e 61 77 73 2e |mpute.amazonaws.|
+| 63 6f 6d 0d 0a 55 73 65 72 2d 41 67 65 6e 74 3a |com..User-Agent:|
+| 20 4d 6f 7a 69 6c 6c 61 2f 35 2e 30 20 28 4d 61 | Mozilla/5.0 (Ma|
+| 63 69 6e 74 6f 73 68 3b 20 49 6e 74 65 6c 20 4d |cintosh; Intel M|
+| 61 63 20 4f 53 20 58 20 31 30 2e 31 34 3b 20 72 |ac OS X 10.14; r|
+| 76 3a 36 38 2e 30 29 20 47 65 63 6b 6f 2f 32 30 |v:68.0) Gecko/20|
+| 31 30 30 31 30 31 20 46 69 72 65 66 6f 78 2f 36 |100101 Firefox/6|
+| 38 2e 30 0d 0a 41 63 63 65 70 74 3a 20 69 6d 61 |8.0..Accept: ima|
+| 67 65 2f 77 65 62 70 2c 2a 2f 2a 0d 0a 41 63 63 |ge/webp,*/*..Acc|
+| 65 70 74 2d 4c 61 6e 67 75 61 67 65 3a 20 65 6e |ept-Language: en|
+| 2d 55 53 2c 65 6e 3b 71 3d 30 2e 35 0d 0a 41 63 |-US,en;q=0.5..Ac|
+| 63 65 70 74 2d 45 6e 63 6f 64 69 6e 67 3a 20 67 |cept-Encoding: g|
+| 7a 69 70 2c 20 64 65 66 6c 61 74 65 2c 20 62 72 |zip, deflate, br|
+| 0d 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 |..Connection: ke|
+| 65 70 2d 61 6c 69 76 65 0d 0a 50 72 61 67 6d 61 |ep-alive..Pragma|
+| 3a 20 6e 6f 2d 63 61 63 68 65 0d 0a 43 61 63 68 |: no-cache..Cach|
+| 65 2d 43 6f 6e 74 72 6f 6c 3a 20 6e 6f 2d 63 61 |e-Control: no-ca|
+| 63 68 65 0d 0a 0d 0a                            |che....         |
+ssl_add_record_info stored decrypted record seq=426 nxtseq=769 flow=0x555deb38c1e0
+dissect_ssl_payload decrypted len 343
+decrypted app data fragment[343]:
+| 47 45 54 20 2f 66 61 76 69 63 6f 6e 2e 69 63 6f |GET /favicon.ico|
+| 20 48 54 54 50 2f 31 2e 31 0d 0a 48 6f 73 74 3a | HTTP/1.1..Host:|
+| 20 65 63 32 2d 31 38 2d 32 32 33 2d 31 38 34 2d | ec2-18-223-184-|
+| 32 30 30 2e 75 73 2d 65 61 73 74 2d 32 2e 63 6f |200.us-east-2.co|
+| 6d 70 75 74 65 2e 61 6d 61 7a 6f 6e 61 77 73 2e |mpute.amazonaws.|
+| 63 6f 6d 0d 0a 55 73 65 72 2d 41 67 65 6e 74 3a |com..User-Agent:|
+| 20 4d 6f 7a 69 6c 6c 61 2f 35 2e 30 20 28 4d 61 | Mozilla/5.0 (Ma|
+| 63 69 6e 74 6f 73 68 3b 20 49 6e 74 65 6c 20 4d |cintosh; Intel M|
+| 61 63 20 4f 53 20 58 20 31 30 2e 31 34 3b 20 72 |ac OS X 10.14; r|
+| 76 3a 36 38 2e 30 29 20 47 65 63 6b 6f 2f 32 30 |v:68.0) Gecko/20|
+| 31 30 30 31 30 31 20 46 69 72 65 66 6f 78 2f 36 |100101 Firefox/6|
+| 38 2e 30 0d 0a 41 63 63 65 70 74 3a 20 69 6d 61 |8.0..Accept: ima|
+| 67 65 2f 77 65 62 70 2c 2a 2f 2a 0d 0a 41 63 63 |ge/webp,*/*..Acc|
+| 65 70 74 2d 4c 61 6e 67 75 61 67 65 3a 20 65 6e |ept-Language: en|
+| 2d 55 53 2c 65 6e 3b 71 3d 30 2e 35 0d 0a 41 63 |-US,en;q=0.5..Ac|
+| 63 65 70 74 2d 45 6e 63 6f 64 69 6e 67 3a 20 67 |cept-Encoding: g|
+| 7a 69 70 2c 20 64 65 66 6c 61 74 65 2c 20 62 72 |zip, deflate, br|
+| 0d 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 |..Connection: ke|
+| 65 70 2d 61 6c 69 76 65 0d 0a 50 72 61 67 6d 61 |ep-alive..Pragma|
+| 3a 20 6e 6f 2d 63 61 63 68 65 0d 0a 43 61 63 68 |: no-cache..Cach|
+| 65 2d 43 6f 6e 74 72 6f 6c 3a 20 6e 6f 2d 63 61 |e-Control: no-ca|
+| 63 68 65 0d 0a 0d 0a                            |che....         |
+process_ssl_payload: found handle 0x555dea35a420 (http-over-tls)
+packet_from_server: is from server - FALSE
+
+dissect_ssl enter frame #38 (first time)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38a010, ssl_session = 0x555deb38b4e0
+  record: offset = 0, reported_length_remaining = 571
+dissect_ssl3_record: content_type 23 Application Data
+decrypt_ssl3_record: app_data len 566, ssl state 0x43F
+packet_from_server: is from server - TRUE
+decrypt_ssl3_record: using server decoder
+ssl_decrypt_record ciphertext len 566
+Ciphertext[566]:
+| cf b9 35 98 5d 66 63 10 dd c6 05 2c ab 54 3d f6 |..5.]fc....,.T=.|
+| ee 75 82 ae 76 dc f7 30 47 db 3f ce bd ae ac 21 |.u..v..0G.?....!|
+| 61 6d 9e 14 ab 2b 0c 67 28 35 4f 5d 82 34 5c 07 |am...+.g(5O].4\.|
+| 6f f2 b0 28 0f 7c 47 9a 0f 1b 58 07 ab a5 b5 09 |o..(.|G...X.....|
+| fb 48 72 a4 a7 ea c4 5f df 93 ba 6a 35 90 e4 7b |.Hr...._...j5..{|
+| c8 a1 6a 1c ed 57 01 21 fd 2c 7d 37 89 fe e4 1f |..j..W.!.,}7....|
+| f4 77 cb 75 30 59 b0 97 a2 0a 70 c5 8b 67 fe 79 |.w.u0Y....p..g.y|
+| 1e 7e 6d a0 c0 2e 9e 25 d3 be e6 6d 0c 77 76 40 |.~m....%...m.wv@|
+| 4f 20 fc 6f 0d 37 be be 97 e7 f7 29 b6 ac 84 92 |O .o.7.....)....|
+| 55 87 ed 19 54 31 f2 38 72 99 7f 23 c1 9d 24 5a |U...T1.8r..#..$Z|
+| 78 94 71 12 72 a1 13 31 3f bb 62 d6 ec bd 60 fa |x.q.r..1?.b...`.|
+| 3b 07 ed 30 00 18 68 f4 7f c0 49 c0 ce 74 1d 64 |;..0..h...I..t.d|
+| a8 56 ad 8c d8 1f 0c fb 26 e3 e8 2d d4 53 36 28 |.V......&..-.S6(|
+| ad 33 06 97 c0 cf 71 16 42 b3 12 74 25 f5 b3 14 |.3....q.B..t%...|
+| e0 bd 9f 20 a5 d4 4c 6b 70 4e b5 1e 5c 42 c7 46 |... ..LkpN..\B.F|
+| 48 28 3d 4a 57 a9 1c e4 c6 77 16 ce 4e e8 05 38 |H(=JW....w..N..8|
+| 96 5b 60 06 3a b2 5a d5 08 03 a1 59 78 4b fa 04 |.[`.:.Z....YxK..|
+| 23 b9 8d 66 ab be b6 dc 72 e6 57 f6 a9 da 14 d2 |#..f....r.W.....|
+| 16 5c 7f e8 fb cd 77 d2 b7 5e 8e fd 17 88 24 c4 |.\....w..^....$.|
+| 4f c1 80 ec 94 2e 54 a1 a8 4b 47 57 f2 e2 4f 17 |O.....T..KGW..O.|
+| e1 90 60 30 ab d9 74 b1 c8 8e 1d 1f 4a 1b 6c 49 |..`0..t.....J.lI|
+| 4d 71 bb 08 b8 30 44 d4 ad ea b0 ac 8c ab 35 ee |Mq...0D.......5.|
+| c6 95 fb f6 e2 c2 c5 bb 02 ae de 35 21 89 af d9 |...........5!...|
+| 7c 06 29 ab 98 15 47 db 8d 94 a1 81 dd 80 0e a1 ||.)...G.........|
+| 84 18 aa b2 dd 62 21 5d 19 bc 89 29 4e aa fe 2c |.....b!]...)N..,|
+| ef 10 69 e7 7a 62 6e 9c 3d 53 e6 31 40 c4 45 8e |..i.zbn.=S.1@.E.|
+| 5e 2a 46 59 54 ab 2a 0e d4 e1 d1 3b a7 ba e1 e3 |^*FYT.*....;....|
+| 3f 3e bc 0d 67 61 4f 4f d2 ab fa 9e 46 9b 93 c8 |?>..gaOO....F...|
+| a3 8f 3a ec 16 f1 07 9c 10 c9 1f 28 6a 9c 75 5a |..:........(j.uZ|
+| 55 be 1b 87 8d 46 09 9a 49 ab 85 4c 4b 15 71 29 |U....F..I..LK.q)|
+| 45 78 e4 2e 90 a8 fe e8 0f a0 7f 90 55 3f a8 74 |Ex..........U?.t|
+| 68 a0 77 c8 20 67 92 fe 80 75 38 8f 36 b6 79 b5 |h.w. g...u8.6.y.|
+| 27 da 67 56 03 99 7a 11 55 4f b3 7d 45 0d 27 f4 |'.gV..z.UO.}E.'.|
+| 1f 37 b5 e5 e2 73 c8 91 e9 9b 61 de f3 0b c7 bd |.7...s....a.....|
+| c6 6e c6 88 cc 9c 87 b7 39 f8 46 ab 87 d3 51 31 |.n......9.F...Q1|
+| e1 bd cd 7d 12 d1                               |...}..          |
+nonce[12]:
+| 17 a3 9e d4 cf b9 35 98 5d 66 63 10             |......5.]fc.    |
+AAD[13]:
+| 00 00 00 00 00 00 00 02 17 03 03 02 1e          |.............   |
+auth_tag(OK)[16]:
+| 87 b7 39 f8 46 ab 87 d3 51 31 e1 bd cd 7d 12 d1 |..9.F...Q1...}..|
+Plaintext[542]:
+| 48 54 54 50 2f 31 2e 31 20 34 30 34 20 4e 6f 74 |HTTP/1.1 404 Not|
+| 20 46 6f 75 6e 64 0d 0a 44 61 74 65 3a 20 46 72 | Found..Date: Fr|
+| 69 2c 20 32 33 20 41 75 67 20 32 30 31 39 20 31 |i, 23 Aug 2019 1|
+| 35 3a 35 36 3a 33 37 20 47 4d 54 0d 0a 53 65 72 |5:56:37 GMT..Ser|
+| 76 65 72 3a 20 41 70 61 63 68 65 2f 32 2e 34 2e |ver: Apache/2.4.|
+| 32 39 20 28 55 62 75 6e 74 75 29 0d 0a 43 6f 6e |29 (Ubuntu)..Con|
+| 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20 33 32 36 |tent-Length: 326|
+| 0d 0a 4b 65 65 70 2d 41 6c 69 76 65 3a 20 74 69 |..Keep-Alive: ti|
+| 6d 65 6f 75 74 3d 35 2c 20 6d 61 78 3d 39 39 0d |meout=5, max=99.|
+| 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 4b 65 65 |.Connection: Kee|
+| 70 2d 41 6c 69 76 65 0d 0a 43 6f 6e 74 65 6e 74 |p-Alive..Content|
+| 2d 54 79 70 65 3a 20 74 65 78 74 2f 68 74 6d 6c |-Type: text/html|
+| 3b 20 63 68 61 72 73 65 74 3d 69 73 6f 2d 38 38 |; charset=iso-88|
+| 35 39 2d 31 0d 0a 0d 0a 3c 21 44 4f 43 54 59 50 |59-1....<!DOCTYP|
+| 45 20 48 54 4d 4c 20 50 55 42 4c 49 43 20 22 2d |E HTML PUBLIC "-|
+| 2f 2f 49 45 54 46 2f 2f 44 54 44 20 48 54 4d 4c |//IETF//DTD HTML|
+| 20 32 2e 30 2f 2f 45 4e 22 3e 0a 3c 68 74 6d 6c | 2.0//EN">.<html|
+| 3e 3c 68 65 61 64 3e 0a 3c 74 69 74 6c 65 3e 34 |><head>.<title>4|
+| 30 34 20 4e 6f 74 20 46 6f 75 6e 64 3c 2f 74 69 |04 Not Found</ti|
+| 74 6c 65 3e 0a 3c 2f 68 65 61 64 3e 3c 62 6f 64 |tle>.</head><bod|
+| 79 3e 0a 3c 68 31 3e 4e 6f 74 20 46 6f 75 6e 64 |y>.<h1>Not Found|
+| 3c 2f 68 31 3e 0a 3c 70 3e 54 68 65 20 72 65 71 |</h1>.<p>The req|
+| 75 65 73 74 65 64 20 55 52 4c 20 2f 66 61 76 69 |uested URL /favi|
+| 63 6f 6e 2e 69 63 6f 20 77 61 73 20 6e 6f 74 20 |con.ico was not |
+| 66 6f 75 6e 64 20 6f 6e 20 74 68 69 73 20 73 65 |found on this se|
+| 72 76 65 72 2e 3c 2f 70 3e 0a 3c 68 72 3e 0a 3c |rver.</p>.<hr>.<|
+| 61 64 64 72 65 73 73 3e 41 70 61 63 68 65 2f 32 |address>Apache/2|
+| 2e 34 2e 32 39 20 28 55 62 75 6e 74 75 29 20 53 |.4.29 (Ubuntu) S|
+| 65 72 76 65 72 20 61 74 20 65 63 32 2d 31 38 2d |erver at ec2-18-|
+| 32 32 33 2d 31 38 34 2d 32 30 30 2e 75 73 2d 65 |223-184-200.us-e|
+| 61 73 74 2d 32 2e 63 6f 6d 70 75 74 65 2e 61 6d |ast-2.compute.am|
+| 61 7a 6f 6e 61 77 73 2e 63 6f 6d 20 50 6f 72 74 |azonaws.com Port|
+| 20 34 34 33 3c 2f 61 64 64 72 65 73 73 3e 0a 3c | 443</address>.<|
+| 2f 62 6f 64 79 3e 3c 2f 68 74 6d 6c 3e 0a       |/body></html>.  |
+ssl_add_record_info stored decrypted record seq=481 nxtseq=1023 flow=0x555deb38c240
+dissect_ssl_payload decrypted len 542
+decrypted app data fragment[542]:
+| 48 54 54 50 2f 31 2e 31 20 34 30 34 20 4e 6f 74 |HTTP/1.1 404 Not|
+| 20 46 6f 75 6e 64 0d 0a 44 61 74 65 3a 20 46 72 | Found..Date: Fr|
+| 69 2c 20 32 33 20 41 75 67 20 32 30 31 39 20 31 |i, 23 Aug 2019 1|
+| 35 3a 35 36 3a 33 37 20 47 4d 54 0d 0a 53 65 72 |5:56:37 GMT..Ser|
+| 76 65 72 3a 20 41 70 61 63 68 65 2f 32 2e 34 2e |ver: Apache/2.4.|
+| 32 39 20 28 55 62 75 6e 74 75 29 0d 0a 43 6f 6e |29 (Ubuntu)..Con|
+| 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20 33 32 36 |tent-Length: 326|
+| 0d 0a 4b 65 65 70 2d 41 6c 69 76 65 3a 20 74 69 |..Keep-Alive: ti|
+| 6d 65 6f 75 74 3d 35 2c 20 6d 61 78 3d 39 39 0d |meout=5, max=99.|
+| 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 4b 65 65 |.Connection: Kee|
+| 70 2d 41 6c 69 76 65 0d 0a 43 6f 6e 74 65 6e 74 |p-Alive..Content|
+| 2d 54 79 70 65 3a 20 74 65 78 74 2f 68 74 6d 6c |-Type: text/html|
+| 3b 20 63 68 61 72 73 65 74 3d 69 73 6f 2d 38 38 |; charset=iso-88|
+| 35 39 2d 31 0d 0a 0d 0a 3c 21 44 4f 43 54 59 50 |59-1....<!DOCTYP|
+| 45 20 48 54 4d 4c 20 50 55 42 4c 49 43 20 22 2d |E HTML PUBLIC "-|
+| 2f 2f 49 45 54 46 2f 2f 44 54 44 20 48 54 4d 4c |//IETF//DTD HTML|
+| 20 32 2e 30 2f 2f 45 4e 22 3e 0a 3c 68 74 6d 6c | 2.0//EN">.<html|
+| 3e 3c 68 65 61 64 3e 0a 3c 74 69 74 6c 65 3e 34 |><head>.<title>4|
+| 30 34 20 4e 6f 74 20 46 6f 75 6e 64 3c 2f 74 69 |04 Not Found</ti|
+| 74 6c 65 3e 0a 3c 2f 68 65 61 64 3e 3c 62 6f 64 |tle>.</head><bod|
+| 79 3e 0a 3c 68 31 3e 4e 6f 74 20 46 6f 75 6e 64 |y>.<h1>Not Found|
+| 3c 2f 68 31 3e 0a 3c 70 3e 54 68 65 20 72 65 71 |</h1>.<p>The req|
+| 75 65 73 74 65 64 20 55 52 4c 20 2f 66 61 76 69 |uested URL /favi|
+| 63 6f 6e 2e 69 63 6f 20 77 61 73 20 6e 6f 74 20 |con.ico was not |
+| 66 6f 75 6e 64 20 6f 6e 20 74 68 69 73 20 73 65 |found on this se|
+| 72 76 65 72 2e 3c 2f 70 3e 0a 3c 68 72 3e 0a 3c |rver.</p>.<hr>.<|
+| 61 64 64 72 65 73 73 3e 41 70 61 63 68 65 2f 32 |address>Apache/2|
+| 2e 34 2e 32 39 20 28 55 62 75 6e 74 75 29 20 53 |.4.29 (Ubuntu) S|
+| 65 72 76 65 72 20 61 74 20 65 63 32 2d 31 38 2d |erver at ec2-18-|
+| 32 32 33 2d 31 38 34 2d 32 30 30 2e 75 73 2d 65 |223-184-200.us-e|
+| 61 73 74 2d 32 2e 63 6f 6d 70 75 74 65 2e 61 6d |ast-2.compute.am|
+| 61 7a 6f 6e 61 77 73 2e 63 6f 6d 20 50 6f 72 74 |azonaws.com Port|
+| 20 34 34 33 3c 2f 61 64 64 72 65 73 73 3e 0a 3c | 443</address>.<|
+| 2f 62 6f 64 79 3e 3c 2f 68 74 6d 6c 3e 0a       |/body></html>.  |
+process_ssl_payload: found handle 0x555dea35a420 (http-over-tls)
+packet_from_server: is from server - TRUE
+
+dissect_ssl enter frame #6 (already visited)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38a010, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 517
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 1 offset 5 length 508 bytes, remaining 517 
+
+dissect_ssl enter frame #8 (already visited)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38a010, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 1007
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 2 offset 5 length 49 bytes, remaining 58 
+  record: offset = 58, reported_length_remaining = 949
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 11 offset 63 length 931 bytes, remaining 998 
+  record: offset = 998, reported_length_remaining = 9
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 14 offset 1003 length 0 bytes, remaining 1007 
+
+dissect_ssl enter frame #10 (already visited)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38a8b0, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 517
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 1 offset 5 length 508 bytes, remaining 517 
+
+dissect_ssl enter frame #13 (already visited)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38a8b0, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 1007
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 2 offset 5 length 49 bytes, remaining 58 
+  record: offset = 58, reported_length_remaining = 949
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 11 offset 63 length 931 bytes, remaining 998 
+  record: offset = 998, reported_length_remaining = 9
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 14 offset 1003 length 0 bytes, remaining 1007 
+
+dissect_ssl enter frame #14 (already visited)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38a010, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 318
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 16 offset 5 length 258 bytes, remaining 267 
+  record: offset = 267, reported_length_remaining = 51
+dissect_ssl3_record: content_type 20 Change Cipher Spec
+  record: offset = 273, reported_length_remaining = 45
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 20 offset 0 length 12 bytes, remaining 16 
+
+dissect_ssl enter frame #15 (already visited)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38a010, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 258
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 4 offset 5 length 198 bytes, remaining 207 
+  record: offset = 207, reported_length_remaining = 51
+dissect_ssl3_record: content_type 20 Change Cipher Spec
+  record: offset = 213, reported_length_remaining = 45
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 20 offset 0 length 12 bytes, remaining 16 
+
+dissect_ssl enter frame #19 (already visited)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38a8b0, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 318
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 16 offset 5 length 258 bytes, remaining 267 
+  record: offset = 267, reported_length_remaining = 51
+dissect_ssl3_record: content_type 20 Change Cipher Spec
+  record: offset = 273, reported_length_remaining = 45
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 20 offset 0 length 12 bytes, remaining 16 
+
+dissect_ssl enter frame #21 (already visited)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38a8b0, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 258
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 4 offset 5 length 198 bytes, remaining 207 
+  record: offset = 207, reported_length_remaining = 51
+dissect_ssl3_record: content_type 20 Change Cipher Spec
+  record: offset = 213, reported_length_remaining = 45
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 20 offset 0 length 12 bytes, remaining 16 
+
+dissect_ssl enter frame #23 (already visited)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38ea70, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 517
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 1 offset 5 length 508 bytes, remaining 517 
+
+dissect_ssl enter frame #25 (already visited)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38ea70, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 1007
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 2 offset 5 length 49 bytes, remaining 58 
+  record: offset = 58, reported_length_remaining = 949
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 11 offset 63 length 931 bytes, remaining 998 
+  record: offset = 998, reported_length_remaining = 9
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 14 offset 1003 length 0 bytes, remaining 1007 
+
+dissect_ssl enter frame #28 (already visited)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38ea70, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 318
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 16 offset 5 length 258 bytes, remaining 267 
+  record: offset = 267, reported_length_remaining = 51
+dissect_ssl3_record: content_type 20 Change Cipher Spec
+  record: offset = 273, reported_length_remaining = 45
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 20 offset 0 length 12 bytes, remaining 16 
+
+dissect_ssl enter frame #29 (already visited)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38ea70, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 258
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 4 offset 5 length 198 bytes, remaining 207 
+  record: offset = 207, reported_length_remaining = 51
+dissect_ssl3_record: content_type 20 Change Cipher Spec
+  record: offset = 213, reported_length_remaining = 45
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 20 offset 0 length 12 bytes, remaining 16 
+
+dissect_ssl enter frame #31 (already visited)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38ea70, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 440
+dissect_ssl3_record: content_type 23 Application Data
+dissect_ssl_payload decrypted len 411
+decrypted app data fragment[411]:
+| 47 45 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a |GET / HTTP/1.1..|
+| 48 6f 73 74 3a 20 65 63 32 2d 31 38 2d 32 32 33 |Host: ec2-18-223|
+| 2d 31 38 34 2d 32 30 30 2e 75 73 2d 65 61 73 74 |-184-200.us-east|
+| 2d 32 2e 63 6f 6d 70 75 74 65 2e 61 6d 61 7a 6f |-2.compute.amazo|
+| 6e 61 77 73 2e 63 6f 6d 0d 0a 55 73 65 72 2d 41 |naws.com..User-A|
+| 67 65 6e 74 3a 20 4d 6f 7a 69 6c 6c 61 2f 35 2e |gent: Mozilla/5.|
+| 30 20 28 4d 61 63 69 6e 74 6f 73 68 3b 20 49 6e |0 (Macintosh; In|
+| 74 65 6c 20 4d 61 63 20 4f 53 20 58 20 31 30 2e |tel Mac OS X 10.|
+| 31 34 3b 20 72 76 3a 36 38 2e 30 29 20 47 65 63 |14; rv:68.0) Gec|
+| 6b 6f 2f 32 30 31 30 30 31 30 31 20 46 69 72 65 |ko/20100101 Fire|
+| 66 6f 78 2f 36 38 2e 30 0d 0a 41 63 63 65 70 74 |fox/68.0..Accept|
+| 3a 20 74 65 78 74 2f 68 74 6d 6c 2c 61 70 70 6c |: text/html,appl|
+| 69 63 61 74 69 6f 6e 2f 78 68 74 6d 6c 2b 78 6d |ication/xhtml+xm|
+| 6c 2c 61 70 70 6c 69 63 61 74 69 6f 6e 2f 78 6d |l,application/xm|
+| 6c 3b 71 3d 30 2e 39 2c 2a 2f 2a 3b 71 3d 30 2e |l;q=0.9,*/*;q=0.|
+| 38 0d 0a 41 63 63 65 70 74 2d 4c 61 6e 67 75 61 |8..Accept-Langua|
+| 67 65 3a 20 65 6e 2d 55 53 2c 65 6e 3b 71 3d 30 |ge: en-US,en;q=0|
+| 2e 35 0d 0a 41 63 63 65 70 74 2d 45 6e 63 6f 64 |.5..Accept-Encod|
+| 69 6e 67 3a 20 67 7a 69 70 2c 20 64 65 66 6c 61 |ing: gzip, defla|
+| 74 65 2c 20 62 72 0d 0a 43 6f 6e 6e 65 63 74 69 |te, br..Connecti|
+| 6f 6e 3a 20 6b 65 65 70 2d 61 6c 69 76 65 0d 0a |on: keep-alive..|
+| 55 70 67 72 61 64 65 2d 49 6e 73 65 63 75 72 65 |Upgrade-Insecure|
+| 2d 52 65 71 75 65 73 74 73 3a 20 31 0d 0a 50 72 |-Requests: 1..Pr|
+| 61 67 6d 61 3a 20 6e 6f 2d 63 61 63 68 65 0d 0a |agma: no-cache..|
+| 43 61 63 68 65 2d 43 6f 6e 74 72 6f 6c 3a 20 6e |Cache-Control: n|
+| 6f 2d 63 61 63 68 65 0d 0a 0d 0a                |o-cache....     |
+process_ssl_payload: found handle 0x555dea35a420 (http-over-tls)
+packet_from_server: is from server - FALSE
+
+dissect_ssl enter frame #32 (already visited)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38ea70, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 1233
+dissect_ssl3_record: content_type 23 Application Data
+dissect_ssl_payload decrypted len 1204
+decrypted app data fragment[1204]:
+| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+| 0a 44 61 74 65 3a 20 46 72 69 2c 20 32 33 20 41 |.Date: Fri, 23 A|
+| 75 67 20 32 30 31 39 20 31 35 3a 35 36 3a 33 36 |ug 2019 15:56:36|
+| 20 47 4d 54 0d 0a 53 65 72 76 65 72 3a 20 41 70 | GMT..Server: Ap|
+| 61 63 68 65 2f 32 2e 34 2e 32 39 20 28 55 62 75 |ache/2.4.29 (Ubu|
+| 6e 74 75 29 0d 0a 4c 61 73 74 2d 4d 6f 64 69 66 |ntu)..Last-Modif|
+| 69 65 64 3a 20 4d 6f 6e 2c 20 31 32 20 41 75 67 |ied: Mon, 12 Aug|
+| 20 32 30 31 39 20 31 36 3a 35 30 3a 30 35 20 47 | 2019 16:50:05 G|
+| 4d 54 0d 0a 45 54 61 67 3a 20 22 35 66 66 2d 35 |MT..ETag: "5ff-5|
+| 38 66 65 65 35 30 64 63 33 66 62 30 2d 67 7a 69 |8fee50dc3fb0-gzi|
+| 70 22 0d 0a 41 63 63 65 70 74 2d 52 61 6e 67 65 |p"..Accept-Range|
+| 73 3a 20 62 79 74 65 73 0d 0a 56 61 72 79 3a 20 |s: bytes..Vary: |
+| 41 63 63 65 70 74 2d 45 6e 63 6f 64 69 6e 67 0d |Accept-Encoding.|
+| 0a 43 6f 6e 74 65 6e 74 2d 45 6e 63 6f 64 69 6e |.Content-Encodin|
+| 67 3a 20 67 7a 69 70 0d 0a 50 69 63 6f 2d 46 6c |g: gzip..Pico-Fl|
+| 61 67 3a 20 70 69 63 6f 43 54 46 7b 6e 6f 6e 67 |ag: picoCTF{nong|
+| 73 68 69 6d 2e 73 68 72 69 6d 70 2e 63 72 61 63 |shim.shrimp.crac|
+| 6b 65 72 73 7d 0d 0a 43 6f 6e 74 65 6e 74 2d 4c |kers}..Content-L|
+| 65 6e 67 74 68 3a 20 38 32 31 0d 0a 4b 65 65 70 |ength: 821..Keep|
+| 2d 41 6c 69 76 65 3a 20 74 69 6d 65 6f 75 74 3d |-Alive: timeout=|
+| 35 2c 20 6d 61 78 3d 31 30 30 0d 0a 43 6f 6e 6e |5, max=100..Conn|
+| 65 63 74 69 6f 6e 3a 20 4b 65 65 70 2d 41 6c 69 |ection: Keep-Ali|
+| 76 65 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 |ve..Content-Type|
+| 3a 20 74 65 78 74 2f 68 74 6d 6c 0d 0a 0d 0a 1f |: text/html.....|
+| 8b 08 00 00 00 00 00 00 03 a5 54 5d 73 da 3a 14 |..........T]s.:.|
+| 7c 4e 7e 85 e2 d7 c4 16 2e 04 c8 1d 9b 99 24 34 ||N~...........$4|
+| 05 67 28 e1 23 40 f2 26 6c d9 96 2b 4b 42 12 1f |.g(.#@.&l..+KB..|
+| e6 d7 5f d9 84 90 66 da 4e ef 5c 5e 2c 1f 2d 47 |.._...f.N.\^,.-G|
+| bb 7b d6 f2 2e 22 1e ea 42 60 90 ea 9c 76 ce bd |.{..."..B`...v..|
+| f2 01 28 62 89 6f 61 66 75 ce 01 f0 52 8c a2 72 |..(b.oafu...R..r|
+| 61 96 17 b6 0d c6 78 b5 26 12 47 20 c7 1a 01 8d |a.....x.&.G ....|
+| 12 05 6c fb 6d bf 2a 85 29 92 0a 6b df 5a eb d8 |..l.m.*.)..k.Z..|
+| 6e 5b 1f b7 18 ca b1 6f 6d 08 de 0a 2e b5 05 42 |n[.....om......B|
+| ce 34 66 06 ba 25 91 4e fd 08 6f 48 88 ed ea e5 |.4f..%.N..oH....|
+| 0a 10 46 34 41 d4 56 21 a2 d8 77 af 80 4a 25 61 |..F4A.V!..w..J%a|
+| 3f 6c cd ed 98 68 9f 71 d3 fa 44 eb 8e 73 ad b4 |?l...h.q..D..s..|
+| 44 02 dc 4f 26 27 46 d4 fc 03 48 4c 7d 4b e9 82 |D..O&'F...HL}K..|
+| 62 95 62 6c ce 4d 25 8e 7d 2b d5 5a a8 7f 20 54 |b.bl.M%.}+.Z.. T|
+| 1a 85 3f 04 d2 a9 b3 3c 36 09 23 e6 84 3c 87 ef |..?....<6.#..<..|
+| 05 d8 70 ea 8e 0b 43 a5 4e 35 27 27 06 a5 94 65 |..p...C.N5''...e|
+| a8 6a 9c 48 a2 0b 73 4c 8a ea ed 86 9d 24 c3 62 |.j.H..sL.....$.b|
+| 5c 23 8b fb e5 60 b4 a9 2f 88 c8 51 bd 31 e8 5e |\#...`../..Q.1.^|
+| 46 3d e8 c6 a3 56 bb 01 b3 66 f8 02 49 30 1d 3d |F=...V...f..I0.=|
+| 0f d3 70 2e 5b bb 9b 60 c3 c7 bb e9 97 c1 eb d6 |..p.[..`........|
+| 9d 1a 6f 24 57 8a 4b 92 10 e6 5b 88 71 56 e4 7c |..o$W.K...[.qV.||
+| ad ac 0f 93 b8 5f 2b cd 73 70 10 06 62 2e 81 4e |....._+.sp..b..N|
+| 89 02 1a e7 82 22 8d 3f 99 70 d0 6c b4 4a 8d a5 |.....".?.p.l.J..|
+| 7d 04 1d f8 7f 36 e8 68 ac 26 9a e2 4e 0f 53 ca |}....6.h.&..N.S.|
+| af c0 96 4b 1a 5d 78 f0 50 2c 93 01 8f d1 f0 96 |...K.]x.P,......|
+| 3c 2a 3a e7 67 5e 44 36 20 a4 48 29 df 2a 67 8b |<*:.g^D6 .H).*g.|
+| 08 c3 f2 8d 32 00 67 3f ed 7f 66 f2 0e ab 80 a9 |....2.g?..f.....|
+| db 99 63 6a 46 80 81 e6 e0 16 4c 90 41 61 f0 84 |..cjF.....L.Aa..|
+| 12 6c 8e 75 7f c2 8a 63 4b 6a e8 98 36 67 e6 37 |.l.u...cKj..6g.7|
+| 4d b1 c4 c0 b8 41 71 42 34 60 dc 58 c3 92 b2 97 |M....AqB4`.X....|
+| c2 26 ec 66 d3 f1 96 b2 c2 7a 50 7c 60 08 0d c5 |.&.f.....zP|`...|
+| 52 49 f5 ac 6c 86 ce bb 94 ca d2 d3 00 86 42 13 |RI..l.........B.|
+| ce 10 05 01 da a0 49 28 89 d0 27 d3 4b 40 36 5a |......I(..'.K@6Z|
+| 63 59 80 98 48 a5 af cc 74 30 03 4f 5c 08 2c 9d |cY..H...t0.O\.,.|
+| 4c bd bd 9f 72 1b 7c 88 ad 3a 34 53 32 3c c5 34 |L...r.|..:4S2<.4|
+| e4 11 76 b2 55 d9 b1 ca e6 61 69 d7 cb 60 3a 8a |..v.U....ai..`:.|
+| 92 bc ca 63 f6 cb 38 ae da 04 2e 2e 6f 9a d7 dd |...c..8.....o...|
+| fd b0 26 a7 2d b4 7c 6c b8 c1 44 8f fa b7 ab 59 |..&.-.|l..D....Y|
+| 32 9e ed c5 72 cf af 55 be 78 14 8d 97 78 bc e9 |2...r..U.x...x..|
+| 5d b6 d1 52 4f bf ba 4f a4 99 91 3d ff 7d 1c 3d |]..RO..O...=.}.=|
+| 78 e0 fa 27 e2 11 cb 94 13 52 be 8e 62 8a 8c f3 |x..'.....R..b...|
+| 25 7b 94 a1 1d a4 64 a9 a0 38 3a 02 5d c7 6d 38 |%{....d..8:.].m8|
+| 2d b8 ce a3 63 f1 f7 8a 9e 87 5f f0 b4 76 2f 7a |-...c....._..v/z|
+| ab 68 12 8c 9a 69 a0 8b eb c7 99 48 f5 53 ba 9f |.h...i.....H.S..|
+| 67 37 f3 a1 1b d2 de 74 f0 0d d5 83 ee eb 56 b2 |g7.....t......V.|
+| d1 aa a1 1e da cd a8 df fb de dd d7 e6 ee ff 52 |...............R|
+| f4 1f 6e 8c ec f3 85 f1 6b 39 41 36 c9 67 49 11 |..n.....k9A6.gI.|
+| d5 44 5d 2c ee 5c 39 26 cb d7 e7 db 17 de ef 17 |.D],.\9&........|
+| cd a1 1c 35 67 32 eb 7f 45 0f 31 64 c1 b7 7d 7f |...5g2..E.1d..}.|
+| f7 d0 55 71 63 57 db f5 07 97 77 b5 56 36 1e fc |..UqcW....w.V6..|
+| 9d 1c 0f 1e 3e 54 f3 09 55 d7 fd bf 29 b5 3f 87 |....>T..U...).?.|
+| ff 05 00 00                                     |....            |
+process_ssl_payload: found handle 0x555dea35a420 (http-over-tls)
+packet_from_server: is from server - TRUE
+
+dissect_ssl enter frame #34 (already visited)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38a010, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 455
+dissect_ssl3_record: content_type 23 Application Data
+dissect_ssl_payload decrypted len 426
+decrypted app data fragment[426]:
+| 47 45 54 20 2f 73 74 61 72 74 65 72 2d 74 65 6d |GET /starter-tem|
+| 70 6c 61 74 65 2e 63 73 73 20 48 54 54 50 2f 31 |plate.css HTTP/1|
+| 2e 31 0d 0a 48 6f 73 74 3a 20 65 63 32 2d 31 38 |.1..Host: ec2-18|
+| 2d 32 32 33 2d 31 38 34 2d 32 30 30 2e 75 73 2d |-223-184-200.us-|
+| 65 61 73 74 2d 32 2e 63 6f 6d 70 75 74 65 2e 61 |east-2.compute.a|
+| 6d 61 7a 6f 6e 61 77 73 2e 63 6f 6d 0d 0a 55 73 |mazonaws.com..Us|
+| 65 72 2d 41 67 65 6e 74 3a 20 4d 6f 7a 69 6c 6c |er-Agent: Mozill|
+| 61 2f 35 2e 30 20 28 4d 61 63 69 6e 74 6f 73 68 |a/5.0 (Macintosh|
+| 3b 20 49 6e 74 65 6c 20 4d 61 63 20 4f 53 20 58 |; Intel Mac OS X|
+| 20 31 30 2e 31 34 3b 20 72 76 3a 36 38 2e 30 29 | 10.14; rv:68.0)|
+| 20 47 65 63 6b 6f 2f 32 30 31 30 30 31 30 31 20 | Gecko/20100101 |
+| 46 69 72 65 66 6f 78 2f 36 38 2e 30 0d 0a 41 63 |Firefox/68.0..Ac|
+| 63 65 70 74 3a 20 74 65 78 74 2f 63 73 73 2c 2a |cept: text/css,*|
+| 2f 2a 3b 71 3d 30 2e 31 0d 0a 41 63 63 65 70 74 |/*;q=0.1..Accept|
+| 2d 4c 61 6e 67 75 61 67 65 3a 20 65 6e 2d 55 53 |-Language: en-US|
+| 2c 65 6e 3b 71 3d 30 2e 35 0d 0a 41 63 63 65 70 |,en;q=0.5..Accep|
+| 74 2d 45 6e 63 6f 64 69 6e 67 3a 20 67 7a 69 70 |t-Encoding: gzip|
+| 2c 20 64 65 66 6c 61 74 65 2c 20 62 72 0d 0a 43 |, deflate, br..C|
+| 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 70 2d |onnection: keep-|
+| 61 6c 69 76 65 0d 0a 52 65 66 65 72 65 72 3a 20 |alive..Referer: |
+| 68 74 74 70 73 3a 2f 2f 65 63 32 2d 31 38 2d 32 |https://ec2-18-2|
+| 32 33 2d 31 38 34 2d 32 30 30 2e 75 73 2d 65 61 |23-184-200.us-ea|
+| 73 74 2d 32 2e 63 6f 6d 70 75 74 65 2e 61 6d 61 |st-2.compute.ama|
+| 7a 6f 6e 61 77 73 2e 63 6f 6d 2f 0d 0a 50 72 61 |zonaws.com/..Pra|
+| 67 6d 61 3a 20 6e 6f 2d 63 61 63 68 65 0d 0a 43 |gma: no-cache..C|
+| 61 63 68 65 2d 43 6f 6e 74 72 6f 6c 3a 20 6e 6f |ache-Control: no|
+| 2d 63 61 63 68 65 0d 0a 0d 0a                   |-cache....      |
+process_ssl_payload: found handle 0x555dea35a420 (http-over-tls)
+packet_from_server: is from server - FALSE
+
+dissect_ssl enter frame #35 (already visited)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38a010, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 510
+dissect_ssl3_record: content_type 23 Application Data
+dissect_ssl_payload decrypted len 481
+decrypted app data fragment[481]:
+| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+| 0a 44 61 74 65 3a 20 46 72 69 2c 20 32 33 20 41 |.Date: Fri, 23 A|
+| 75 67 20 32 30 31 39 20 31 35 3a 35 36 3a 33 36 |ug 2019 15:56:36|
+| 20 47 4d 54 0d 0a 53 65 72 76 65 72 3a 20 41 70 | GMT..Server: Ap|
+| 61 63 68 65 2f 32 2e 34 2e 32 39 20 28 55 62 75 |ache/2.4.29 (Ubu|
+| 6e 74 75 29 0d 0a 4c 61 73 74 2d 4d 6f 64 69 66 |ntu)..Last-Modif|
+| 69 65 64 3a 20 4d 6f 6e 2c 20 31 32 20 41 75 67 |ied: Mon, 12 Aug|
+| 20 32 30 31 39 20 31 36 3a 34 37 3a 30 35 20 47 | 2019 16:47:05 G|
+| 4d 54 0d 0a 45 54 61 67 3a 20 22 36 32 2d 35 38 |MT..ETag: "62-58|
+| 66 65 65 34 36 32 62 66 32 32 37 2d 67 7a 69 70 |fee462bf227-gzip|
+| 22 0d 0a 41 63 63 65 70 74 2d 52 61 6e 67 65 73 |"..Accept-Ranges|
+| 3a 20 62 79 74 65 73 0d 0a 56 61 72 79 3a 20 41 |: bytes..Vary: A|
+| 63 63 65 70 74 2d 45 6e 63 6f 64 69 6e 67 0d 0a |ccept-Encoding..|
+| 43 6f 6e 74 65 6e 74 2d 45 6e 63 6f 64 69 6e 67 |Content-Encoding|
+| 3a 20 67 7a 69 70 0d 0a 50 69 63 6f 2d 46 6c 61 |: gzip..Pico-Fla|
+| 67 3a 20 70 69 63 6f 43 54 46 7b 6e 6f 6e 67 73 |g: picoCTF{nongs|
+| 68 69 6d 2e 73 68 72 69 6d 70 2e 63 72 61 63 6b |him.shrimp.crack|
+| 65 72 73 7d 0d 0a 43 6f 6e 74 65 6e 74 2d 4c 65 |ers}..Content-Le|
+| 6e 67 74 68 3a 20 31 30 30 0d 0a 4b 65 65 70 2d |ngth: 100..Keep-|
+| 41 6c 69 76 65 3a 20 74 69 6d 65 6f 75 74 3d 35 |Alive: timeout=5|
+| 2c 20 6d 61 78 3d 31 30 30 0d 0a 43 6f 6e 6e 65 |, max=100..Conne|
+| 63 74 69 6f 6e 3a 20 4b 65 65 70 2d 41 6c 69 76 |ction: Keep-Aliv|
+| 65 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a |e..Content-Type:|
+| 20 74 65 78 74 2f 63 73 73 0d 0a 0d 0a 1f 8b 08 | text/css.......|
+| 00 00 00 00 00 00 03 4b ca 4f a9 54 a8 e6 52 50 |.......K.O.T..RP|
+| 28 48 4c 49 c9 cc 4b d7 2d c9 2f b0 52 30 2d 4a |(HLI..K.-./.R0-J|
+| cd b5 e6 aa e5 d2 2b 2e 49 2c 2a 49 2d d2 2d 49 |......+.I,*I-.-I|
+| cd 2d c8 49 2c 49 45 56 6a a5 60 0c 54 a6 60 a8 |.-.I,IEVj.`.T.`.|
+| 07 51 ad a0 50 92 5a 51 a2 9b 98 93 99 9e 67 a5 |.Q..P.ZQ......g.|
+| 90 9c 9a 07 d4 07 32 03 00 20 cc fb a0 62 00 00 |......2.. ...b..|
+| 00                                              |.               |
+process_ssl_payload: found handle 0x555dea35a420 (http-over-tls)
+packet_from_server: is from server - TRUE
+
+dissect_ssl enter frame #37 (already visited)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38a010, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 372
+dissect_ssl3_record: content_type 23 Application Data
+dissect_ssl_payload decrypted len 343
+decrypted app data fragment[343]:
+| 47 45 54 20 2f 66 61 76 69 63 6f 6e 2e 69 63 6f |GET /favicon.ico|
+| 20 48 54 54 50 2f 31 2e 31 0d 0a 48 6f 73 74 3a | HTTP/1.1..Host:|
+| 20 65 63 32 2d 31 38 2d 32 32 33 2d 31 38 34 2d | ec2-18-223-184-|
+| 32 30 30 2e 75 73 2d 65 61 73 74 2d 32 2e 63 6f |200.us-east-2.co|
+| 6d 70 75 74 65 2e 61 6d 61 7a 6f 6e 61 77 73 2e |mpute.amazonaws.|
+| 63 6f 6d 0d 0a 55 73 65 72 2d 41 67 65 6e 74 3a |com..User-Agent:|
+| 20 4d 6f 7a 69 6c 6c 61 2f 35 2e 30 20 28 4d 61 | Mozilla/5.0 (Ma|
+| 63 69 6e 74 6f 73 68 3b 20 49 6e 74 65 6c 20 4d |cintosh; Intel M|
+| 61 63 20 4f 53 20 58 20 31 30 2e 31 34 3b 20 72 |ac OS X 10.14; r|
+| 76 3a 36 38 2e 30 29 20 47 65 63 6b 6f 2f 32 30 |v:68.0) Gecko/20|
+| 31 30 30 31 30 31 20 46 69 72 65 66 6f 78 2f 36 |100101 Firefox/6|
+| 38 2e 30 0d 0a 41 63 63 65 70 74 3a 20 69 6d 61 |8.0..Accept: ima|
+| 67 65 2f 77 65 62 70 2c 2a 2f 2a 0d 0a 41 63 63 |ge/webp,*/*..Acc|
+| 65 70 74 2d 4c 61 6e 67 75 61 67 65 3a 20 65 6e |ept-Language: en|
+| 2d 55 53 2c 65 6e 3b 71 3d 30 2e 35 0d 0a 41 63 |-US,en;q=0.5..Ac|
+| 63 65 70 74 2d 45 6e 63 6f 64 69 6e 67 3a 20 67 |cept-Encoding: g|
+| 7a 69 70 2c 20 64 65 66 6c 61 74 65 2c 20 62 72 |zip, deflate, br|
+| 0d 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 |..Connection: ke|
+| 65 70 2d 61 6c 69 76 65 0d 0a 50 72 61 67 6d 61 |ep-alive..Pragma|
+| 3a 20 6e 6f 2d 63 61 63 68 65 0d 0a 43 61 63 68 |: no-cache..Cach|
+| 65 2d 43 6f 6e 74 72 6f 6c 3a 20 6e 6f 2d 63 61 |e-Control: no-ca|
+| 63 68 65 0d 0a 0d 0a                            |che....         |
+process_ssl_payload: found handle 0x555dea35a420 (http-over-tls)
+packet_from_server: is from server - FALSE
+
+dissect_ssl enter frame #38 (already visited)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38a010, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 571
+dissect_ssl3_record: content_type 23 Application Data
+dissect_ssl_payload decrypted len 542
+decrypted app data fragment[542]:
+| 48 54 54 50 2f 31 2e 31 20 34 30 34 20 4e 6f 74 |HTTP/1.1 404 Not|
+| 20 46 6f 75 6e 64 0d 0a 44 61 74 65 3a 20 46 72 | Found..Date: Fr|
+| 69 2c 20 32 33 20 41 75 67 20 32 30 31 39 20 31 |i, 23 Aug 2019 1|
+| 35 3a 35 36 3a 33 37 20 47 4d 54 0d 0a 53 65 72 |5:56:37 GMT..Ser|
+| 76 65 72 3a 20 41 70 61 63 68 65 2f 32 2e 34 2e |ver: Apache/2.4.|
+| 32 39 20 28 55 62 75 6e 74 75 29 0d 0a 43 6f 6e |29 (Ubuntu)..Con|
+| 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20 33 32 36 |tent-Length: 326|
+| 0d 0a 4b 65 65 70 2d 41 6c 69 76 65 3a 20 74 69 |..Keep-Alive: ti|
+| 6d 65 6f 75 74 3d 35 2c 20 6d 61 78 3d 39 39 0d |meout=5, max=99.|
+| 0a 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 4b 65 65 |.Connection: Kee|
+| 70 2d 41 6c 69 76 65 0d 0a 43 6f 6e 74 65 6e 74 |p-Alive..Content|
+| 2d 54 79 70 65 3a 20 74 65 78 74 2f 68 74 6d 6c |-Type: text/html|
+| 3b 20 63 68 61 72 73 65 74 3d 69 73 6f 2d 38 38 |; charset=iso-88|
+| 35 39 2d 31 0d 0a 0d 0a 3c 21 44 4f 43 54 59 50 |59-1....<!DOCTYP|
+| 45 20 48 54 4d 4c 20 50 55 42 4c 49 43 20 22 2d |E HTML PUBLIC "-|
+| 2f 2f 49 45 54 46 2f 2f 44 54 44 20 48 54 4d 4c |//IETF//DTD HTML|
+| 20 32 2e 30 2f 2f 45 4e 22 3e 0a 3c 68 74 6d 6c | 2.0//EN">.<html|
+| 3e 3c 68 65 61 64 3e 0a 3c 74 69 74 6c 65 3e 34 |><head>.<title>4|
+| 30 34 20 4e 6f 74 20 46 6f 75 6e 64 3c 2f 74 69 |04 Not Found</ti|
+| 74 6c 65 3e 0a 3c 2f 68 65 61 64 3e 3c 62 6f 64 |tle>.</head><bod|
+| 79 3e 0a 3c 68 31 3e 4e 6f 74 20 46 6f 75 6e 64 |y>.<h1>Not Found|
+| 3c 2f 68 31 3e 0a 3c 70 3e 54 68 65 20 72 65 71 |</h1>.<p>The req|
+| 75 65 73 74 65 64 20 55 52 4c 20 2f 66 61 76 69 |uested URL /favi|
+| 63 6f 6e 2e 69 63 6f 20 77 61 73 20 6e 6f 74 20 |con.ico was not |
+| 66 6f 75 6e 64 20 6f 6e 20 74 68 69 73 20 73 65 |found on this se|
+| 72 76 65 72 2e 3c 2f 70 3e 0a 3c 68 72 3e 0a 3c |rver.</p>.<hr>.<|
+| 61 64 64 72 65 73 73 3e 41 70 61 63 68 65 2f 32 |address>Apache/2|
+| 2e 34 2e 32 39 20 28 55 62 75 6e 74 75 29 20 53 |.4.29 (Ubuntu) S|
+| 65 72 76 65 72 20 61 74 20 65 63 32 2d 31 38 2d |erver at ec2-18-|
+| 32 32 33 2d 31 38 34 2d 32 30 30 2e 75 73 2d 65 |223-184-200.us-e|
+| 61 73 74 2d 32 2e 63 6f 6d 70 75 74 65 2e 61 6d |ast-2.compute.am|
+| 61 7a 6f 6e 61 77 73 2e 63 6f 6d 20 50 6f 72 74 |azonaws.com Port|
+| 20 34 34 33 3c 2f 61 64 64 72 65 73 73 3e 0a 3c | 443</address>.<|
+| 2f 62 6f 64 79 3e 3c 2f 68 74 6d 6c 3e 0a       |/body></html>.  |
+process_ssl_payload: found handle 0x555dea35a420 (http-over-tls)
+packet_from_server: is from server - TRUE
+
+dissect_ssl enter frame #6 (already visited)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38a010, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 517
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 1 offset 5 length 508 bytes, remaining 517 
+
+dissect_ssl enter frame #8 (already visited)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38a010, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 1007
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 2 offset 5 length 49 bytes, remaining 58 
+  record: offset = 58, reported_length_remaining = 949
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 11 offset 63 length 931 bytes, remaining 998 
+  record: offset = 998, reported_length_remaining = 9
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 14 offset 1003 length 0 bytes, remaining 1007 
+
+dissect_ssl enter frame #10 (already visited)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38a8b0, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 517
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 1 offset 5 length 508 bytes, remaining 517 
+
+dissect_ssl enter frame #13 (already visited)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38a8b0, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 1007
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 2 offset 5 length 49 bytes, remaining 58 
+  record: offset = 58, reported_length_remaining = 949
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 11 offset 63 length 931 bytes, remaining 998 
+  record: offset = 998, reported_length_remaining = 9
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 14 offset 1003 length 0 bytes, remaining 1007 
+
+dissect_ssl enter frame #14 (already visited)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38a010, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 318
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 16 offset 5 length 258 bytes, remaining 267 
+  record: offset = 267, reported_length_remaining = 51
+dissect_ssl3_record: content_type 20 Change Cipher Spec
+  record: offset = 273, reported_length_remaining = 45
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 20 offset 0 length 12 bytes, remaining 16 
+
+dissect_ssl enter frame #15 (already visited)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38a010, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 258
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 4 offset 5 length 198 bytes, remaining 207 
+  record: offset = 207, reported_length_remaining = 51
+dissect_ssl3_record: content_type 20 Change Cipher Spec
+  record: offset = 213, reported_length_remaining = 45
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 20 offset 0 length 12 bytes, remaining 16 
+
+dissect_ssl enter frame #19 (already visited)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38a8b0, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 318
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 16 offset 5 length 258 bytes, remaining 267 
+  record: offset = 267, reported_length_remaining = 51
+dissect_ssl3_record: content_type 20 Change Cipher Spec
+  record: offset = 273, reported_length_remaining = 45
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 20 offset 0 length 12 bytes, remaining 16 
+
+dissect_ssl enter frame #21 (already visited)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38a8b0, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 258
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 4 offset 5 length 198 bytes, remaining 207 
+  record: offset = 207, reported_length_remaining = 51
+dissect_ssl3_record: content_type 20 Change Cipher Spec
+  record: offset = 213, reported_length_remaining = 45
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 20 offset 0 length 12 bytes, remaining 16 
+
+dissect_ssl enter frame #23 (already visited)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38ea70, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 517
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 1 offset 5 length 508 bytes, remaining 517 
+
+dissect_ssl enter frame #25 (already visited)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38ea70, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 1007
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 2 offset 5 length 49 bytes, remaining 58 
+  record: offset = 58, reported_length_remaining = 949
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 11 offset 63 length 931 bytes, remaining 998 
+  record: offset = 998, reported_length_remaining = 9
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 14 offset 1003 length 0 bytes, remaining 1007 
+
+dissect_ssl enter frame #28 (already visited)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38ea70, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 318
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 16 offset 5 length 258 bytes, remaining 267 
+  record: offset = 267, reported_length_remaining = 51
+dissect_ssl3_record: content_type 20 Change Cipher Spec
+  record: offset = 273, reported_length_remaining = 45
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 20 offset 0 length 12 bytes, remaining 16 
+
+dissect_ssl enter frame #29 (already visited)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38ea70, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 258
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 4 offset 5 length 198 bytes, remaining 207 
+  record: offset = 207, reported_length_remaining = 51
+dissect_ssl3_record: content_type 20 Change Cipher Spec
+  record: offset = 213, reported_length_remaining = 45
+dissect_ssl3_record: content_type 22 Handshake
+dissect_ssl3_handshake iteration 1 type 20 offset 0 length 12 bytes, remaining 16 
+
+dissect_ssl enter frame #31 (already visited)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38ea70, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 440
+dissect_ssl3_record: content_type 23 Application Data
+dissect_ssl_payload decrypted len 411
+decrypted app data fragment[411]:
+| 47 45 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a |GET / HTTP/1.1..|
+| 48 6f 73 74 3a 20 65 63 32 2d 31 38 2d 32 32 33 |Host: ec2-18-223|
+| 2d 31 38 34 2d 32 30 30 2e 75 73 2d 65 61 73 74 |-184-200.us-east|
+| 2d 32 2e 63 6f 6d 70 75 74 65 2e 61 6d 61 7a 6f |-2.compute.amazo|
+| 6e 61 77 73 2e 63 6f 6d 0d 0a 55 73 65 72 2d 41 |naws.com..User-A|
+| 67 65 6e 74 3a 20 4d 6f 7a 69 6c 6c 61 2f 35 2e |gent: Mozilla/5.|
+| 30 20 28 4d 61 63 69 6e 74 6f 73 68 3b 20 49 6e |0 (Macintosh; In|
+| 74 65 6c 20 4d 61 63 20 4f 53 20 58 20 31 30 2e |tel Mac OS X 10.|
+| 31 34 3b 20 72 76 3a 36 38 2e 30 29 20 47 65 63 |14; rv:68.0) Gec|
+| 6b 6f 2f 32 30 31 30 30 31 30 31 20 46 69 72 65 |ko/20100101 Fire|
+| 66 6f 78 2f 36 38 2e 30 0d 0a 41 63 63 65 70 74 |fox/68.0..Accept|
+| 3a 20 74 65 78 74 2f 68 74 6d 6c 2c 61 70 70 6c |: text/html,appl|
+| 69 63 61 74 69 6f 6e 2f 78 68 74 6d 6c 2b 78 6d |ication/xhtml+xm|
+| 6c 2c 61 70 70 6c 69 63 61 74 69 6f 6e 2f 78 6d |l,application/xm|
+| 6c 3b 71 3d 30 2e 39 2c 2a 2f 2a 3b 71 3d 30 2e |l;q=0.9,*/*;q=0.|
+| 38 0d 0a 41 63 63 65 70 74 2d 4c 61 6e 67 75 61 |8..Accept-Langua|
+| 67 65 3a 20 65 6e 2d 55 53 2c 65 6e 3b 71 3d 30 |ge: en-US,en;q=0|
+| 2e 35 0d 0a 41 63 63 65 70 74 2d 45 6e 63 6f 64 |.5..Accept-Encod|
+| 69 6e 67 3a 20 67 7a 69 70 2c 20 64 65 66 6c 61 |ing: gzip, defla|
+| 74 65 2c 20 62 72 0d 0a 43 6f 6e 6e 65 63 74 69 |te, br..Connecti|
+| 6f 6e 3a 20 6b 65 65 70 2d 61 6c 69 76 65 0d 0a |on: keep-alive..|
+| 55 70 67 72 61 64 65 2d 49 6e 73 65 63 75 72 65 |Upgrade-Insecure|
+| 2d 52 65 71 75 65 73 74 73 3a 20 31 0d 0a 50 72 |-Requests: 1..Pr|
+| 61 67 6d 61 3a 20 6e 6f 2d 63 61 63 68 65 0d 0a |agma: no-cache..|
+| 43 61 63 68 65 2d 43 6f 6e 74 72 6f 6c 3a 20 6e |Cache-Control: n|
+| 6f 2d 63 61 63 68 65 0d 0a 0d 0a                |o-cache....     |
+process_ssl_payload: found handle 0x555dea35a420 (http-over-tls)
+packet_from_server: is from server - FALSE
+
+dissect_ssl enter frame #32 (already visited)
+packet_from_server: is from server - TRUE
+  conversation = 0x555deb38ea70, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 1233
+dissect_ssl3_record: content_type 23 Application Data
+dissect_ssl_payload decrypted len 1204
+decrypted app data fragment[1204]:
+| 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d |HTTP/1.1 200 OK.|
+| 0a 44 61 74 65 3a 20 46 72 69 2c 20 32 33 20 41 |.Date: Fri, 23 A|
+| 75 67 20 32 30 31 39 20 31 35 3a 35 36 3a 33 36 |ug 2019 15:56:36|
+| 20 47 4d 54 0d 0a 53 65 72 76 65 72 3a 20 41 70 | GMT..Server: Ap|
+| 61 63 68 65 2f 32 2e 34 2e 32 39 20 28 55 62 75 |ache/2.4.29 (Ubu|
+| 6e 74 75 29 0d 0a 4c 61 73 74 2d 4d 6f 64 69 66 |ntu)..Last-Modif|
+| 69 65 64 3a 20 4d 6f 6e 2c 20 31 32 20 41 75 67 |ied: Mon, 12 Aug|
+| 20 32 30 31 39 20 31 36 3a 35 30 3a 30 35 20 47 | 2019 16:50:05 G|
+| 4d 54 0d 0a 45 54 61 67 3a 20 22 35 66 66 2d 35 |MT..ETag: "5ff-5|
+| 38 66 65 65 35 30 64 63 33 66 62 30 2d 67 7a 69 |8fee50dc3fb0-gzi|
+| 70 22 0d 0a 41 63 63 65 70 74 2d 52 61 6e 67 65 |p"..Accept-Range|
+| 73 3a 20 62 79 74 65 73 0d 0a 56 61 72 79 3a 20 |s: bytes..Vary: |
+| 41 63 63 65 70 74 2d 45 6e 63 6f 64 69 6e 67 0d |Accept-Encoding.|
+| 0a 43 6f 6e 74 65 6e 74 2d 45 6e 63 6f 64 69 6e |.Content-Encodin|
+| 67 3a 20 67 7a 69 70 0d 0a 50 69 63 6f 2d 46 6c |g: gzip..Pico-Fl|
+| 61 67 3a 20 70 69 63 6f 43 54 46 7b 6e 6f 6e 67 |ag: picoCTF{nong|
+| 73 68 69 6d 2e 73 68 72 69 6d 70 2e 63 72 61 63 |shim.shrimp.crac|
+| 6b 65 72 73 7d 0d 0a 43 6f 6e 74 65 6e 74 2d 4c |kers}..Content-L|
+| 65 6e 67 74 68 3a 20 38 32 31 0d 0a 4b 65 65 70 |ength: 821..Keep|
+| 2d 41 6c 69 76 65 3a 20 74 69 6d 65 6f 75 74 3d |-Alive: timeout=|
+| 35 2c 20 6d 61 78 3d 31 30 30 0d 0a 43 6f 6e 6e |5, max=100..Conn|
+| 65 63 74 69 6f 6e 3a 20 4b 65 65 70 2d 41 6c 69 |ection: Keep-Ali|
+| 76 65 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 |ve..Content-Type|
+| 3a 20 74 65 78 74 2f 68 74 6d 6c 0d 0a 0d 0a 1f |: text/html.....|
+| 8b 08 00 00 00 00 00 00 03 a5 54 5d 73 da 3a 14 |..........T]s.:.|
+| 7c 4e 7e 85 e2 d7 c4 16 2e 04 c8 1d 9b 99 24 34 ||N~...........$4|
+| 05 67 28 e1 23 40 f2 26 6c d9 96 2b 4b 42 12 1f |.g(.#@.&l..+KB..|
+| e6 d7 5f d9 84 90 66 da 4e ef 5c 5e 2c 1f 2d 47 |.._...f.N.\^,.-G|
+| bb 7b d6 f2 2e 22 1e ea 42 60 90 ea 9c 76 ce bd |.{..."..B`...v..|
+| f2 01 28 62 89 6f 61 66 75 ce 01 f0 52 8c a2 72 |..(b.oafu...R..r|
+| 61 96 17 b6 0d c6 78 b5 26 12 47 20 c7 1a 01 8d |a.....x.&.G ....|
+| 12 05 6c fb 6d bf 2a 85 29 92 0a 6b df 5a eb d8 |..l.m.*.)..k.Z..|
+| 6e 5b 1f b7 18 ca b1 6f 6d 08 de 0a 2e b5 05 42 |n[.....om......B|
+| ce 34 66 06 ba 25 91 4e fd 08 6f 48 88 ed ea e5 |.4f..%.N..oH....|
+| 0a 10 46 34 41 d4 56 21 a2 d8 77 af 80 4a 25 61 |..F4A.V!..w..J%a|
+| 3f 6c cd ed 98 68 9f 71 d3 fa 44 eb 8e 73 ad b4 |?l...h.q..D..s..|
+| 44 02 dc 4f 26 27 46 d4 fc 03 48 4c 7d 4b e9 82 |D..O&'F...HL}K..|
+| 62 95 62 6c ce 4d 25 8e 7d 2b d5 5a a8 7f 20 54 |b.bl.M%.}+.Z.. T|
+| 1a 85 3f 04 d2 a9 b3 3c 36 09 23 e6 84 3c 87 ef |..?....<6.#..<..|
+| 05 d8 70 ea 8e 0b 43 a5 4e 35 27 27 06 a5 94 65 |..p...C.N5''...e|
+| a8 6a 9c 48 a2 0b 73 4c 8a ea ed 86 9d 24 c3 62 |.j.H..sL.....$.b|
+| 5c 23 8b fb e5 60 b4 a9 2f 88 c8 51 bd 31 e8 5e |\#...`../..Q.1.^|
+| 46 3d e8 c6 a3 56 bb 01 b3 66 f8 02 49 30 1d 3d |F=...V...f..I0.=|
+| 0f d3 70 2e 5b bb 9b 60 c3 c7 bb e9 97 c1 eb d6 |..p.[..`........|
+| 9d 1a 6f 24 57 8a 4b 92 10 e6 5b 88 71 56 e4 7c |..o$W.K...[.qV.||
+| ad ac 0f 93 b8 5f 2b cd 73 70 10 06 62 2e 81 4e |....._+.sp..b..N|
+| 89 02 1a e7 82 22 8d 3f 99 70 d0 6c b4 4a 8d a5 |.....".?.p.l.J..|
+| 7d 04 1d f8 7f 36 e8 68 ac 26 9a e2 4e 0f 53 ca |}....6.h.&..N.S.|
+| af c0 96 4b 1a 5d 78 f0 50 2c 93 01 8f d1 f0 96 |...K.]x.P,......|
+| 3c 2a 3a e7 67 5e 44 36 20 a4 48 29 df 2a 67 8b |<*:.g^D6 .H).*g.|
+| 08 c3 f2 8d 32 00 67 3f ed 7f 66 f2 0e ab 80 a9 |....2.g?..f.....|
+| db 99 63 6a 46 80 81 e6 e0 16 4c 90 41 61 f0 84 |..cjF.....L.Aa..|
+| 12 6c 8e 75 7f c2 8a 63 4b 6a e8 98 36 67 e6 37 |.l.u...cKj..6g.7|
+| 4d b1 c4 c0 b8 41 71 42 34 60 dc 58 c3 92 b2 97 |M....AqB4`.X....|
+| c2 26 ec 66 d3 f1 96 b2 c2 7a 50 7c 60 08 0d c5 |.&.f.....zP|`...|
+| 52 49 f5 ac 6c 86 ce bb 94 ca d2 d3 00 86 42 13 |RI..l.........B.|
+| ce 10 05 01 da a0 49 28 89 d0 27 d3 4b 40 36 5a |......I(..'.K@6Z|
+| 63 59 80 98 48 a5 af cc 74 30 03 4f 5c 08 2c 9d |cY..H...t0.O\.,.|
+| 4c bd bd 9f 72 1b 7c 88 ad 3a 34 53 32 3c c5 34 |L...r.|..:4S2<.4|
+| e4 11 76 b2 55 d9 b1 ca e6 61 69 d7 cb 60 3a 8a |..v.U....ai..`:.|
+| 92 bc ca 63 f6 cb 38 ae da 04 2e 2e 6f 9a d7 dd |...c..8.....o...|
+| fd b0 26 a7 2d b4 7c 6c b8 c1 44 8f fa b7 ab 59 |..&.-.|l..D....Y|
+| 32 9e ed c5 72 cf af 55 be 78 14 8d 97 78 bc e9 |2...r..U.x...x..|
+| 5d b6 d1 52 4f bf ba 4f a4 99 91 3d ff 7d 1c 3d |]..RO..O...=.}.=|
+| 78 e0 fa 27 e2 11 cb 94 13 52 be 8e 62 8a 8c f3 |x..'.....R..b...|
+| 25 7b 94 a1 1d a4 64 a9 a0 38 3a 02 5d c7 6d 38 |%{....d..8:.].m8|
+| 2d b8 ce a3 63 f1 f7 8a 9e 87 5f f0 b4 76 2f 7a |-...c....._..v/z|
+| ab 68 12 8c 9a 69 a0 8b eb c7 99 48 f5 53 ba 9f |.h...i.....H.S..|
+| 67 37 f3 a1 1b d2 de 74 f0 0d d5 83 ee eb 56 b2 |g7.....t......V.|
+| d1 aa a1 1e da cd a8 df fb de dd d7 e6 ee ff 52 |...............R|
+| f4 1f 6e 8c ec f3 85 f1 6b 39 41 36 c9 67 49 11 |..n.....k9A6.gI.|
+| d5 44 5d 2c ee 5c 39 26 cb d7 e7 db 17 de ef 17 |.D],.\9&........|
+| cd a1 1c 35 67 32 eb 7f 45 0f 31 64 c1 b7 7d 7f |...5g2..E.1d..}.|
+| f7 d0 55 71 63 57 db f5 07 97 77 b5 56 36 1e fc |..UqcW....w.V6..|
+| 9d 1c 0f 1e 3e 54 f3 09 55 d7 fd bf 29 b5 3f 87 |....>T..U...).?.|
+| ff 05 00 00                                     |....            |
+process_ssl_payload: found handle 0x555dea35a420 (http-over-tls)
+packet_from_server: is from server - TRUE
+
+dissect_ssl enter frame #34 (already visited)
+packet_from_server: is from server - FALSE
+  conversation = 0x555deb38a010, ssl_session = (nil)
+  record: offset = 0, reported_length_remaining = 455
+dissect_ssl3_record: content_type 23 Application Data
+dissect_ssl_payload decrypted len 426
+decrypted app data fragment[426]:
+| 47 45 54 20 2f 73 74 61 72 74 65 72 2d 74 65 6d |GET /starter-tem|
+| 70 6c 61 74 65 2e 63 73 73 20 48 54 54 50 2f 31 |plate.css HTTP/1|
+| 2e 31 0d 0a 48 6f 73 74 3a 20 65 63 32 2d 31 38 |.1..Host: ec2-18|
+| 2d 32 32 33 2d 31 38 34 2d 32 30 30 2e 75 73 2d |-223-184-200.us-|
+| 65 61 73 74 2d 32 2e 63 6f 6d 70 75 74 65 2e 61 |east-2.compute.a|
+| 6d 61 7a 6f 6e 61 77 73 2e 63 6f 6d 0d 0a 55 73 |mazonaws.com..Us|
+| 65 72 2d 41 67 65 6e 74 3a 20 4d 6f 7a 69 6c 6c |er-Agent: Mozill|
+| 61 2f 35 2e 30 20 28 4d 61 63 69 6e 74 6f 73 68 |a/5.0 (Macintosh|
+| 3b 20 49 6e 74 65 6c 20 4d 61 63 20 4f 53 20 58 |; Intel Mac OS X|
+| 20 31 30 2e 31 34 3b 20 72 76 3a 36 38 2e 30 29 | 10.14; rv:68.0)|
+| 20 47 65 63 6b 6f 2f 32 30 31 30 30 31 30 31 20 | Gecko/20100101 |
+| 46 69 72 65 66 6f 78 2f 36 38 2e 30 0d 0a 41 63 |Firefox/68.0..Ac|
+| 63 65 70 74 3a 20 74 65 78 74 2f 63 73 73 2c 2a |cept: text/css,*|
+| 2f 2a 3b 71 3d 30 2e 31 0d 0a 41 63 63 65 70 74 |/*;q=0.1..Accept|
+| 2d 4c 61 6e 67 75 61 67 65 3a 20 65 6e 2d 55 53 |-Language: en-US|
+| 2c 65 6e 3b 71 3d 30 2e 35 0d 0a 41 63 63 65 70 |,en;q=0.5..Accep|
+| 74 2d 45 6e 63 6f 64 69 6e 67 3a 20 67 7a 69 70 |t-Encoding: gzip|
+| 2c 20 64 65 66 6c 61 74 65 2c 20 62 72 0d 0a 43 |, deflate, br..C|
+| 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 70 2d |onnection: keep-|
+| 61 6c 69 76 65 0d 0a 52 65 66 65 72 65 72 3a 20 |alive..Referer: |
+| 68 74 74 70 73 3a 2f 2f 65 63 32 2d 31 38 2d 32 |https://ec2-18-2|
+| 32 33 2d 31 38 34 2d 32 30 30 2e 75 73 2d 65 61 |23-184-200.us-ea|
+| 73 74 2d 32 2e 63 6f 6d 70 75 74 65 2e 61 6d 61 |st-2.compute.ama|
+| 7a 6f 6e 61 77 73 2e 63 6f 6d 2f 0d 0a 50 72 61 |zonaws.com/..Pra|
+| 67 6d 61 3a 20 6e 6f 2d 63 61 63 68 65 0d 0a 43 |gma: no-cache..C|
+| 61 63 68 65 2d 43 6f 6e 74 72 6f 6c 3a 20 6e 6f |ache-Control: no|
+| 2d 63 61 63 68 65 0d 0a 0d 0a                   |-cache....      |
+process_ssl_payload: found handle 0x555dea35a420 (http-over-tls)
+packet_from_server: is from server - FALSE
